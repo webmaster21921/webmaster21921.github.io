@@ -5,7 +5,7 @@
 }
 
 html {
-    background-color: antiquewhite;
+    background-color: rgba(239, 234, 227, 0.945);
 }
 
 .nav-bar {
@@ -13,12 +13,12 @@ html {
     align-items: center; 
     justify-content: left; 
     gap: 10px; 
-    background-color: #315e26; 
+    background-color: #1b3215; 
     padding: 10px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .nav-link {
-    background-color: #2a4f32;
+    background-color: #101e13;
     color: beige;
     border: none;
     height: auto;
