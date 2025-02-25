@@ -9,24 +9,21 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background: radial-gradient(at top left, #5b250a,#2c1002, #000000);
+    overflow-x: hidden;
 }
 
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 
-.background {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    margin: 0px;
-    padding: 0px;
-    background-color: beige;
-    position: fixed;
-    z-index: -1;
+body {
+    padding-top: 60px;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .nav-bar {
@@ -38,10 +35,12 @@ body {
     left: 0px;
     width: 100%;
     gap: 60px; 
-    background-color:#727f71c8; 
-    padding: 30px; 
+    background-color: #00000074; 
+    padding: 10px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1000 !important;
+    border-radius: 13px;
+    border-bottom-left-radius: 13px;
 }
 
 
