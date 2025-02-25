@@ -30,8 +30,42 @@
             <button class="nav-link">Connect</button>
         </form>
     </nav>
-    
+
+    <div>
+        <h1 class="heading">Reserve Now</h1>
+        <label class="container">
+            <input type="checkbox" id="reservation"><span class="checkmark"></span> Reservation
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="tour"> Book a Tour
+        </label>
+        <br><br>
+        <button onclick="redirectToPage()">Continue</button>
+    </div>
+
+    <script>
+        function redirectToPage() {
+            let reservationChecked = document.getElementById("reservation").checked;
+            let tourChecked = document.getElementById("tour").checked;
+
+            if (reservationChecked && !tourChecked) {
+                window.location.href = "reservePage.html"; // Change to your actual reservation page
+            } else if (tourChecked && !reservationChecked) {
+                window.location.href = "tourPage.html"; // Change to your actual tour page
+            } else {
+                alert("Please select only one option.");
+            }
+        }
+    </script>
+
+    <div>
+        <header>
+            <p>February 2025</p>
+            <div>
+                <span class="material-symbols-rounded">chevron_left</span>
+            </div>
+        </header>
+    </div>
 </body>
-
 </html>
-
