@@ -35,7 +35,7 @@
     </div>
 
     </nav>
-
+<div class="reserve-container">
     <div>
         <h1 class="heading">Reserve Now</h1>
         <label class="container">
@@ -48,7 +48,6 @@
         <br><br>
         <button onclick="redirectToPage()">Continue</button>
     </div>
-
     <script>
         function redirectToPage() {
             let reservationChecked = document.getElementById("reservation").checked;
@@ -59,7 +58,7 @@
             } else if (tourChecked && !reservationChecked) {
                 window.location.href = "tourPage.html"; // Change to your actual tour page
             } else {
-                alert("Please select only one option.");
+                alert("Please select ONE option.");
             }
         }
     </script>
@@ -72,6 +71,8 @@
             </div>
         </header>
     </div>
+</div>
     <script src="embêr.js"></script>
 </body>
+<div class="background"></div>
 </html>
