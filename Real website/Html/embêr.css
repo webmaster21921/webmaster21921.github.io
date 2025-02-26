@@ -46,7 +46,7 @@ body {
     height: 100%; 
     width: 140px; 
     gap: 30px;
-    background-color: #FFD700;
+    background-color: #727f71c8;
     padding: 30px 0;
     box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 6px 0px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1000;
@@ -88,6 +88,7 @@ body {
     z-index: 110000;
     -webkit-transition: box-shadow .3s -webkit-transform 1s;
     cursor: pointer;
+    opacity: 50%;
 }
 
 #logo.hover {
@@ -229,6 +230,16 @@ display: block;
   user-select: none;
 }
 
+.reserve-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    position: relative;
+    padding-left: 140px;
+    color: beige;
+    font-family:"sanchezFont"
+}
+
 .container {
     display: block;
     position: relative;
@@ -237,6 +248,8 @@ display: block;
     cursor: pointer;
     font-size: 22px;
     user-select: none;
+    color: beige;
+    font-family:"sanchezFont"
   }
   
   .container input {
@@ -245,6 +258,8 @@ display: block;
     cursor: pointer;
     height: 0;
     width: 0;
+    color: beige;
+    font-family:"sanchezFont"
   }
   
   .checkmark {
@@ -254,6 +269,7 @@ display: block;
     height: 25px;
     width: 25px;
     background-color: #eee;
+    border-radius: 4px;
   }
   
   .container:hover input ~ .checkmark {
@@ -261,7 +277,7 @@ display: block;
   }
   
   .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #727f71;
   }
   
   .checkmark:after {
@@ -285,3 +301,5 @@ display: block;
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
   }
+
+ 
