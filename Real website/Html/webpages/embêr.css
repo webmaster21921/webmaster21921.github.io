@@ -44,9 +44,9 @@ body {
     top: 0px;
     left: 0px;
     height: 100%; 
-    width: 140px; 
+    width: 150px; 
     gap: 30px;
-    background-color: #FFD700;
+    background-color: #ffd9005c;
     padding: 30px 0;
     box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 6px 0px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1000;
@@ -55,7 +55,7 @@ body {
 }
 
 .nav-bar.show-nav {
-    left: -104px;
+    left: -110px;
 }
 
 .nav-link {
@@ -65,7 +65,7 @@ body {
     padding: 10px 20px; 
     border-radius: 30px;
     cursor: pointer;
-    font-family: "sanchezFont";
+    font-family: "Cormorant Garamond";
     font-size: 16px;
     font-weight: lighter;
     width: 100%; 
@@ -114,9 +114,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 90px;
-    font-family: 'bambiFont';
+    font-family: 'Cormorant Garamond';
     font-weight: 100;
-    font-size: 300px;
+    font-size: 900%;
     letter-spacing: 2px;
     text-shadow: 4px 2px 5px #d37e00a5;
     color: beige;
@@ -235,7 +235,7 @@ display: block;
     flex-direction: column;
     margin: 0px;
     position: relative;
-    padding-left: 140px;
+    padding-left: 150px;
     color: beige;
     font-family:"sanchezFont"
 }
