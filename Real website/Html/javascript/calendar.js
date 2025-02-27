@@ -47,13 +47,26 @@ const renderCalendar = () => {
             let selectedMonth = months[currMonth];
             let selectedYear = currYear;
 
+            // Check the current page and update the confirmation text accordingly
+            let confirmationText = "";
+            if (window.location.pathname.includes("reservationPage")) {
+                confirmationText = `Do you want to book a reservation on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+            } else if (window.location.pathname.includes("tourPage")) {
+                confirmationText = `Do you want to book a tour on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+            }
+
             // Update confirmation box text
-            document.getElementById("confirmation-text").innerText = 
-                `Do you want to book a tour on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+            document.getElementById("confirmation-text").innerText = confirmationText;
 
             // Show the confirmation box
             document.getElementById("confirmation-box").style.display = "block";
         });
+    });
+
+    // Add event listener to the Cancel button
+    document.getElementById("cancel-btn").addEventListener("click", function () {
+        // Hide the confirmation box when Cancel is clicked
+        document.getElementById("confirmation-box").style.display = "none";
     });
 };
 
