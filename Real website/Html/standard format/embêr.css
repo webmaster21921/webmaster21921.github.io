@@ -235,7 +235,7 @@ display: block;
     cursor: pointer;
     font-size: 22px;
     user-select: none;
-    color: beige;
+    color: black;
   }
   
   .container input {
@@ -287,4 +287,6 @@ display: block;
     transform: rotate(45deg);
   }
 
- 
+  /* calendar */
+
+
