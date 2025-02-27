@@ -54,8 +54,8 @@ body {
 
 }
 
-.nav-bar.show-nav {
-    left: -110px;
+.nav-bar.hide-nav {
+    left: -112px;
 }
 
 .nav-link {
@@ -66,12 +66,13 @@ body {
     border-radius: 30px;
     cursor: pointer;
     font-family: "Cormorant Garamond";
-    font-size: 16px;
+    font-size: 17px;
     font-weight: lighter;
     width: 100%; 
     text-align: left; 
     user-select: none;
     margin-bottom: 10px;
+    transition: opacity .1s ease-in-out;
 }
 
 .navlink-container {
