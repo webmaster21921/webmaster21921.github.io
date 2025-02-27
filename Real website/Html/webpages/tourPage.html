@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book your Tour</title>
+    <link rel="stylesheet" href="../standard format/embêr.css">
+    <link rel="stylesheet" href="../standard format/calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="../standard format/logo.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../javascript/calendar.js" defer></script>
+</head>
+
+<body>
+    <div class="logo-container">
+        <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
+    </div>
+    <nav class="nav-bar">
+
+    <div class="navlink-container">
+        <form action = "index.html">
+            <button class="nav-link">Home</button>
+        </form>
+        <form action = "aboutPage.html">
+            <button class="nav-link">About</button>
+        </form>
+        <form action = "sustainabilityPage.html">
+            <button class="nav-link">Sustainability</button>
+        </form>
+        <form action = "menuPage.html">
+            <button class="nav-link">Menu</button>
+        </form>
+        <form action = "reservePage.html">
+            <button class="nav-link">Reserve</button>
+        </form>
+    </div>
+    </nav>
+
+    <h1 class="heading">BOOK A TOUR</h1>
+
+    <script>
+        function goBack() {
+            window.location.href = "reservePage.html"; }
+    </script>
+
+    <button onclick="goBack()">Go Back</button>
+    <div class="wrapper">
+        <header>
+          <p class="current-date"></p>
+          <div class="icons">
+            <span id="prev" class="material-symbols-rounded">chevron_left</span>
+            <span id="next" class="material-symbols-rounded">chevron_right</span>
+          </div>
+        </header>
+        <div class="calendar">
+          <ul class="weeks">
+            <li>Sun</li>
+            <li>Mon</li>
+            <li>Tue</li>
+            <li>Wed</li>
+            <li>Thu</li>
+            <li>Fri</li>
+            <li>Sat</li>
+          </ul>
+          <ul class="days"></ul>
+        </div>
+      </div>
+      
+      <div id="confirmation-box" class="hidden">
+        <p id="confirmation-text"></p>
+        <button id="confirm-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+
+    </body>
+    
+
+</html>

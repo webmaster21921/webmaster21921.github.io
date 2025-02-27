@@ -9,8 +9,6 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: radial-gradient(at top left, #5b250a,#2c1002, #000000);
-    overflow-x: hidden;
 }
 
 html, body {
@@ -25,9 +23,11 @@ html, body {
     top: 0;
     margin: 0px;
     padding: 0px;
-    background: radial-gradient(at top left, #5b250a,#2c1002, #000000);
     position: fixed;
     z-index: -1;
+    background-color:#d7d7d7;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -38,48 +38,59 @@ body {
 
 .nav-bar {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-start;
+    flex-direction: row; 
+    align-items: center; 
     position: fixed !important;
-    top: 0px;
-    left: 0px;
-    height: 100%; 
-    width: 140px; 
-    gap: 30px;
-    background-color: #FFD700;
-    padding: 30px 0;
-    box-shadow: 4px 0px 8px 0 rgba(0, 0, 0, 0.2), 6px 0px 20px 0 rgba(0, 0, 0, 0.19);
+    top: 0;
+    left: 0;
+    height: 60px; 
+    width: 100%; 
+    padding: 50px 30px;
+    gap: 50px;
     z-index: 1000;
-    transition: left .3s ease-in-out;
-
+    transition: top 0.3s ease-in-out;
 }
 
-.nav-bar.show-nav {
-    left: -104px;
+
+.nav-bar.hide-nav {
+    top: -300px;
 }
 
 .nav-link {
     background-color: transparent;
-    color: beige;
     border: none;
-    padding: 10px 20px; 
-    border-radius: 30px;
+    padding: 9px 20px; 
+    border-radius: 0px;
     cursor: pointer;
-    font-family: "sanchezFont";
-    font-size: 16px;
-    font-weight: lighter;
+    font-family: "Barlow Condensed";
+    font-size: 20px;
     width: 100%; 
     text-align: left; 
     user-select: none;
     margin-bottom: 10px;
+    transition: opacity .1s ease-in-out;
+    color: black;
+    border: 2px solid black; 
+    padding: 5px 10px; 
+    display: inline-block;
 }
 
 .navlink-container {
-    margin-top: 60px;
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%; 
 }
 
+.navlink-container form {
+    display: flex; 
+}
+
+
 #logo {
-    top: 20px;
+    top: 22px;
     position: fixed;
     width: 35px;
     aspect-ratio: 1/1;
@@ -87,13 +98,8 @@ body {
     user-select: none;
     z-index: 110000;
     -webkit-transition: box-shadow .3s -webkit-transform 1s;
-    cursor: pointer;
-    opacity: 50%;
-}
 
-#logo.hover {
-    cursor: pointer;
-    box-shadow: 0 0 20px 5px rgba(216, 127, 2, 0.341);
+    opacity: 50%;
 }
 
 .hover-rotate {
@@ -111,16 +117,17 @@ body {
 
 .heading {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 90px;
-    font-family: 'bambiFont';
+    font-family: 'Barlow Condensed';
     font-weight: 100;
-    font-size: 300px;
+    font-size: 200%;
     letter-spacing: 2px;
-    text-shadow: 4px 2px 5px #d37e00a5;
-    color: beige;
+    text-shadow: 4px 2px 5px #ffffff98;
+    color: rgb(0, 0, 0);
     user-select: none;
+    top:22px;
+    left: 40px;
+    position: fixed;
+    font-weight: 0.2
 }
 
 .img-group {
@@ -141,7 +148,6 @@ body {
     opacity: 0; 
     transform: translateY(50px); 
     animation: enterimages 1s forwards;
-    box-shadow: 0 0 20px 5px rgba(216, 127, 2, 0.341);
 }
 
 .post-img:nth-child(1) { animation-delay: 0.3s; }
@@ -160,23 +166,6 @@ body {
     }
 }
 
-
-@font-face {
-    font-family: bambiFont;
-    src: url(bambiFont.ttf);
-}
-@font-face {
-    font-family: quattrocentoFont;
-    src: url(Quattrocento-Regular.ttf);
-}
-@font-face {
-    font-family: sanchezFont;
-    src: url(Sanchez-Regular.ttf);
-}
-@font-face {
-    font-family: sanchezItalicFont;
-    src: url(Sanchez-Italic.ttf);
-}
 
 /* imported colors from colormagic.app  */
 .color-1 {
@@ -211,7 +200,6 @@ body {
         align-items: center;
         padding: 20%;
         color: beige;
-        font-family: "bambiFont";
         font-weight:100;
     }
 
@@ -235,9 +223,8 @@ display: block;
     flex-direction: column;
     margin: 0px;
     position: relative;
-    padding-left: 140px;
+    padding-left: 150px;
     color: beige;
-    font-family:"sanchezFont"
 }
 
 .container {
@@ -248,8 +235,7 @@ display: block;
     cursor: pointer;
     font-size: 22px;
     user-select: none;
-    color: beige;
-    font-family:"sanchezFont"
+    color: black;
   }
   
   .container input {
@@ -259,7 +245,6 @@ display: block;
     height: 0;
     width: 0;
     color: beige;
-    font-family:"sanchezFont"
   }
   
   .checkmark {
@@ -302,4 +287,6 @@ display: block;
     transform: rotate(45deg);
   }
 
- 
+  /* calendar */
+
+

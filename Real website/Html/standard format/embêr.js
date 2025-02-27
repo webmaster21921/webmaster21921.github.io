@@ -1,4 +1,5 @@
-document.getElementById("logo").addEventListener("click", function() {
+/*document.getElementById("logo").addEventListener("click", function() {
     var navBar = document.querySelector(".nav-bar");
-    navBar.classList.toggle("show-nav");
-});
+    navBar.classList.toggle("hide-nav");
+});*/
+

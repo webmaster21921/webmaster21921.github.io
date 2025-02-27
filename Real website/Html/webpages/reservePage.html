@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <Title>Reserve A Table</Title>
-    <link rel="stylesheet" href="embêr.css">
-    <link rel="icon" href="logo.png"/>
+    <title>Plan a Visit</title>
+    <link rel="stylesheet" href="../standard format/embêr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="../standard format/logo.png"/>
 </head>
 
-<body>    
+<body>
     <div class="logo-container">
-        <img class="hover-rotate" src="logo.png" id="logo" />
+        <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
     </div>
     <nav class="nav-bar">
 
@@ -29,53 +30,51 @@
         <form action = "reservePage.html">
             <button class="nav-link">Reserve</button>
         </form>
-        <form action = "orderPage.html">
-            <button class="nav-link">Order Now</button>
-        </form>
-        <form action = "connectPage.html">
-            <button class="nav-link">Connect</button>
-        </form>
     </div>
-
     </nav>
+
+    <h1 class="heading">RESERVE</h1>
+
+<br>
+
 <div class="reserve-container">
     <div>
-        <h1 class="heading">Reserve Now</h1>
         <label class="container">
-            <input type="checkbox" id="reservation"><span class="checkmark"></span> Reservation
+            <input type="checkbox" id="reservation">
+            <span class="checkmark"></span> 
+            Reservation
         </label>
+
         <br>
-        <label>
-            <input type="checkbox" id="tour"> Book a Tour
+
+        <label class="container">
+            <input type="checkbox" id="tour">
+            <span class="checkmark"></span>
+            Book a Tour
         </label>
+
         <br><br>
+
         <button onclick="redirectToPage()">Continue</button>
     </div>
+
     <script>
         function redirectToPage() {
             let reservationChecked = document.getElementById("reservation").checked;
             let tourChecked = document.getElementById("tour").checked;
 
             if (reservationChecked && !tourChecked) {
-                window.location.href = "reservePage.html"; // Change to your actual reservation page
+                window.location.href = "reservationPage.html"; 
             } else if (tourChecked && !reservationChecked) {
-                window.location.href = "tourPage.html"; // Change to your actual tour page
+                window.location.href = "tourPage.html"; 
             } else {
                 alert("Please select ONE option.");
             }
         }
     </script>
 
-    <div>
-        <header>
-            <p>February 2025</p>
-            <div>
-                <span class="material-symbols-rounded">chevron_left</span>
-            </div>
-        </header>
-    </div>
 </div>
-    <script src="embêr.js"></script>
+    <script src="../standard format/embêr.js"></script>
 </body>
 <div class="background"></div>
 </html>
