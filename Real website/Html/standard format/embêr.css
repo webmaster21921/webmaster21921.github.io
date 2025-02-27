@@ -9,10 +9,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    background-image: url(https://i.postimg.cc/2SzYGNSv/lightbeige.avif);
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 html, body {
@@ -29,6 +26,9 @@ html, body {
     padding: 0px;
     position: fixed;
     z-index: -1;
+    background-image: url(https://i.postimg.cc/2SzYGNSv/lightbeige.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -49,12 +49,12 @@ body {
     padding: 50px 30px;
     gap: 50px;
     z-index: 1000;
-    transition: left 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
 }
 
 
 .nav-bar.hide-nav {
-    left: -112px;
+    top: -300px;
 }
 
 .nav-link {
@@ -130,6 +130,9 @@ body {
     text-shadow: 4px 2px 5px #ffffff98;
     color: rgb(0, 0, 0);
     user-select: none;
+    top:20px;
+    left: 40px;
+    position: fixed;
 }
 
 .img-group {
