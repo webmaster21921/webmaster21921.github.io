@@ -12,27 +12,36 @@ const months = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
 
 const renderCalendar = () => {
-    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
+
+    let //determines which day of the week the 1st day of the month falls on
+        firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), 
+        //gives the total number of days in the current month
         lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
+        //finds which day of the week the last date of the month is on
         lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
+        //gives the last day of the eprevious month
         lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
     
-    let liTag = "";
+    let liTag = ""; //liTag is the content that fills up the <ul class="days"> in HTML
 
+    //fills in the days of the previous month that are in the first row of the current month
     for (let i = firstDayofMonth; i > 0; i--) { 
         liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
     }
 
+    //generates elements for each day of the current month
     for (let i = 1; i <= lastDateofMonth; i++) { 
         let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
                      && currYear === new Date().getFullYear() ? "active" : "";
         liTag += `<li class="day ${isToday}" data-day="${i}">${i}</li>`;
     }
 
+    //fills in the days of the next month that are in the last row of the current month
     for (let i = lastDayofMonth; i < 6; i++) { 
         liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
     }
 
+    //update the calendar header
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
 
@@ -47,7 +56,7 @@ const renderCalendar = () => {
             let selectedMonth = months[currMonth];
             let selectedYear = currYear;
 
-            // Check the current page and update the confirmation text accordingly
+            // Check the current page and update the confirmation text
             let confirmationText = "";
             if (window.location.pathname.includes("reservationPage")) {
                 confirmationText = `Do you want to book a reservation on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
