@@ -9,7 +9,6 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: radial-gradient(at top left, #5b250a,#2c1002, #000000);
     overflow-x: hidden;
 }
 
@@ -25,7 +24,6 @@ html, body {
     top: 0;
     margin: 0px;
     padding: 0px;
-    background: radial-gradient(at top left, #5b250a,#2c1002, #000000);
     position: fixed;
     z-index: -1;
 }
@@ -119,8 +117,8 @@ body {
     font-weight: 100;
     font-size: 900%;
     letter-spacing: 2px;
-    text-shadow: 4px 2px 5px #d37e00a5;
-    color: beige;
+    text-shadow: 4px 2px 5px #ffffff98;
+    color: rgb(0, 0, 0);
     user-select: none;
 }
 
@@ -162,23 +160,6 @@ body {
 }
 
 
-@font-face {
-    font-family: bambiFont;
-    src: url(bambiFont.ttf);
-}
-@font-face {
-    font-family: quattrocentoFont;
-    src: url(Quattrocento-Regular.ttf);
-}
-@font-face {
-    font-family: sanchezFont;
-    src: url(Sanchez-Regular.ttf);
-}
-@font-face {
-    font-family: sanchezItalicFont;
-    src: url(Sanchez-Italic.ttf);
-}
-
 /* imported colors from colormagic.app  */
 .color-1 {
     color: #c8c2b6;
@@ -212,7 +193,6 @@ body {
         align-items: center;
         padding: 20%;
         color: beige;
-        font-family: "bambiFont";
         font-weight:100;
     }
 
@@ -238,7 +218,6 @@ display: block;
     position: relative;
     padding-left: 150px;
     color: beige;
-    font-family:"sanchezFont"
 }
 
 .container {
@@ -250,7 +229,6 @@ display: block;
     font-size: 22px;
     user-select: none;
     color: beige;
-    font-family:"sanchezFont"
   }
   
   .container input {
@@ -260,7 +238,6 @@ display: block;
     height: 0;
     width: 0;
     color: beige;
-    font-family:"sanchezFont"
   }
   
   .checkmark {
