@@ -65,7 +65,7 @@ body {
 .nav-link {
     background-color: transparent;
     border: none;
-    padding: 9px 20px; 
+    padding: 5px 10px; 
     border-radius: 0px;
     cursor: pointer;
     font-family: "Barlow Condensed";
@@ -74,10 +74,9 @@ body {
     text-align: left; 
     user-select: none;
     margin-bottom: 10px;
-    transition: opacity .1s ease-in-out;
+    transition: opacity .3s ease-in-out !important;
     color: white;
     border: 2px solid white; 
-    padding: 5px 10px; 
     display: inline-block;
 }
 
@@ -344,7 +343,7 @@ body {
     opacity: 0;
     display: flex;
     flex-direction: column;
-    height: 50px;
+    opacity: 50px;
     gap: 15px;
     position: absolute;
     border-style: solid;
@@ -362,14 +361,21 @@ body {
     background-color: rgba(0, 0, 0, 0.341);
     border-radius: 12px;
   }
-  .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
+
+.dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
     opacity: 1;
     height: 90px;
 }
+
+.dropdown:hover .nav-link {
+    opacity: 0.5;  
+}
+
   .abt-link {
     color: white;
     text-underline-offset: 100000000px;
     transition: opacity .3s ease-in-out;
+
   }
 
 
