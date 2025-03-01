@@ -179,6 +179,8 @@ body {
     }
 }
 
+/* home page ids and classes*/
+
 .big-vid {
     display: flex;
     padding: 0px;
@@ -243,15 +245,42 @@ body {
     --color-5: #cebc9c;
 }
 
-.normal-text {
-    position: absolute;
-    top: 1000px;
-    left: 0px;
-    right: 0px;
+/* sustainabilityPage ids and classes */
+
+.sources {
+    display: flex;
+    padding: 0px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
     align-items: center;
-    padding: 20%;
-    color: beige;
-    font-weight:100;
+    margin: 0;
+    top:0px;
+}
+
+.partnerships {
+    position: absolute;
+    z-index: 2222100;
+    width: 100%;
+    background-color: white;
+    height: 1000px;
+    top: 2000px;
+    transition: all .3 ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.statistics {
+    position: absolute;
+    z-index: 5222100;
+    width: 100%;
+    background-color: var(--color-3);
+    height: 1000px;
+    top: 3000px;
+    transition: all .3 ease-in-out;
+    background-repeat: no-repeat;
 }
 
 /* reservePage ids and classes */
