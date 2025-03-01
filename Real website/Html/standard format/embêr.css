@@ -243,7 +243,7 @@ body {
     --color-5: #cebc9c;
 }
 
-    .yap {
+     .yap {
         position: absolute;
         top: 1000px;
         left: 0px;
@@ -257,16 +257,16 @@ body {
 /* reservePage ids and classes */
 
 #tour {
-display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .reserve-container {
@@ -338,6 +338,41 @@ display: block;
     transform: rotate(45deg);
   }
 
-  /* calendar */
+  /* about-dropdown */
+
+  .drop-links {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    gap: 15px;
+    position: absolute;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    color: black;
+    font-family: "Barlow Condensed";
+    width: 160px;
+    height: 0px;
+    transition: opacity .3s ease-in-out, height .3s ease-in-out;
+    justify-content: center;
+    align-items: left;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.341);
+    border-radius: 12px;
+  }
+  .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
+    opacity: 1;
+    height: 90px;
+}
+  .abt-link {
+    color: white;
+    text-underline-offset: 100000000px;
+    transition: opacity .3s ease-in-out;
+  }
 
 
+  .abt-link:hover {
+    opacity: 70%;
+  }
