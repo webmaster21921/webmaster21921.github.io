@@ -105,7 +105,7 @@ body {
     z-index: 110000;
     -webkit-transition: box-shadow .3s -webkit-transform 1s;
 
-    opacity: 50%;
+    opacity: 100%;
 }
 
 .hover-rotate {
