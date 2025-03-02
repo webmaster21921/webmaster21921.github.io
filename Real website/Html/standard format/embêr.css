@@ -532,9 +532,9 @@ body {
     gap: 20%;
     position: absolute;
     border-style: solid;
-    border-color: white;
+    border-color: rgba(72, 72, 72, 0.498);
     border-width: .5px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: "inter";
     font-weight:100;
     font-size: 85%;
@@ -544,8 +544,7 @@ body {
     justify-content: center;
     align-items: left;
     padding: .5%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.341);
+    background-color: rgb(226, 226, 226);
     border-radius: 2px;
   }
 
@@ -559,14 +558,15 @@ body {
 }
 
   .abt-link {
-    color: white;
+    color: rgb(0, 0, 0);
     text-underline-offset: 100000000px;
     transition: opacity .3s ease-in-out;
+    font-weight: 300;
 
   }
 
   .abt-link:hover {
-    opacity: 70%;
+    opacity: 30%;
   }
 
   /*index.html*/
