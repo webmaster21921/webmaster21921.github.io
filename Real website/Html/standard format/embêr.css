@@ -495,7 +495,35 @@ body {
 
   }
 
-
   .abt-link:hover {
     opacity: 70%;
   }
+
+  /*index.html*/
+#stars {
+    top: 2150px;
+    left: 50px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+
+}
+
+.text_bottom {
+    font-size: 35px;
+    display: flex;
+    flex-direction: row; 
+    color: white;
+    font-family: "inter";
+    top: 2157px;
+    left: 380px;
+    position: absolute;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+    transform: scaleX(1.5);
+    width: 20%;
+}
