@@ -474,38 +474,35 @@ body {
 
 /* sustainabilityPage ids and classes */
 
-.sources {
+.map {
     display: flex;
-    padding: 0px;
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     width: 100%;
     height: auto;
-    padding: 0px;
-    justify-content: center;
     align-items: center;
     margin: 0;
     top:0px;
 }
 
-.partnerships {
+.sources {
     position: absolute;
-    z-index: 2222100;
+    z-index: 22;
     width: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     height: 1000px;
     top: 2000px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
 
-.map {
+.partnerships {
     position: absolute;
-    z-index: 5222100;
-    width: 100%;
-    background-color: var(--color-5);
+    z-index: 522;
+    width: 100%;;
     height: 1000px;
     top: 3000px;
+    background-color: var(--color-4);
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -522,13 +519,13 @@ body {
 }
 
 #hydroponics {
-    top: 300px;
+    top: 2300px;
     right: 150px;
     position: absolute;
     width: 500px;
     height: auto;
     user-select: none;
-    z-index: 15;
+    z-index: 30;
     opacity: 100%;
 }
 
