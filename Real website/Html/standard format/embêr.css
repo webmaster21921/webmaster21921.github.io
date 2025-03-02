@@ -153,6 +153,45 @@ body {
     opacity: 50%;
 }
 
+.title-container {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+
+}
+
+.title {
+    display: block;
+    font-family: 'inter';
+    font-weight: 150;
+    font-size: 1000%;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 5px #00000085;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    position: absolute;
+    font-weight: 0.2;
+    z-index: 9;
+    width: 30%;
+    left: 25%;
+    top:19%;
+}
+
+.subtitle {
+    display: block;
+    font-family: 'inter';
+    font-weight: 100;
+    font-size: 600%;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 5px #0000006b;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    position: absolute;
+    font-weight: 0.2;
+    z-index: 9;
+    width: 55%;
+    left: 25%;
+    top: 40%
+}
 
 .heading {
     display: flex;
@@ -218,7 +257,7 @@ body {
     display: flex;
     padding: 0px;
     position: fixed;
-    z-index: 10;
+    z-index: 8;
     width: 100%;
     height: auto;
     padding: 0px;
@@ -227,6 +266,7 @@ body {
     animation-play-state: running;
     margin: 0;
     top:0px;
+
 }
 
 .cont-scroll {
