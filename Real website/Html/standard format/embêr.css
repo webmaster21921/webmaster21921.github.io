@@ -304,7 +304,7 @@ body {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.467), rgb(0, 0, 0));
     height: 1000px;
     top: 1000px;
-    transition: all .3 ease-in-out;
+    transition: all 1s ease-in-out;
     background-repeat: no-repeat;
     z-index: 10;
 
