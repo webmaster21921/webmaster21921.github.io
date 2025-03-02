@@ -25,27 +25,27 @@ h1 {
     width: 100%; 
     text-align: center; 
     position: absolute;
-    top: 100px;
+    top: 150px;
 }
 
 h2 {
     font-family: "Barlow Condensed";
     font-size: 40px;
-    width: 100%; 
+    width: 50%; 
     text-align: left; 
     position: absolute;
-    top: 200px;
-    left: 25px
+    top: 275px;
+    left: 50px
 }
 
 .sustain {
     font-family: "Barlow Condensed";
     font-size: 20px;
-    width: 80%; 
+    width: 60%; 
     text-align: left; 
     position: absolute;
-    top: 340px;
-    left: 25px;
+    top: 440px;
+    left: 50px;
     right: 25px;
 }
 
@@ -474,38 +474,35 @@ body {
 
 /* sustainabilityPage ids and classes */
 
-.sources {
+.map {
     display: flex;
-    padding: 0px;
     position: fixed;
-    z-index: 10;
+    z-index: 11;
     width: 100%;
     height: auto;
-    padding: 0px;
-    justify-content: center;
     align-items: center;
     margin: 0;
     top:0px;
 }
 
-.partnerships {
+.sources {
     position: absolute;
-    z-index: 2222100;
+    z-index: 22;
     width: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-5);
     height: 1000px;
     top: 2000px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
 
-.map {
+.partnerships {
     position: absolute;
-    z-index: 5222100;
-    width: 100%;
-    background-color: var(--color-5);
+    z-index: 522;
+    width: 100%;;
     height: 1000px;
     top: 3000px;
+    background-color: var(--color-4);
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -521,10 +518,20 @@ body {
     background-repeat: no-repeat;
 }
 
+#hydroponics {
+    top: 2300px;
+    right: 150px;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    user-select: none;
+    z-index: 30;
+    opacity: 100%;
+}
 
   /* about-dropdown */
 
-  .drop-links {
+.drop-links {
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -532,9 +539,9 @@ body {
     gap: 20%;
     position: absolute;
     border-style: solid;
-    border-color: white;
+    border-color: rgba(72, 72, 72, 0.498);
     border-width: .5px;
-    color: black;
+    color: rgb(0, 0, 0);
     font-family: "inter";
     font-weight:100;
     font-size: 85%;
@@ -544,10 +551,9 @@ body {
     justify-content: center;
     align-items: left;
     padding: .5%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.341);
+    background-color: rgb(226, 226, 226);
     border-radius: 2px;
-  }
+}
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
     opacity: 1;
@@ -559,14 +565,15 @@ body {
 }
 
   .abt-link {
-    color: white;
+    color: rgb(0, 0, 0);
     text-underline-offset: 100000000px;
     transition: opacity .3s ease-in-out;
+    font-weight: 300;
 
   }
 
   .abt-link:hover {
-    opacity: 70%;
+    opacity: 30%;
   }
 
   /*index.html*/
@@ -597,3 +604,119 @@ body {
     transform: scaleX(1.5);
     width: 20%;
 }
+
+/* MENU STUFFFSSS*/
+
+.circle-menu h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centering */
+    font-family: "Barlow Condensed"; 
+    z-index: 2; /* Ensures title stays on top */
+}
+.menu-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    position: relative;
+    background: #727f71; 
+    overflow: hidden;
+}
+.circle-menu {
+    position: relative;
+    width: 500px; 
+    height: 500px;
+    margin: 150px auto; 
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dish {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
+    transition: transform 0.5s ease, background-color 0.4s ease, width 0.3s ease, height 0.3s ease;
+    background: #c8a27c; 
+    cursor: pointer;
+    overflow: hidden; /* Keeps everything inside */
+}
+
+.dish-content {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack name + description vertically */
+    text-align: center;
+    overflow: hidden; 
+    position: relative;
+}
+
+.dish .name {
+    color: white;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Smooth fade */
+}
+
+.dish .data-description {
+    color: black;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+    position: absolute; /* Keeps description on top of name */
+    width: 80%; /* Smaller so it doesn't overflow */
+    line-height: 1.4;
+}
+
+.dish:hover {
+    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg)) scale(1.2);
+    
+}
+
+.dish:hover .name {
+    opacity: 0; /* Hide name on hover */
+}
+
+.dish:hover .data-description {
+    opacity: 1; /* Show description on hover */
+}
+
+
+
+.dish:nth-child(2) {
+    background: #c8c2b6; 
+}
+
+.dish:nth-child(3) {
+    background: #ab8b78;
+}
+
+.dish:nth-child(4) {
+    background: #72978d;
+}
+
+.dish:nth-child(5) {
+    background: #cebc9c; 
+}
+
+
