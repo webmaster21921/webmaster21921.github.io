@@ -38,7 +38,7 @@ h2 {
     left: 25px
 }
 
-p {
+.sustain {
     font-family: "Barlow Condensed";
     font-size: 20px;
     width: 80%; 
@@ -161,7 +161,7 @@ body {
 
 .title {
     display: block;
-    font-family: 'inter';
+    font-family: 'Playfair Display';
     font-weight: 150;
     font-size: 1000%;
     letter-spacing: 3px;
@@ -172,8 +172,9 @@ body {
     font-weight: 0.2;
     z-index: 9;
     width: 30%;
-    left: 25%;
+    left: 37%;
     top:19%;
+
 }
 
 .subtitle {
@@ -513,7 +514,7 @@ body {
 }
 
 .text_bottom {
-    font-size: 35px;
+    font-size: 40px;
     display: flex;
     flex-direction: row; 
     color: white;
