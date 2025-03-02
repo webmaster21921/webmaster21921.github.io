@@ -165,8 +165,9 @@ body {
 .title {
     display: block;
     font-family: 'Playfair Display';
+    font-family: 'inter';
     font-weight: 150;
-    font-size: 1000%;
+    font-size: 700%;
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     color: rgb(255, 255, 255);
@@ -174,9 +175,15 @@ body {
     position: absolute;
     font-weight: 0.2;
     z-index: 9;
-    width: 30%;
-    left: 37%;
-    top:19%;
+    width: 65%;
+    left: 10%;
+    top:30%;
+    align-content: left;
+    justify-items: left;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
 
 }
 
