@@ -4,6 +4,7 @@
 <head>
     <title>Plan a Visit</title>
     <link rel="stylesheet" href="../standard format/embêr.css">
+    <link rel="stylesheet" href="../standard format/checkmark.css">
     <link href='https://fonts.googleapis.com/css?family=Cormorant Garamond' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
     <link rel="icon" href="../standard format/logo.png"/>
@@ -38,15 +39,13 @@
         </form>
     </div>
     </nav>
-
-<br>
-
+ 
 <div class="reserve-container">
     <div>
         <label class="container">
             <input type="checkbox" id="reservation">
             <span class="checkmark"></span> 
-            Reservation
+            <p class="h2">Reservation</p>
         </label>
 
         <br>
@@ -54,12 +53,12 @@
         <label class="container">
             <input type="checkbox" id="tour">
             <span class="checkmark"></span>
-            Book a Tour
+            <p class="h2">Book a Tour</p>
         </label>
 
         <br><br>
 
-        <button onclick="redirectToPage()">Continue</button>
+        <button class="continue-button" onclick="redirectToPage()">Continue</button>
     </div>
 
     <script>

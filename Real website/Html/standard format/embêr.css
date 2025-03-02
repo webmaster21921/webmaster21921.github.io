@@ -69,9 +69,12 @@ h2 {
 }
 
 body {
+    display: flex;
     padding-top: 60px;
     min-height: 100vh;
     max-height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bar {
@@ -278,6 +281,129 @@ body {
     }
 }
 
+/* reserve pages ids and classes */
+
+/* reservePage ids and classes */
+
+#tour {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.reserve-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional for a nice shadow */
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    color: black;
+    gap: 10px;
+  }
+  
+  .container input {
+    position: relative;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    color: beige;
+  }
+  
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: gray;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #727f71;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: relative;
+    display: none;
+    margin-right: 20px;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .h2 {
+    font-family: "Barlow Condensed";
+    font-size: 40px;
+    width: 100%; 
+    text-align: left; 
+    top: 200px;
+    left: 25px;
+}
+
+.continue-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Barlow Condensed", sans-serif;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.continue-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.continue-button:active {
+    background-color: #3e8e41;
+    transform: scale(0.98);
+}
+
 /* home page ids and classes*/
 
 .big-vid {
@@ -395,89 +521,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* reservePage ids and classes */
-
-#tour {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.reserve-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    position: relative;
-    padding-left: 150px;
-    color: beige;
-}
-
-.container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    user-select: none;
-    color: black;
-  }
-  
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-    color: beige;
-  }
-  
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: white;
-    border-radius: 4px;
-  }
-  
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  .container input:checked ~ .checkmark {
-    background-color: #727f71;
-  }
-  
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
 
   /* about-dropdown */
 
