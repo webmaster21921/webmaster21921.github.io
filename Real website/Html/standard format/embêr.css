@@ -47,21 +47,27 @@ h2 {
     height: auto;
     user-select: none;
     z-index: 15;
-    -webkit-transition: box-shadow .3s -webkit-transform 1s;
-
     opacity: 100%;
 }
 
-p {
+.text_bottom {
+    font-size: 35px;
+    display: flex;
+    flex-direction: row; 
+    color: white;
     font-family: "Barlow Condensed";
-    font-size: 20px;
-    width: 80%; 
-    text-align: left; 
+    top: 2157px;
+    left: 380px;
     position: absolute;
-    top: 340px;
-    left: 25px;
-    right: 25px;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+    transform: scaleX(1.5);
+    width: 20%;
+
 }
+
+
 
 ::-webkit-scrollbar {
     display: none;
