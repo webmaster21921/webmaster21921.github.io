@@ -162,11 +162,11 @@ body {
 
 }
 
-.title {
+.name {
     display: block;
-    font-family: 'inter';
+    font-family: 'Playfair Display';
     font-weight: 150;
-    font-size: 700%;
+    font-size: 1500%;
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     color: rgb(255, 255, 255);
@@ -175,16 +175,36 @@ body {
     font-weight: 0.2;
     z-index: 9;
     width: 65%;
-    left: 10%;
-    top:30%;
+    left: 31%;
+    top: 30%;
     align-content: left;
     justify-items: left;
     align-items: left;
     justify-content: left;
     text-align: left;
-
-
 }
+.undername {
+    display: block;
+    font-family: 'Playfair Display';
+    font-weight: 150;
+    font-size: 300%;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 5px #00000085;
+    color: rgb(255, 255, 255);
+    user-select: none;
+    position: absolute;
+    font-weight: 0.2;
+    z-index: 9;
+    width: 65%;
+    left: 32%;
+    top: 60%;
+    align-content: left;
+    justify-items: left;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
 
 .subtitle {
     display: block;
