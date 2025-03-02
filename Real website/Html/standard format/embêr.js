@@ -1,5 +1,5 @@
 window.addEventListener('scroll', () => {
-    const title = document.querySelector('.title');
+    const title = document.querySelector('.name');
     const scrollY = window.scrollY; 
     const fadePoint = 250; 
     let opacity = 1 - scrollY / fadePoint;
@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-    const title = document.querySelector('.subtitle');
+    const title = document.querySelector('.undername');
     const scrollY = window.scrollY; 
     const fadePoint = 250; 
     let opacity = 1 - scrollY / fadePoint;
