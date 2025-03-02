@@ -100,15 +100,16 @@ body {
     padding: 5px 10px; 
     border-radius: 0px;
     cursor: pointer;
-    font-family: "Barlow Condensed";
-    font-size: 30px;
+    font-family: "inter";
+    font-size: 20px;
+    font-weight: 100;
     width: 100%; 
     text-align: left; 
     user-select: none;
     margin-bottom: 10px;
     transition: opacity .3s ease-in-out !important;
     color: white;
-    border: 2px solid white; 
+    border: .3px solid white; 
     display: inline-block;
 }
 
@@ -155,14 +156,14 @@ body {
 
 .heading {
     display: flex;
-    font-family: 'Barlow Condensed';
+    font-family: 'inter';
     font-weight: 100;
-    font-size: 300%;
+    font-size: 200%;
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #ffffff98;
     color: rgb(255, 255, 255);
     user-select: none;
-    top:22px;
+    top:4%;
     left: 80px;
     position: fixed;
     font-weight: 0.2;
@@ -418,27 +419,29 @@ body {
     display: flex;
     flex-direction: column;
     opacity: 50px;
-    gap: 15px;
+    gap: 20%;
     position: absolute;
     border-style: solid;
     border-color: white;
-    border-width: 2px;
+    border-width: .5px;
     color: black;
-    font-family: "Barlow Condensed";
-    width: 160px;
+    font-family: "inter";
+    font-weight:100;
+    font-size: 85%;
+    width: 10%;
     height: 0px;
     transition: opacity .3s ease-in-out, height .3s ease-in-out;
     justify-content: center;
     align-items: left;
-    padding: 10px;
+    padding: .5%;
     color: white;
     background-color: rgba(0, 0, 0, 0.341);
-    border-radius: 12px;
+    border-radius: 2px;
   }
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
     opacity: 1;
-    height: 90px;
+    height: 80%;
 }
 
 .dropdown:hover .nav-link {
