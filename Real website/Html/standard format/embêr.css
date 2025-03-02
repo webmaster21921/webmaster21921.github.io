@@ -87,7 +87,7 @@ body {
     gap: 50px;
     z-index: 1000;
     transition: top 0.3s ease-in-out;
-    background-color: black
+    background-color: #466d1d92;
 }
 
 
@@ -112,6 +112,7 @@ body {
     color: white;
     border: .3px solid white; 
     display: inline-block;
+    z-index: 10;
 }
 
 .navlink-container {
@@ -121,6 +122,7 @@ body {
     align-items: center;
     justify-content: flex-end; 
     width: 100%; 
+    z-index: 5;
 }
 
 .navlink-container form {
@@ -195,7 +197,7 @@ body {
     top: 40%
 }
 
-.heading {
+#heading {
     display: flex;
     font-family: 'inter';
     font-weight: 100;
@@ -208,14 +210,11 @@ body {
     left: 80px;
     position: fixed;
     font-weight: 0.2;
+    z-index: 110000;
     
 }
 
-.underline-effect {
-    position: relative;
-    display: inline-block;
-    z-index: 11;
-}
+
 
 .img-group {
     display: flex; 
