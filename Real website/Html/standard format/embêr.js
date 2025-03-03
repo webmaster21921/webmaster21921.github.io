@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper', {
     speed: 3000,
     loop: true,
     autoplay: {
-      delay: 3000,               // 2500ms = 2.5 seconds
+      delay: 3000,               // 
       disableOnInteraction: false // Continues autoplay after user interacts
     },
     navigation: {
