@@ -465,8 +465,7 @@ body {
     color: rgb(0, 0, 0);
     font-family: "Antic Didone";
     top: 1050px;
-    left: 50%;
-    transform: translateX(-25%);
+    left: 540px;
     position: absolute;
     user-select: none;
     z-index: 15;
@@ -479,10 +478,9 @@ body {
     position: absolute;
     z-index: 100;
     top: 1120px;
-    left: 50%;
-    border-radius: 10px;
+    left: 635px;
+    border-radius: 140px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.811); 
-    transform: translateX(-50%)
   }
 
 .section-2 {
