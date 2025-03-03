@@ -8,6 +8,7 @@ window.addEventListener('scroll', () => {
 });
 
 const swiper = new Swiper('.swiper', {
+    speed: 3000,
     loop: true,
     autoplay: {
       delay: 3000,               // 2500ms = 2.5 seconds
