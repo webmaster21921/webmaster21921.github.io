@@ -185,7 +185,30 @@ body {
     align-items: left;
     justify-content: left;
     text-align: left;
+    -webkit-transition: transform 2s ease-in-out;
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: go-up 1s forwards;
 }
+
+.name { animation-delay: 0s; }
+.undername {animation-delay: .3s;}
+
+.name-container{
+    z-index: 10;
+}
+
+@keyframes go-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
 .undername {
     display: block;
     font-family: 'Playfair Display';
@@ -206,6 +229,10 @@ body {
     align-items: left;
     justify-content: left;
     text-align: left;
+    -webkit-transition: transform 2s ease-in-out;
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: go-up 1s forwards;
 }
 
 
@@ -255,20 +282,15 @@ body {
 }
 
 .post-img {
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    width: 20%;
-    height: auto;
-    -webkit-transition: transform 2s ease-in-out, box-shadow 1s;
+
+    -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
     transform: translateY(50px); 
     animation: enterimages 1s forwards;
 }
 
-.post-img:nth-child(1) { animation-delay: 0.3s; }
-.post-img:nth-child(2) { animation-delay: .6s; }
-.post-img:nth-child(3) { animation-delay: .9s; }
-.post-img:nth-child(4) { animation-delay: 1.2s; }
+.post-img { animation-delay: 0.3s; }
+
 
 @keyframes enterimages {
     from {
@@ -552,8 +574,8 @@ body {
     border-color: rgba(72, 72, 72, 0);
     border-width: .5px;
     color: rgb(0, 58, 21);
-    font-family: "inter";
-    font-weight:100;
+    font-family: "playfair display";
+    font-weight:1000;
     font-size: 85%;
     width: 10%;
     height: 5px;
@@ -677,7 +699,7 @@ body {
     transition: transform 0.5s ease, background-color 0.4s ease, width 0.3s ease, height 0.3s ease;
     background: #c8a27c; 
     cursor: pointer;
-    overflow: hidden; /* Keeps everything inside */
+    overflow: hidden
 }
 
 .dish-content {
@@ -687,7 +709,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack name + description vertically */
+    flex-direction: column; 
     text-align: center;
     overflow: hidden; 
     position: relative;
@@ -698,7 +720,7 @@ body {
     font-family: "Barlow Condensed";
     font-size: 18px;
     font-weight: bold;
-    transition: opacity 0.3s ease; /* Smooth fade */
+    transition: opacity 0.3s ease;
 }
 
 .dish .data-description {
@@ -706,10 +728,10 @@ body {
     font-family: "Barlow Condensed";
     font-size: 14px;
     text-align: center;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.3s ease;
-    position: absolute; /* Keeps description on top of name */
-    width: 80%; /* Smaller so it doesn't overflow */
+    position: absolute; 
+    width: 80%; 
     line-height: 1.4;
 }
 
@@ -719,11 +741,11 @@ body {
 }
 
 .dish:hover .name {
-    opacity: 0; /* Hide name on hover */
+    opacity: 0; 
 }
 
 .dish:hover .data-description {
-    opacity: 1; /* Show description on hover */
+    opacity: 1; 
 }
 
 
