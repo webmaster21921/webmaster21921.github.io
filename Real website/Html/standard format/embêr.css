@@ -481,7 +481,7 @@ body {
     top: 1120px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
   }
 
