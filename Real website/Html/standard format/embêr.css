@@ -104,7 +104,7 @@ body {
     padding: 5px 10px; 
     border-radius: 0px;
     cursor: pointer;
-    font-family: "Barlow Condensed";
+    font-family: "barlow condensed";
     font-size: 30px;
     font-weight: 350;
     width: 100%; 
@@ -539,20 +539,22 @@ body {
     gap: 20%;
     position: absolute;
     border-style: solid;
-    border-color: rgba(72, 72, 72, 0.498);
+    border-color: rgba(72, 72, 72, 0);
     border-width: .5px;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 58, 21);
     font-family: "inter";
     font-weight:100;
     font-size: 85%;
     width: 10%;
-    height: 0px;
+    height: 5px;
     transition: opacity .3s ease-in-out, height .3s ease-in-out;
     justify-content: center;
     align-items: left;
     padding: .5%;
-    background-color: rgb(226, 226, 226);
-    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    margin-left: -20px;
+    
 }
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
@@ -564,18 +566,32 @@ body {
     opacity: 0.5;  
 }
 
-  .abt-link {
-    color: rgb(0, 0, 0);
-    text-underline-offset: 100000000px;
-    transition: opacity .3s ease-in-out;
-    font-weight: 300;
+.abt-link {
+    display: inline-block;
+    position: relative;   
+    color: rgb(15, 62, 11);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    cursor: pointer;
+}
 
-  }
+.abt-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 75%;               
+    height: 2px;
+    background-color: rgb(237, 134, 0);
+    transform: scaleX(0);      
+    transform-origin: left;    
+    transition: transform 0.3s ease-in-out;
+}
 
-  .abt-link:hover {
-    opacity: 30%;
-  }
-
+.abt-link:hover::after {
+    transform: scaleX(1);       
+}
   /*index.html*/
 #stars {
     top: 1700px;
