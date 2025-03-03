@@ -10,7 +10,7 @@ window.addEventListener('scroll', () => {
 const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: {
-      delay: 2500,               // 2500ms = 2.5 seconds
+      delay: 3000,               // 2500ms = 2.5 seconds
       disableOnInteraction: false // Continues autoplay after user interacts
     },
     navigation: {
