@@ -434,17 +434,7 @@ body {
     z-index: 10;
 
 }
-#stars {
-    top: 1700px;
-    left: 50px;
-    position: absolute;
-    width: 500px;
-    height: auto;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
 
-}
 
 .text_bottom {
     font-size: 40px;
@@ -604,7 +594,7 @@ body {
 }
   /*index.html*/
 #stars {
-    top: 1700px;
+    top: 1120px;
     left: 50px;
     position: absolute;
     width: 500px;
@@ -612,8 +602,73 @@ body {
     user-select: none;
     z-index: 15;
     opacity: 100%;
-
 }
+#award {
+    top: 1280px;
+    left: -120px;
+    position: absolute;
+    width: 600px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+}
+
+#best {
+    top: 1300px;
+    left: 350px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
+}
+
+#green
+{
+    top: 1118px;
+    right: 350px;
+    position: absolute;
+    width: 170px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
+}
+
+#new {
+    top: 1120px;
+    right: 60px;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
+}
+#certified {
+    top: 1327px;
+    right: 308px;
+    position: absolute;
+    width: 250px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
+}
+#snail
+{
+    top: 1370px;
+    right: 70px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
+}
+
 
 .text_bottom {
     font-size: 40px;
@@ -628,6 +683,7 @@ body {
     z-index: 15;
     opacity: 100%;
     width: 481;
+    font-weight: bolder;
 }
 
 /* MENU STUFFFSSS*/
