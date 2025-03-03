@@ -191,6 +191,7 @@ body {
     animation: go-up 1s forwards;
 }
 
+
 .name { animation-delay: 0s; }
 .undername {animation-delay: .3s;}
 
@@ -444,6 +445,23 @@ body {
 
 }
 
+.mid-vid {
+    display: flex;
+    padding: 0px;
+    position: absolute;
+    z-index: 8;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    animation-play-state: running;
+    margin: 0;
+    right: 50x;
+
+
+}
+
 .cont-scroll {
     display: flex;
     position: absolute;
@@ -492,6 +510,17 @@ body {
     background-color: rgb(255, 255, 255);
     height: 2000px;
     top: 1000px;
+    transition: all .3 ease-in-out;
+    background-repeat: no-repeat;
+}
+
+.section-3 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2000px;
+    top: 700px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -578,7 +607,7 @@ body {
     padding: .5%;
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
-    margin-left: -20px;
+    margin-left: -1.5%;
     
 }
 
@@ -598,6 +627,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 20px;
+    margin-right: 20px;
     cursor: pointer;
 }
 
@@ -606,7 +636,7 @@ body {
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 75%;               
+    width: 70%;               
     height: 2px;
     background-color: rgb(237, 134, 0);
     transform: scaleX(0);      
