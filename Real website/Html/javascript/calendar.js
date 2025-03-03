@@ -77,6 +77,14 @@ const renderCalendar = () => {
         // Hide the confirmation box when Cancel is clicked
         document.getElementById("confirmation-box").style.display = "none";
     });
+
+    document.getElementById("confirm-btn").addEventListener("click", function () {
+        if (window.location.pathname.includes("reservationPage")) {
+            window.location.href = "reservationForm.html";
+        } else if (window.location.pathname.includes("tourPage")) {
+            window.location.href = "tourForm.html";
+        }
+    });
 };
 
 // Call the function initially to render the calendar
