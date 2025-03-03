@@ -131,6 +131,7 @@ header .current-date{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -140,8 +141,6 @@ header .current-date{
 
 }
 
-
-
 .goback-button {
   display: inline-block;
   padding: 12px 24px;
@@ -149,7 +148,7 @@ header .current-date{
   font-weight: bold;
   font-family: "Barlow Condensed", sans-serif;
   color: white;
-  background-color: #4CAF50;
+  background-color: #d33232;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -159,11 +158,11 @@ header .current-date{
 }
 
 .goback-button:hover {
-  background-color: #45a049;
+  background-color: #ad1d1d;
   transform: scale(1.05);
 }
 
 .boback-button:active {
-  background-color: #3e8e41;
+  background-color: #a01f1f;
   transform: scale(0.98);
 }
