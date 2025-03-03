@@ -88,12 +88,12 @@ body {
     width: 100%; 
     padding: 50px 30px;
     gap: 50px;
-    z-index: 1000;
+    z-index: 100;
     transition: top 0.3s ease-in-out;
     background-color: #ffffff;
 }
 
-
+  
 .nav-bar.hide-nav {
     top: -300px;
 }
@@ -425,7 +425,6 @@ body {
 .cont-scroll {
     display: flex;
     position: absolute;
-    z-index: 2222100;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.467), rgb(0, 0, 0));
     height: 500px;
@@ -435,6 +434,40 @@ body {
     z-index: 10;
 
 }
+#stars {
+    top: 1700px;
+    left: 50px;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+
+}
+
+.text_bottom {
+    font-size: 40px;
+    display: flex;
+    flex-direction: row; 
+    color: rgb(0, 0, 0);
+    font-family: "Antic Didone";
+    top: 1050px;
+    left: 540px;
+    position: absolute;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+    width: 481;
+}
+.swiper {
+    width: 700px;
+    height: 450px;
+    position: absolute;
+    z-index: 100;
+    top: 1120px;
+    left: 640px;
+  }
 
 .section-2 {
     position: absolute;
@@ -447,30 +480,6 @@ body {
     background-repeat: no-repeat;
 }
 
-/* imported colors from colormagic.app  */
-.color-1 {
-    color: #c8c2b6;
-}
-.color-2 {
-    color: #ab8b78;
-}
-.color-3 {
-    color: #727f71;
-}
-.color-4 {
-    color: #72978d;
-}
-.color-5 {
-    color: #cebc9c;
-}
-
-:root {
-    --color-1: #c8c2b6;
-    --color-2: #ab8b78;
-    --color-3: #727f71;
-    --color-4: #72978d;
-    --color-5: #cebc9c;
-}
 
 /* sustainabilityPage ids and classes */
 
@@ -576,33 +585,7 @@ body {
     opacity: 30%;
   }
 
-  /*index.html*/
-#stars {
-    top: 1700px;
-    left: 50px;
-    position: absolute;
-    width: 500px;
-    height: auto;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
 
-}
-
-.text_bottom {
-    font-size: 40px;
-    display: flex;
-    flex-direction: row; 
-    color: rgb(0, 0, 0);
-    font-family: "Antic Didone";
-    top: 1050px;
-    left: 540px;
-    position: absolute;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
-    width: 481;
-}
 
 /* MENU STUFFFSSS*/
 
