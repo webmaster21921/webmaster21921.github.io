@@ -15,3 +15,14 @@ window.addEventListener('scroll', () => {
     opacity = Math.max(opacity, 0);
     title.style.opacity = opacity;
 });
+const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 2500,               // 2500ms = 2.5 seconds
+      disableOnInteraction: false // Continues autoplay after user interacts
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
