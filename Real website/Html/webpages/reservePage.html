@@ -64,6 +64,14 @@
             <p class="h2">Book a Tour</p>
         </label>
 
+        <br>
+
+        <label class="container">
+            <input type="checkbox" id="carry-out">
+            <span class="checkmark"></span>
+            <p class="h2">Carry-Out</p>
+        </label>
+
         <br><br>
 
         <button class="continue-button" onclick="redirectToPage()">Continue</button>
@@ -73,11 +81,14 @@
         function redirectToPage() {
             let reservationChecked = document.getElementById("reservation").checked;
             let tourChecked = document.getElementById("tour").checked;
+            let carryOutChecked = document.getElementById("carry-out").checked;
 
-            if (reservationChecked && !tourChecked) {
+            if (reservationChecked && !tourChecked && !carryOutChecked) {
                 window.location.href = "reservationPage.html"; 
-            } else if (tourChecked && !reservationChecked) {
+            } else if (tourChecked && !reservationChecked && !carryOutChecked) {
                 window.location.href = "tourPage.html"; 
+            } else if (carryOutChecked && !reservationChecked && !tourChecked) {
+                window.location.href = "carryOutPage.html"; 
             } else {
                 alert("Please select ONE option.");
             }
