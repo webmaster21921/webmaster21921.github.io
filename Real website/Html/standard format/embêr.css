@@ -466,7 +466,8 @@ body {
     position: absolute;
     z-index: 100;
     top: 1120px;
-    left: 640px;
+    left: 635px;
+    border-radius: 10px;
   }
 
 .section-2 {
