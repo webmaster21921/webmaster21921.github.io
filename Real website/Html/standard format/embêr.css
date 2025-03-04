@@ -194,9 +194,7 @@ body {
 .name { animation-delay: 0s; }
 .undername {animation-delay: .3s;}
 
-.name-container{
-    z-index: 10;
-}
+
 
 @keyframes go-up {
     from {
@@ -210,25 +208,19 @@ body {
 }
 
 .undername {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Playfair Display';
     font-weight: 150;
     font-size: 300%;
     letter-spacing: 3px;
-    text-shadow: 4px 3px 5px #00000085;
+    text-shadow: 4px 3px 5px #000000; 
     color: rgb(255, 255, 255);
     user-select: none;
     position: absolute;
     font-weight: 0.2;
     z-index: 9;
-    width: 65%;
-    left: 31%;
-    top: 62%;
-    align-content: left;
-    justify-items: left;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
     transform: translateY(50px); 
