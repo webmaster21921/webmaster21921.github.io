@@ -83,8 +83,10 @@ const renderCalendar = () => {
             window.location.href = "reservationForm.html";
         } else if (window.location.pathname.includes("tourPage")) {
             window.location.href = "tourForm.html";
+        } else if (window.location.pathname.includes("carryOutPage")) {
+            window.location.href = "carryOutForm.html";
         }
-    });
+    }); 
 };
 
 // Call the function initially to render the calendar
