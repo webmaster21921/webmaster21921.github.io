@@ -6,7 +6,7 @@
     padding: 0px;
     position: fixed;
     z-index: -1;
-    background-color: #ffffff;
+    background-color: #727f71;
     background-size: cover;
     background-repeat: no-repeat;
     scrollbar-width: none; 
@@ -19,29 +19,29 @@
     font-weight: 150;
     font-size: 700%;
     letter-spacing: 3px;
-    
-    color: rgb(0, 0, 0);
+    text-shadow: 4px 3px 5px #00000085;
+    color: white;
     user-select: none;
     position: absolute;
     font-weight: 0.2;
     z-index: 9;
-    width: 65%;
-    left: 32%;
+    width: 100%;
+    left: -0% ;
+
     top: 30%;
-    align-content: left;
-    justify-items: left;
     align-items: left;
     justify-content: left;
-    text-align: left;
+    align-content: left;
+    justify-items: left;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
-    transform: translate(-50%, 50px); 
+    
     animation: go-up 1s forwards;
     font-weight: bold;
-    background: url('leaves1.jpg')  no-repeat center center;
+    /*background: url('leaves1.jpg')  no-repeat center center;
     background-size: cover;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
 }
 
 .name1 { animation-delay: 0s; }
