@@ -213,13 +213,14 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: 'Playfair Display';
+    width: 1000px;
     font-weight: 150;
     font-size: 300%;
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #000000; 
     color: rgb(255, 255, 255);
     user-select: none;
-    position: absolute;
+    position: relative;
     font-weight: 0.2;
     z-index: 9;
     -webkit-transition: transform 2s ease-in-out;
