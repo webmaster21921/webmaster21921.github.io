@@ -640,9 +640,13 @@ body {
     transform: scaleX(1);       
 }
   /*index.html*/
+
+
 #stars {
+    display: flex;
+    flex-direction: row; 
     top: 1120px;
-    left: 50px;
+    margin-left: -26%;
     position: absolute;
     width: 500px;
     height: auto;
