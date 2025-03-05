@@ -645,8 +645,7 @@ body {
 #stars {
     display: flex;
     flex-direction: row; 
-    align-items: flex-start;
-    left: 50px;
+    margin-left: -26%;
     top: 1120px;
     position: absolute;
     width: 500px;
