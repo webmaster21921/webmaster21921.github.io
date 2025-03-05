@@ -453,7 +453,7 @@ body {
     flex-direction: row; 
     color: rgb(0, 0, 0);
     font-family: "Antic Didone";
-    top: 111%;
+    top: 1050px;
     position: absolute;
     user-select: none;
     z-index: 15;
@@ -468,7 +468,7 @@ body {
     height: auto;
     position: absolute;
     z-index: 100;
-    top: 118%;
+    top: 1120px;
     border-radius: 20px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
   }
@@ -654,23 +654,23 @@ body {
 #stars {
     width: 27vw;
     height: auto;
-    margin-left: -25vw;
-    top: 117vh;
+    margin-left: -500px;
+    top: 1117px;
     position: absolute;
 }
 #award {
     top: 1280px;
-    margin-left: -40%;
+    margin-left: -750px;
     position: absolute;
-    width: 600px;
+    width: 31vw;
     height: auto;
 }
 
 #best {
     top: 1300px;
-    left: 350px;
+    margin-left: -180px;
     position: absolute;
-    width: 200px;
+    width: 11vw;
     height: auto;
 }
 
