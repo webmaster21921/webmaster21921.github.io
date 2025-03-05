@@ -114,6 +114,7 @@ body {
 }
 
 
+
 #logo {
     top: 1.2%;
     left: 1.2%;
@@ -645,14 +646,15 @@ body {
 #stars {
     display: flex;
     flex-direction: row; 
-    margin-left: -26%;
+    left: 3%;
     top: 1120px;
+    translate: translateX(-50%);
     position: absolute;
     width: 500px;
     height: auto;
     user-select: none;
     z-index: 15;
-    opacity: 100%;
+    opacity: 1;
 }
 #award {
     top: 1280px;
