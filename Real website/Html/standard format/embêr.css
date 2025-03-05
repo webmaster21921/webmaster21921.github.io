@@ -654,8 +654,8 @@ body {
 #stars {
     width: 27vw;
     height: auto;
-    margin-left: -25%;
-    top: 117%;
+    margin-left: -25vw;
+    top: 117vh;
     position: absolute;
 }
 #award {
