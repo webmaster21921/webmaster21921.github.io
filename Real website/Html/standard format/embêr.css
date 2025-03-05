@@ -220,7 +220,6 @@ body {
     width: 100%;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
-    transform: translateY(50px); 
     animation: go-up 1s forwards;
 
 }
