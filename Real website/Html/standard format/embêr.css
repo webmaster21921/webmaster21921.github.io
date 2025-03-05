@@ -158,8 +158,7 @@ body {
     color: rgb(255, 255, 255);
     user-select: none;
     position: relative;
-    font-weight: 0.2;
-    z-index: 10000009;
+    z-index: 9;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
     transform: translateY(50px); 
@@ -178,7 +177,6 @@ body {
     color: rgb(255, 255, 255);
     user-select: none;
     position: relative;
-    font-weight: 0.2;
     z-index: 9;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
@@ -189,7 +187,7 @@ body {
 }
 
 
-.name { animation-delay: 0s; }
+.name { animation-delay: .3s; }
 .undername {animation-delay: .3s;}
 
 
@@ -218,7 +216,6 @@ body {
     color: rgb(255, 255, 255);
     user-select: none;
     position: relative;
-    font-weight: 0.2;
     z-index: 9;
     width: 100%;
     -webkit-transition: transform 2s ease-in-out;
@@ -230,7 +227,9 @@ body {
 
 
 .subtitle {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Poppins';
     font-weight: 100;
     font-size: 600%;
@@ -238,12 +237,8 @@ body {
     text-shadow: 4px 3px 5px #0000006b;
     color: rgb(255, 255, 255);
     user-select: none;
-    position: absolute;
-    font-weight: 0.2;
+    position: relative;
     z-index: 9;
-    width: 55%;
-    left: 25%;
-    top: 40%
 }
 
 #heading {
