@@ -22,20 +22,13 @@
     text-shadow: 4px 3px 5px #00000085;
     color: white;
     user-select: none;
-    position: absolute;
+    position: relative;
     font-weight: 0.2;
     z-index: 9;
     width: 100%;
-    left: -0% ;
-
-    top: 30%;
-    align-items: left;
-    justify-content: left;
-    align-content: left;
-    justify-items: left;
+    transition: transform 2s ease-in-out;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
-    
     animation: go-up 1s forwards;
     font-weight: bold;
     /*background: url('leaves1.jpg')  no-repeat center center;
@@ -44,7 +37,7 @@
     -webkit-text-fill-color: transparent;*/
 }
 
-.name1 { animation-delay: 0s; }
+.name1 { animation-delay: .3s; }
 
 
 
