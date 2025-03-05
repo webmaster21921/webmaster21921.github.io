@@ -470,7 +470,6 @@ body {
     color: rgb(0, 0, 0);
     font-family: "Antic Didone";
     top: 1050px;
-    transform: translateX(-5%);
     position: absolute;
     user-select: none;
     z-index: 15;
