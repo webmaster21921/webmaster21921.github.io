@@ -654,7 +654,7 @@ body {
 #stars {
     width: 27vw;
     height: auto;
-    margin-left: -500px;
+    left: 38px;
     top: 1117px;
     position: absolute;
 }
