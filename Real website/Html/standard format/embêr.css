@@ -19,14 +19,6 @@ html, body {
     overflow-x: hidden;
 }
 
-h1 {
-    font-family: "Barlow Condensed";
-    font-size: 60px;
-    width: 100%; 
-    text-align: center; 
-    position: absolute;
-    top: 150px;
-}
 
 h2 {
     font-family: "Barlow Condensed";
@@ -155,7 +147,9 @@ body {
 }
 
 .name {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: 'Playfair Display';
     font-weight: 150;
     font-size: 1500%;
@@ -163,17 +157,29 @@ body {
     text-shadow: 4px 3px 5px #00000085;
     color: rgb(255, 255, 255);
     user-select: none;
-    position: absolute;
+    position: relative;
+    font-weight: 0.2;
+    z-index: 10000009;
+    -webkit-transition: transform 2s ease-in-out;
+    opacity: 0; 
+    transform: translateY(50px); 
+    animation: go-up 1s forwards;
+}
+.undername {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Playfair Display';
+    width: 1000px;
+    font-weight: 150;
+    font-size: 300%;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 5px #000000; 
+    color: rgb(255, 255, 255);
+    user-select: none;
+    position: relative;
     font-weight: 0.2;
     z-index: 9;
-    width: 65%;
-    left: 30%;
-    top: 30%;
-    align-content: left;
-    justify-items: left;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
     -webkit-transition: transform 2s ease-in-out;
     opacity: 0; 
     transform: translateY(50px); 
@@ -202,13 +208,14 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: 'Playfair Display';
+    width: 1000px;
     font-weight: 150;
     font-size: 300%;
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #000000; 
     color: rgb(255, 255, 255);
     user-select: none;
-    position: absolute;
+    position: relative;
     font-weight: 0.2;
     z-index: 9;
     -webkit-transition: transform 2s ease-in-out;
@@ -747,7 +754,7 @@ body {
 
 /* MENU STUFFFSSS*/
 
-.circle-menu h1 {
+.circle-menu {
     position: absolute; 
     top: 50%; 
     left: 50%; 
