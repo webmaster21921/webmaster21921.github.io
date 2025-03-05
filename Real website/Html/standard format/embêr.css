@@ -475,6 +475,7 @@ body {
     z-index: 15;
     opacity: 100%;
     width: 481;
+    font-weight: bolder
 }
 .swiper {
     width: 700px;
@@ -733,21 +734,6 @@ body {
 }
 
 
-.text_bottom {
-    font-size: 40px;
-    display: flex;
-    flex-direction: row; 
-    color: rgb(0, 0, 0);
-    font-family: "Antic Didone";
-    top: 1050px;
-    left: 540px;
-    position: absolute;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
-    width: 481;
-    font-weight: bolder;
-}
 
 /* MENU STUFFFSSS*/
 
