@@ -642,29 +642,28 @@ body {
 }
   /*index.html*/
 
-
-#stars {
+.logo-container {
     display: flex;
-    flex-direction: row; 
-    left: 3%;
-    top: 1120px;
-    translate: translateX(-50%);
-    position: absolute;
-    width: 500px;
-    height: auto;
-    user-select: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     z-index: 15;
     opacity: 1;
+    user-select: none;
+}
+#stars {
+    width: 500px;
+    height: auto;
+    margin-left: -500px;
+    top: 1120px;
+    position: absolute;
 }
 #award {
     top: 1280px;
-    left: -120px;
+    margin-left: -40%;
     position: absolute;
     width: 600px;
     height: auto;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
 }
 
 #best {
@@ -673,9 +672,6 @@ body {
     position: absolute;
     width: 200px;
     height: auto;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%; 
 }
 
 #green
