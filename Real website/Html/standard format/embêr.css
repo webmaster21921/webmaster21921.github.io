@@ -661,7 +661,7 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    top: calc(1254px + 1.5vh);
+    top: calc(1263px + 0.5vh);
     left: -7vw;
     position: absolute;
     width: auto;
@@ -670,7 +670,7 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: calc(1298px + 1.5vh);
+    top: calc(1298px + 0.5vh);
     left: 18vw;
     position: absolute;
     width: auto;
