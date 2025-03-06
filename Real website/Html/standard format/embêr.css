@@ -447,42 +447,6 @@ body {
 }
 
 
-.text_bottom {
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    font-family: "Antic Didone";
-    top: 1050px;
-    position: absolute;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
-    width: 60vw;
-    font-weight: bolder
-}
-.swiper {
-    justify-content: center;
-    display: flex;
-    width: 40vw;
-    height: 50vh;
-    position: absolute;
-    z-index: 100;
-    top: 1120px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
-  }
-
-.section-2 {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    height: 2000px;
-    top: 1000px;
-    transition: all .3 ease-in-out;
-    background-repeat: no-repeat;
-}
 
 .section-3 {
     position: absolute;
@@ -642,28 +606,64 @@ body {
 }
   /*index.html*/
 
+  .text_bottom {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: "Antic Didone";
+    top: 1050px;
+    position: absolute;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%;
+    width: 60vw;
+    font-weight: bolder
+}
+.swiper {
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    z-index: 100;
+    top: 1120px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
+  }
+
+.section-2 {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2000px;
+    top: 1000px;
+    transition: all .3 ease-in-out;
+    background-repeat: no-repeat;
+}
 .logo-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    z-index: 15;
+    z-index: 100;
     opacity: 1;
     user-select: none;
 }
 #stars {
-    width: 500px;
-    height: auto;
-    transform: translateX(-14vw); /* Moves it left dynamically */
-    top: 1120px;
-    position: absolute;
+        width: 25vw; /* Make it scale dynamically */
+        height: auto;
+        position: absolute;
+        top: 1120px; /* Keeps its height consistent */
+        left: 3vw; /* Moves it left from center */
 }
 #award {
-    top: 1280px;
-    margin-left: -40%;
+    top: 1270px;
+    left: -7vw;
     position: absolute;
-    width: 600px;
-    height: auto;
+    width: auto;
+    height: 38vh;
 }
 
 #best {
