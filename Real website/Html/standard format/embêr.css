@@ -668,11 +668,11 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    width: 25vw; /* Scales with screen width */
+    width: 12vw; /* Scales with screen width */
     height: auto;
     position: absolute;
-    top: calc(1100px + 2vh);
-    left: 3vw; /* Moves it left from center */
+    top: calc(1200px + 8vh);
+    left: 17vw; /* Moves it left from center */
 }
 
 #green
