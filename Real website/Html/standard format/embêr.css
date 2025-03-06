@@ -643,10 +643,6 @@ body {
   /*index.html*/
 
 .logo-container { /* complete */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     z-index: 15;
     opacity: 1;
     user-select: none;
