@@ -655,7 +655,7 @@ body {
     width: 25vw; /* Scales with screen width */
     height: auto;
     position: absolute;
-    top: 119vh; /* ✅ Use `vh` instead of `px` */
+    top: 70rem; /* ✅ Use `vh` instead of `px` */
     left: 3vw; /* Moves it left from center */
 }
 
