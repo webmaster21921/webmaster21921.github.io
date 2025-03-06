@@ -674,7 +674,7 @@ body {
     width: 11vw;
     height: auto;
     position: absolute;
-    top: calc(1270px + 2vh); /* ✅ Moves it even higher */
+    top: calc(1250px + 2.5rem); /* ✅ Moves it up slightly but keeps it stable */
     left: 18vw;
 }
 
