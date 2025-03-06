@@ -656,10 +656,10 @@ body {
 }
 #award { /* complete */
     top: 1280px;
-    left: -118px;
+    left: -125px;
     position: absolute;
-    width: 31vw;
-    height: auto;
+    height: 36vh;
+    width: auto;
 }
 
 #best { /* complete */
