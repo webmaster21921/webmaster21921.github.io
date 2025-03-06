@@ -655,18 +655,18 @@ body {
         width: 25vw; /* Make it scale dynamically */
         height: auto;
         position: absolute;
-        top: 1120px; /* Keeps its height consistent */
+        top: 119vh; /* Keeps its height consistent */
         left: 3vw; /* Moves it left from center */
 }
 #award {
-    top: 1270px;
-    left: -7vw;
+    top: 135vh;
+    left: -8vw;
     position: absolute;
     width: auto;
     height: 38vh;
 }
 #best {
-    top: 1300px;
+    top: 138vh;
     left: 18vw;
     position: absolute;
     width: auto;
