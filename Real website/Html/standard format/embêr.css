@@ -655,13 +655,13 @@ body {
     width: 25vw; /* Scales with screen width */
     height: auto;
     position: absolute;
-    top: 70rem; /* ✅ Use `vh` instead of `px` */
+    top: calc(1100px + 2vh);
     left: 3vw; /* Moves it left from center */
 }
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    top: 135vh; /* ✅ Use `vh` instead of `1270px` */
+    top: calc(1254px + 1.5vh);
     left: -7vw;
     position: absolute;
     width: auto;
@@ -670,7 +670,7 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: 82rem; /* ✅ Use `vh` instead of `1300px` */
+    top: calc(1298px + 1.5vh);
     left: 18vw;
     position: absolute;
     width: auto;
