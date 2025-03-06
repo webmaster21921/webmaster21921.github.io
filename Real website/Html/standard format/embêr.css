@@ -647,6 +647,7 @@ body {
     z-index: 100;
     opacity: 1;
     user-select: none;
+    position: absolute;
 }
 #stars {
     width: 25vw; /* Scales with screen width */
@@ -658,20 +659,19 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    width: 32vw;
+    width: 32vw; /* Scales with screen width */
     height: auto;
     position: absolute;
-    top: calc(130vh + 3rem); 
-    left: -7vw;
-   
+    top: calc(1240px + 3vh); /* Fixed base value + dynamic adjustment */
+    left: -8vw; /* Moves it left from center */
 }
 
-/* ✅ Keeps #best in the right place on all screens */
+/* Matches #stars behavior */
 #best {
-    width: 12vw; /* Scales with screen width */
+    width: 11.5vw; /* Scales with screen width */
     height: auto;
     position: absolute;
-    top: calc(1200px + 8vh);
+    top: calc(1210px + 7vh); /* Fixed base value + dynamic adjustment */
     left: 17vw; /* Moves it left from center */
 }
 
