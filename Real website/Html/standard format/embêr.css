@@ -661,20 +661,20 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    top: calc(1250px + 2vh);
+    top: calc(1225px + 5vh);
     left: -7vw;
     position: absolute;
-    width: auto;
-    height: 38vh;
+    width: 32vw;
+    height: auto;
 }
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: calc(1290px + 2vh);
+    top: calc(1265px + 2vh);
     left: 18vw;
     position: absolute;
-    width: auto;
-    height: 30vh;
+    width: 11vw;
+    height: auto;
 }
 
 
