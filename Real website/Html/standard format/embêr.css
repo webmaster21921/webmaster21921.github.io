@@ -661,7 +661,7 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    top: 135vh; /* ✅ Use `vh` instead of `1270px` */
+    top: 80rem; /* ✅ Use `vh` instead of `1270px` */
     left: -7vw;
     position: absolute;
     width: auto;
@@ -670,7 +670,7 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: 139vh; /* ✅ Use `vh` instead of `1300px` */
+    top: 82rem; /* ✅ Use `vh` instead of `1300px` */
     left: 18vw;
     position: absolute;
     width: auto;
