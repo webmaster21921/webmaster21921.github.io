@@ -627,7 +627,7 @@ body {
     height: 50vh;
     position: absolute;
     z-index: 100;
-    top: 1120px;
+    top: calc(1100px + 2vh); /* ✅ Moves it dynamically without pushing #best */
     border-radius: 20px;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
   }
@@ -674,10 +674,9 @@ body {
     width: 11vw;
     height: auto;
     position: absolute;
-    top: calc(1250px + 2.5rem); /* ✅ Moves it up slightly but keeps it stable */
+    top: calc(1280px + 1.5vh); /* ✅ Moves it up slightly but keeps it stable */
     left: 18vw;
 }
-
 
 #green
 {
