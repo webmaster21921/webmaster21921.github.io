@@ -621,15 +621,12 @@ body {
     font-weight: bolder
 }
 .swiper {
-    justify-content: center;
-    display: flex;
     width: 40vw;
     height: 50vh;
     position: absolute;
-    z-index: 100;
+    z-index: 15;
     top: calc(1100px + 2vh); /* ✅ Moves it dynamically without pushing #best */
     border-radius: 20px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.177); 
   }
 
 .section-2 {
@@ -671,11 +668,11 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    width: 11vw;
-    height: auto;
+    width: auto; /* Scales with screen width, just like #stars */
+    height: 15vw;
     position: absolute;
-    top: calc(1280px + 1.5vh); /* ✅ Moves it up slightly but keeps it stable */
-    left: 18vw;
+    top: calc(1280px + 2vh); /* ✅ Same logic as #stars */
+    left: 18vw; /* Keeps horizontal positioning stable */
 }
 
 #green
