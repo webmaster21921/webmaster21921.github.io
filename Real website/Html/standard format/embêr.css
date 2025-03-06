@@ -664,7 +664,7 @@ body {
     width: 32vw;
     height: auto;
     position: absolute;
-    top: calc(1249px + 2vh);
+    top: calc(130vh + 3rem); 
     left: -7vw;
    
 }
@@ -674,7 +674,7 @@ body {
     width: 11vw;
     height: auto;
     position: absolute;
-    top: calc(1275px + 2vh);
+    top: calc(132vh + 3rem); /* ✅ Auto-scales across all screens */
     left: 18vw;
 }
 
