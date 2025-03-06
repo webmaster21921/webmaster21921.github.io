@@ -659,11 +659,11 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    width: 32vw; /* Scales with screen width */
+    width: 30vw; /* Scales with screen width */
     height: auto;
     position: absolute;
     top: calc(1240px + 3vh); /* Fixed base value + dynamic adjustment */
-    left: -8vw; /* Moves it left from center */
+    left: -7vw; /* Moves it left from center */
 }
 
 /* Matches #stars behavior */
