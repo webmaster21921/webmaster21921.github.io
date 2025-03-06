@@ -650,70 +650,69 @@ body {
     position: absolute;
 }
 #stars {
-    width: 25vw; /* Scales with screen width */
+    width: 25vw; 
     height: auto;
     position: absolute;
     top: calc(1100px + 2vh);
-    left: 1vw; /* Moves it left from center */
+    left: 1vw; 
 }
 
-/* ✅ Fixed inconsistent positioning */
+
 #award {
-    width: 30vw; /* Scales with screen width */
+    width: 30vw; 
     height: auto;
     position: absolute;
-    top: calc(1240px + 3vh); /* Fixed base value + dynamic adjustment */
-    left: -8vw; /* Moves it left from center */
+    top: calc(1240px + 3vh); 
+    left: -8vw; 
 }
 
-/* Matches #stars behavior */
 #best {
-    width: 11.5vw; /* Scales with screen width */
+    width: 11.5vw; 
     height: auto;
     position: absolute;
-    top: calc(1210px + 7vh); /* Fixed base value + dynamic adjustment */
-    left: 16vw; /* Moves it left from center */
+    top: calc(1210px + 7vh); 
+    left: 16vw; 
 }
 
 #green
 {
-    width: 8.51vw; /* Scales with screen width */
+    width: 8.51vw; 
     height: auto;
     position: absolute;
-    top: calc(1096px + 2vh); /* Fixed base value + dynamic adjustment */
-    right: 350px;
+    top: calc(1096px + 2vh); 
+    right: 350px; /* change px to vw/vh*/
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 
 #new {
-    width: 12vw; /* Scales with screen width */
+    width: 12vw; 
     height: auto;
     position: absolute;
-    top: calc(1100px + 2vh); /* Fixed base value + dynamic adjustment */
-    right: 60px;
+    top: calc(1100px + 2vh); 
+    right: 60px; /* change px to vw/vh*/
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 #certified {
-    width: 14vw; /* Scales with screen width */
+    width: 14vw; 
     height: auto;
     position: absolute;
-    top: calc(1290px + 2vh); /* Fixed base value + dynamic adjustment */
-    right: 290px;
+    top: calc(1290px + 2vh); 
+    right: 290px; /* change px to vw/vh*/
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 #snail
 {
-    width: 11vw; /* Scales with screen width */
+    width: 11vw; 
     height: auto;
     position: absolute;
-    top: calc(1340px + 2vh); /* Fixed base value + dynamic adjustment */
-    right: 40px;
+    top: calc(1340px + 2vh); 
+    right: 40px; /* change px to vw/vh*/
     user-select: none;
     z-index: 15;
     opacity: 100%; 
