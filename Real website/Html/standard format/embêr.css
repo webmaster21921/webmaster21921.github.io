@@ -669,7 +669,7 @@ body {
 /* ✅ Keeps #best in the right place on all screens */
 #best {
     width: auto; /* Scales with screen width, just like #stars */
-    height: 15vw;
+    height: 15dvw;
     position: absolute;
     top: calc(1280px + 2vh); /* ✅ Same logic as #stars */
     left: 18vw; /* Keeps horizontal positioning stable */
