@@ -670,12 +670,13 @@ body {
 
 /* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: calc(1298px + 0.5vh);
+    top: clamp(1230px, 1280px + 3vh, 1300px); /* ✅ Adaptive fix */
     left: 18vw;
     position: absolute;
     width: auto;
     height: 30vh;
 }
+
 
 
 #green
