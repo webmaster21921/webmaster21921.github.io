@@ -650,73 +650,75 @@ body {
     z-index: 15;
     opacity: 1;
     user-select: none;
-}#stars {
-    width: 20vw; /* Adjust based on viewport width */
+}
+#stars {
+    width: 500px;
     height: auto;
-    margin-left: -10vw; /* Move left by 10% of viewport width */
-    top: 50vh; /* Position 50% down the viewport */
+    margin-left: -500px;
+    top: 1120px;
     position: absolute;
 }
-
 #award {
-    top: 70vh; /* Position 70% down the viewport */
-    margin-left: -20vw; /* Move left by 20% of viewport width */
+    top: 1280px;
+    margin-left: -40%;
     position: absolute;
-    width: 30vw; /* Adjust based on viewport width */
+    width: 600px;
     height: auto;
 }
 
 #best {
-    top: 75vh; /* Position 75% down the viewport */
-    left: 20vw; /* Position 20% from the left */
+    top: 1300px;
+    left: 350px;
     position: absolute;
-    width: 10vw; /* Adjust based on viewport width */
+    width: 200px;
     height: auto;
 }
 
-#green {
-    top: 122vh; /* Position 60% down the viewport */
-    right: 19vw; /* Position 20% from the right */
+#green
+{
+    top: 1118px;
+    right: 350px;
     position: absolute;
-    width: 9vw; /* Adjust based on viewport width */
+    width: 170px;
     height: auto;
     user-select: none;
     z-index: 15;
-    opacity: 100%;
+    opacity: 100%; 
 }
 
 #new {
-    top: 119vh; /* Position 65% down the viewport */
-    right: 4vw; /* Position 5% from the right */
+    top: 1120px;
+    right: 60px;
     position: absolute;
-    width: 12vw; /* Adjust based on viewport width */
+    width: 250px;
     height: auto;
     user-select: none;
     z-index: 15;
-    opacity: 100%;
+    opacity: 100%; 
 }
-
 #certified {
-    top: 145vh; /* Position 80% down the viewport */
-    right: 17vw; /* Position 15% from the right */
+    top: 1327px;
+    right: 308px;
     position: absolute;
-    width: 12vw; /* Adjust based on viewport width */
+    width: 250px;
     height: auto;
     user-select: none;
     z-index: 15;
-    opacity: 100%;
+    opacity: 100%; 
+}
+#snail
+{
+    top: 1370px;
+    right: 70px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    user-select: none;
+    z-index: 15;
+    opacity: 100%; 
 }
 
-#snail {
-    top: 147vh; /* Position 85% down the viewport */
-    right: 5vw; /* Position 5% from the right */
-    position: absolute;
-    width: 10vw; /* Adjust based on viewport width */
-    height: auto;
-    user-select: none;
-    z-index: 15;
-    opacity: 100%;
-}
+
 
 /* MENU STUFFFSSS*/
 
