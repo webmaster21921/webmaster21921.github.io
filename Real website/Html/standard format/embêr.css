@@ -654,7 +654,7 @@ body {
     height: auto;
     position: absolute;
     top: calc(1100px + 2vh);
-    left: 3vw; /* Moves it left from center */
+    left: 1vw; /* Moves it left from center */
 }
 
 /* ✅ Fixed inconsistent positioning */
@@ -663,7 +663,7 @@ body {
     height: auto;
     position: absolute;
     top: calc(1240px + 3vh); /* Fixed base value + dynamic adjustment */
-    left: -7vw; /* Moves it left from center */
+    left: -8vw; /* Moves it left from center */
 }
 
 /* Matches #stars behavior */
@@ -672,48 +672,48 @@ body {
     height: auto;
     position: absolute;
     top: calc(1210px + 7vh); /* Fixed base value + dynamic adjustment */
-    left: 17vw; /* Moves it left from center */
+    left: 16vw; /* Moves it left from center */
 }
 
 #green
 {
-    top: 1118px;
-    right: 350px;
-    position: absolute;
-    width: 170px;
+    width: 8.51vw; /* Scales with screen width */
     height: auto;
+    position: absolute;
+    top: calc(1096px + 2vh); /* Fixed base value + dynamic adjustment */
+    right: 350px;
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 
 #new {
-    top: 1120px;
-    right: 60px;
-    position: absolute;
-    width: 250px;
+    width: 12vw; /* Scales with screen width */
     height: auto;
+    position: absolute;
+    top: calc(1100px + 2vh); /* Fixed base value + dynamic adjustment */
+    right: 60px;
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 #certified {
-    top: 1327px;
-    right: 308px;
-    position: absolute;
-    width: 250px;
+    width: 14vw; /* Scales with screen width */
     height: auto;
+    position: absolute;
+    top: calc(1290px + 2vh); /* Fixed base value + dynamic adjustment */
+    right: 290px;
     user-select: none;
     z-index: 15;
     opacity: 100%; 
 }
 #snail
 {
-    top: 1370px;
-    right: 70px;
-    position: absolute;
-    width: 200px;
+    width: 11vw; /* Scales with screen width */
     height: auto;
+    position: absolute;
+    top: calc(1340px + 2vh); /* Fixed base value + dynamic adjustment */
+    right: 40px;
     user-select: none;
     z-index: 15;
     opacity: 100%; 
