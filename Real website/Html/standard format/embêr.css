@@ -659,14 +659,14 @@ body {
         left: 3vw; /* Moves it left from center */
 }
 #award {
-    top: max(1269px, 65vh);
+    top: 1270px;
     left: -7vw;
     position: absolute;
     width: auto;
     height: 38vh;
 }
 #best {
-    top: max(1310px, 70vh);
+    top: 1300px;
     left: 18vw;
     position: absolute;
     width: auto;
