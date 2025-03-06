@@ -652,21 +652,25 @@ body {
     user-select: none;
 }
 #stars {
-        width: 25vw; /* Make it scale dynamically */
-        height: auto;
-        position: absolute;
-        top: 1120px; /* Keeps its height consistent */
-        left: 3vw; /* Moves it left from center */
+    width: 25vw; /* Scales with screen width */
+    height: auto;
+    position: absolute;
+    top: 119vh; /* ✅ Use `vh` instead of `px` */
+    left: 3vw; /* Moves it left from center */
 }
+
+/* ✅ Fixed inconsistent positioning */
 #award {
-    top: 1270px;
+    top: 135vh; /* ✅ Use `vh` instead of `1270px` */
     left: -7vw;
     position: absolute;
     width: auto;
     height: 38vh;
 }
+
+/* ✅ Keeps #best in the right place on all screens */
 #best {
-    top: 1300px;
+    top: 139vh; /* ✅ Use `vh` instead of `1300px` */
     left: 18vw;
     position: absolute;
     width: auto;
