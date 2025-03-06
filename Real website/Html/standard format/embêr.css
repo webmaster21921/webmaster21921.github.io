@@ -665,14 +665,14 @@ body {
     width: auto;
     height: 38vh;
 }
-
 #best {
     top: 1300px;
-    left: 350px;
+    left: 18vw;
     position: absolute;
-    width: 200px;
-    height: auto;
+    width: auto;
+    height: 30vh;
 }
+
 
 #green
 {
