@@ -674,7 +674,7 @@ body {
     width: 11vw;
     height: auto;
     position: absolute;
-    top: calc(132vh + 3rem); /* ✅ Auto-scales across all screens */
+    top: clamp(120vh, 137vh, calc(1300px + 2vh)); /* ✅ Prevents it from going too high */
     left: 18vw;
 }
 
