@@ -661,7 +661,7 @@ body {
 
 /* ✅ Fixed inconsistent positioning */
 #award {
-    top: 80rem; /* ✅ Use `vh` instead of `1270px` */
+    top: 135vh; /* ✅ Use `vh` instead of `1270px` */
     left: -7vw;
     position: absolute;
     width: auto;
