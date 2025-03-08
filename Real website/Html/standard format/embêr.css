@@ -453,6 +453,33 @@ body {
 
 /* sustainabilityPage ids and classes */
 
+.name1 {
+    display: block;
+    font-family: 'Playfair Display';
+    font-weight: 150;
+    font-size: 700%;
+    letter-spacing: 3px;
+    text-shadow: 4px 3px 5px #00000085;
+    text-align:center;
+    color: white;
+    user-select: none;
+    position: relative;
+    top: 20%;
+    font-weight: 0.2;
+    z-index: 20;
+    width: 100%;
+    height:fit-content;
+    transition: transform 2s ease-in-out;
+    -webkit-transition: transform 2s ease-in-out;
+    opacity: 0; 
+    animation: go-up 1s forwards;
+    font-weight: bold;
+    background: url('leaves1.jpg')  no-repeat center center;
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .section-heading {
     font-family: "Barlow Condensed";
     font-size: 60px;
@@ -460,7 +487,6 @@ body {
     text-align: center; 
     position: absolute;
     top: 15%;
-    right: 25px;
 }
 
 .h2 {
@@ -470,6 +496,15 @@ body {
     text-align: left; 
     top: 200px;
     left: 25px;
+}
+
+.caption {
+    font-family: "Barlow Condensed";
+    font-size: 26px;
+    width: 100%; 
+    text-align: center; 
+    position:absolute;
+    top: 125px;
 }
 
 .sustain {
@@ -485,13 +520,13 @@ body {
 
 .map {
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 11;
     width: 100%;
     height: auto;
     align-items: center;
     margin: 0;
-    top:0px;
+    top:800px;
 }
 
 .sources {
@@ -500,7 +535,7 @@ body {
     width: 100%;
     background-color: #EDE4D3;
     height: 1000px;
-    top: 1500px;
+    top: 1700px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -510,7 +545,7 @@ body {
     z-index: 222;
     width: 100%;;
     height: 1000px;
-    top: 2500px;
+    top: 2600px;
     background-color: #2D6A4F;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
@@ -530,7 +565,7 @@ body {
 #hydroponics {
     top: 2300px;
     right: 150px;
-    position: absolute;
+    position: relative;
     width: 500px;
     height: auto;
     user-select: none;
@@ -539,15 +574,14 @@ body {
 }
 
 #interactive {
-    display: flex;
-    position: fixed;
-    right: 150px;
+    display: block;
+    position: absolute;
     z-index: 20;
-    width: 45%;
+    width: 50%;
     height: auto;
-    float: right;
-    margin: 0;
-    top: 275px;
+    margin: auto;
+    top: 200px;
+    left: 375px;
 }
 
   /* about-dropdown */
