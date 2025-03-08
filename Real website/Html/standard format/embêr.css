@@ -363,15 +363,6 @@ body {
     transform: rotate(45deg);
   }
 
-  .h2 {
-    font-family: "Barlow Condensed";
-    font-size: 40px;
-    width: 100%; 
-    text-align: left; 
-    top: 200px;
-    left: 25px;
-}
-
 .continue-button {
     display: inline-block;
     padding: 12px 24px;
@@ -462,6 +453,25 @@ body {
 
 /* sustainabilityPage ids and classes */
 
+.section-heading {
+    font-family: "Barlow Condensed";
+    font-size: 60px;
+    width: 100%; 
+    text-align: center; 
+    position: absolute;
+    top: 15%;
+    right: 25px;
+}
+
+.h2 {
+    font-family: "Barlow Condensed";
+    font-size: 40px;
+    width: 60%; 
+    text-align: left; 
+    top: 200px;
+    left: 25px;
+}
+
 .sustain {
     font-family: "Barlow Condensed";
     font-size: 20px;
@@ -486,11 +496,11 @@ body {
 
 .sources {
     position: absolute;
-    z-index: 22;
+    z-index: 100;
     width: 100%;
     background-color: #EDE4D3;
     height: 1000px;
-    top: 2000px;
+    top: 1500px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -500,7 +510,7 @@ body {
     z-index: 222;
     width: 100%;;
     height: 1000px;
-    top: 3000px;
+    top: 2500px;
     background-color: #2D6A4F;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
@@ -512,7 +522,7 @@ body {
     width: 100%;
     background-color: white;
     height: 1000px;
-    top: 4000px;
+    top: 3500px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -524,7 +534,7 @@ body {
     width: 500px;
     height: auto;
     user-select: none;
-    z-index: 30;
+    z-index: 170;
     opacity: 100%;
 }
 
