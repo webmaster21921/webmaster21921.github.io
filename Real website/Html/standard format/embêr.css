@@ -647,7 +647,7 @@ body {
     z-index: 100;
     opacity: 1;
     user-select: none;
-    position: absolute;
+    position: relative;
 }
 #stars {
     width: 25vw; 
