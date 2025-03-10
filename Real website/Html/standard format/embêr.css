@@ -831,11 +831,13 @@ body {
     padding-top: 100px; /* Add some space between the navbar and the circle */
 }
 
+
+
 .circle-menu {
     position: absolute; 
-    top: 50%; /* This keeps it centered vertically */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center it fully */
+    transform: translate(-50%, -50%);
     font-family: "Barlow Condensed"; 
     z-index: 2; 
     width: 500px; 
@@ -846,6 +848,10 @@ body {
     align-items: center;
 }
 
+@keyframes orbit {
+    0% { transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg)); }
+    100% { transform: rotate(calc(var(--i) * 72deg + 360deg)) translate(240px) rotate(calc(var(--i) * -72deg - 360deg)); }
+}
 
 .dish {
     position: absolute;
@@ -856,11 +862,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
-    transition: transform 0.5s ease, background-color 0.4s ease, width 0.3s ease, height 0.3s ease;
     background: #c8a27c;
     cursor: pointer;
     overflow: hidden;
+
+    /* Unique positions for each dish */
+    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
+
+    /* Each dish orbits independently */
+    animation: orbit 10s linear infinite;
+}
+
+/* Stop all orbits when hovering over any dish */
+.circle-menu:hover .dish {
+    animation-play-state: paused;
 }
 
 .dish .name {
@@ -902,6 +917,8 @@ body {
 .dish:hover .data-description {
     opacity: 1; /* Description fades in on hover */
 }
+
+
 
 
 .dish:nth-child(2) {
