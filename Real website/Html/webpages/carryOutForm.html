@@ -1,89 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carry-Out</title>
     <link rel="stylesheet" href="../standard format/embêr.css">
     <link rel="stylesheet" href="../standard format/calendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
     <link rel="icon" href="../standard format/logo.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-    <script src="../javascript/calendar.js" defer></script>
+    <script src="../javascript/carryOut.js" defer></script>
 </head>
 
 <body>
     <div class="logo-container">
         <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
     </div>
-    <nav class="nav-bar">
 
-    <div class="navlink-container">
-        <form action = "index.html">
-            <button class="nav-link">Home</button>
-        </form>
-        <div class="dropdown">
-            <button id='drop-btn'class="nav-link">ABOUT</button>
-            <div class="drop-links">
-              <a class="abt-link" href="contactPage.html">CONTACT US</a>
-              <a class="abt-link" href="aboutPage.html">OUR STORY</a>
-          </div>
+    <nav class="nav-bar">
+        <div class="navlink-container">
+            <form action="index.html"><button class="nav-link">Home</button></form>
+            <div class="dropdown">
+                <button id="drop-btn" class="nav-link">ABOUT</button>
+                <div class="drop-links">
+                    <a class="abt-link" href="contactPage.html">CONTACT US</a>
+                    <a class="abt-link" href="aboutPage.html">OUR STORY</a>
+                </div>
+            </div>
+            <form action="sustainabilityPage.html"><button class="nav-link">Sustainability</button></form>
+            <form action="menuPage.html"><button class="nav-link">Menu</button></form>
+            <form action="reservePage.html"><button class="nav-link">Reserve</button></form>
         </div>
-        <form action = "sustainabilityPage.html">
-            <button class="nav-link">Sustainability</button>
-        </form>
-        <form action = "menuPage.html">
-            <button class="nav-link">Menu</button>
-        </form>
-        <form action = "reservePage.html">
-            <button class="nav-link">Reserve</button>
-        </form>
-    </div>
     </nav>
 
-    <h1 class="heading">CARRY OUT</h1>
+    <div class="tour-container">
+        <h1 class="heading">CARRY OUT</h1>
+        <button class="goback-button" onclick="window.location.href='carryOutPage.html'">Go Back</button>
 
-    <script>
-        function goBack() {
-            window.location.href = "carryOutPage.html"; }
-    </script>
-
-<div class="tour-container">
-
-<br><br><br>
-
-    <button class="goback-button" onclick="goBack()">Go Back</button>
-<br>
-
-<div class="form-wrapper">
-    <form action="#" method="POST">
-  
-      <div class="form-group">
-        <label for="name" class="form-label">Name</label>
-        <input type="text" id="name" class="form-input" placeholder="Your Name" required>
-      </div>
-  
-      <div class="form-group">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" class="form-input" placeholder="Your Email" required>
-      </div>
-  
-      <div class="form-group">
-        <label for="tel" class="form-label">Phone Number</label>
-        <input type="phone number" id="phone number" class="form-input" placeholder="Your Number: (123)-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-      </div>
-      
-      <div class="number_input-wrapper">
-        <div class="number_input-group">
-          <label for="children" class="number_input-label">Number of Guests</label>
-          <input type="number" id="children" class="number_input-input" placeholder="Enter a number" min="0" max="15" step="1" required>
+        <!-- MENU -->
+        <div class="menu-container">
+            <h2>Menu</h2>
+            <div class="menu">
+                <div class="menu-item" onclick="addToCart('Burger', 5.99, 'burger.jpg')">
+                    <img src="../standard format/burger.jpg" alt="Burger">
+                    <p>Burger - $5.99</p>
+                </div>
+                <div class="menu-item" onclick="addToCart('Pizza', 8.99, 'pizza.jpg')">
+                    <img src="../standard format/pizza.jpg" alt="Pizza">
+                    <p>Pizza - $8.99</p>
+                </div>
+                <div class="menu-item" onclick="addToCart('Sushi', 12.99, 'sushi.jpg')">
+                    <img src="../standard format/sushi.jpg" alt="Sushi">
+                    <p>Sushi - $12.99</p>
+                </div>
+            </div>
         </div>
-                
-      <button type="submit" class="form-button">Submit</button>
-    </form>
-  </div>
 
-</div>
-    </body>
-    
+        <!-- CART -->
+        <div class="cart-container">
+            <h2>Your Order</h2>
+            <ul id="cart-items"></ul>
+            <button class="form-button" onclick="submitOrder(event)">Confirm Order</button>
+        </div>
+
+        <!-- FORM -->
+        <div class="form-wrapper">
+            <form action="#" method="POST">
+                <h2 class="form-title">Customer Info</h2>
+
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" class="form-input" placeholder="(123)-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+
+                <div class="number_input-group">
+                    <label for="guests" class="number_input-label">Number of Guests</label>
+                    <input type="number" id="guests" class="number_input-input" placeholder="Enter a number" min="0" max="15" required>
+                </div>
+
+                <button type="submit" class="form-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
 
 </html>
