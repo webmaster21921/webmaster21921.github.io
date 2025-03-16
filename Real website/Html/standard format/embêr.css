@@ -817,35 +817,36 @@ body {
 
 /* MENU STUFFFSSS*/
 
-.menu-background {
+/* Basic container */
+.menu-container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;  /* Full height of the viewport */
-    width: 100vw;   /* Full width of the viewport */
-    text-align: center;
+    flex-direction: column; /* Align circles vertically */
+    align-items: center;    /* Center the circles horizontally */
     position: relative;
-    background: #727f71; 
-    overflow: hidden;
-    padding-top: 100px; /* Add some space between the navbar and the circle */
+    top: calc(775px);        
 }
 
-
-
 .circle-menu {
-    position: absolute; 
+    position: relative;
+    height: 500px; /* Set the height of each circle menu */
+    width: 500px;  /* Set the width of each circle menu */
+    background-color: #f0c27b; /* Just an example background color */
+    border-radius: 50%;  /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;  /* Add gap between circle menus */
+}
+
+.circle-menu h1 {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Barlow Condensed"; 
-    z-index: 2; 
-    width: 500px; 
-    height: 500px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    color: white;  /* Adjust text color */
+    font-size: 24px;
+    z-index: 2;
 }
 
 @keyframes orbit {
@@ -864,7 +865,7 @@ body {
     text-align: center;
     background: #c8a27c;
     cursor: pointer;
-    overflow: hidden;
+  
 
     /* Unique positions for each dish */
     transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
