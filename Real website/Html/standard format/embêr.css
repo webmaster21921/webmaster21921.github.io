@@ -827,11 +827,13 @@ body {
     top: calc(775px);        
 }
 
+
+
 .circle-menu {
     position: relative;
     height: 500px; /* Set the height of each circle menu */
     width: 500px;  /* Set the width of each circle menu */
-    background-color: #f0c27b; /* Just an example background color */
+    background-color: #727f71; /* Just an example background color */
     border-radius: 50%;  /* Make it circular */
     display: flex;
     justify-content: center;
@@ -840,6 +842,7 @@ body {
 }
 
 .circle-menu h1 {
+    font-family: "Barlow Condensed";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -913,6 +916,10 @@ body {
     opacity: 0; 
     transition: visibility 0s, opacity 0.5s; 
 
+}
+
+.menu-page {
+    background-color: #727f71;
 }
 
 .dish:hover .data-description {
