@@ -852,10 +852,7 @@ body {
     z-index: 2;
 }
 
-@keyframes orbit {
-    0% { transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg)); }
-    100% { transform: rotate(calc(var(--i) * 72deg + 360deg)) translate(240px) rotate(calc(var(--i) * -72deg - 360deg)); }
-}
+
 
 .dish {
     position: absolute;
@@ -873,14 +870,10 @@ body {
     /* Unique positions for each dish */
     transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
 
-    /* Each dish orbits independently */
-    animation: orbit 10s linear infinite;
+
 }
 
-/* Stop all orbits when hovering over any dish */
-.circle-menu:hover .dish {
-    animation-play-state: paused;
-}
+
 
 .dish .name {
     color: white;
