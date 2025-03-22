@@ -619,91 +619,59 @@ h2 {
     transform: scaleX(1);       
 }
   /*index.html*/
-
   .text_bottom {
-    font-size: 40px;
+    font-size: clamp(0.9rem, 4vw, 3rem);
     display: flex;
     justify-content: center;
-    color: rgb(0, 0, 0);
+    text-align: center;
+    color: black;
     font-family: "Antic Didone";
-    top: 1050px;
-    position: absolute;
     user-select: none;
     z-index: 15;
-    opacity: 100%;
-    width: 60vw;
-    font-weight: bolder
-}
-.swiper {
-    width: 40vw;
-    height: 50vh;
-    position: absolute;
-    z-index: 15;
-    top: calc(1100px + 2vh); /* ✅ Moves it dynamically without pushing #best */
-    border-radius: 20px;
-  }
-
-.section-2 {
-    display: block;
-    justify-content: center;
-    object-fit: contain;
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    height: 2000px;
-    top: 100%;
-    transition: all .3 ease-in-out;
-    background-repeat: no-repeat;
-    
-}
-
-.logo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
     opacity: 1;
+    width: 100%;
+    font-weight: bolder;
+    margin: 1rem auto;
+
+  }
+  
+  .swiper {
+    width: 60vw;
+    height: auto;
+    z-index: 15;
+    border-radius: 20px;
+    
+  }
+  
+
+.logo-container img {
+    width: 10vw;
+    height: auto;
+    max-width: 100px; /* optional: limit huge logos */
     user-select: none;
-    position: relative;
+
 }
 #stars {
-    width: 25vw; 
-    height: auto;
+    width: 15vw;
     position: absolute;
-    top: calc(1100px + 2vh);
-    left: 1vw; 
-}
-
-
-#award {
-    width: 30vw; 
-    height: auto;
+    top: 70%;
+    left: 5%;
+  }
+  
+  #award {
+    width: 18vw;
     position: absolute;
-    top: calc(1240px + 3vh); 
-    left: -8vw; 
-}
-
-#best {
-    width: 11.5vw; 
-    height: auto;
+    top: 78%;
+    left: -5%;
+  }
+  
+  #green {
+    width: 10vw;
     position: absolute;
-    top: calc(1210px + 7vh); 
-    left: 16vw; 
-}
+    top: 68%;
+    right: 10%;
+  }
 
-#green
-{
-    width: 8.51vw; 
-    height: auto;
-    position: absolute;
-    top: calc(1096px + 2vh); 
-    right: 350px; /* change px to vw/vh*/
-    user-select: none;
-    z-index: 15;
-    opacity: 100%; 
-}
 
 #new {
     width: 12vw; 
