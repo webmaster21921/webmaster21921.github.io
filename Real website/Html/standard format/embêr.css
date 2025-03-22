@@ -484,7 +484,7 @@ h2 {
     width: 100%;
     background-color: #EDE4D3;
     height: 900px;
-    top: 2400px;
+    top: 2480px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
 }
@@ -494,7 +494,7 @@ h2 {
     z-index: 222;
     width: 100%;;
     height:900px;
-    top: 3300px;
+    top: 3380px;
     background-color: #2D6A4F;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
@@ -505,7 +505,7 @@ h2 {
     z-index: 230;
     width: 100%;
     background-color: #FAF9F6;
-    height: 500px;
+    height: 580px;
     top: 1900px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
@@ -523,10 +523,6 @@ h2 {
     opacity: 100%;
 }
 
-
-
-
-
   #interactive {
     display: block;
     position: relative; 
@@ -543,6 +539,31 @@ h2 {
     background-repeat: no-repeat;
 }
 
+.img-scrl-container {
+    width: 100%;
+    height: 420px;
+    overflow-x: auto; 
+    justify-content: flex-start;
+    background-color: transparent;
+    position: relative;
+    z-index: 8;
+    margin-top: 80px;
+    overflow-y: hidden;
+    user-select: none;
+  }
+
+.img-scrl {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    gap: 80px;
+    display: flex;
+    overflow-x: scroll !important;
+    scroll-behavior:auto;
+    padding: 10%;
+    overflow-y: hidden;
+    scrollbar: visible;
+  }
 
 #calamansi {
     position: absolute; 
@@ -667,13 +688,11 @@ h2 {
     
 }
 
-
 .img {
     width: auto; 
     height: 260px; 
     flex: 0 0 auto;
     border-radius: 60px;
-    box-shadow:  0px 0px 50px 30px rgba(0, 0, 0, 0.8);
 }
 
   /* about-dropdown */
