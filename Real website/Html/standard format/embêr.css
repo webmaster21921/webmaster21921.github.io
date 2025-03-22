@@ -552,7 +552,6 @@ h2 {
     left: 50%;
     transform: translate(-360%, -87%); 
     cursor: pointer;
-    filter: drop-shadow(-2px 2px .1px rgba(0, 0, 0, 0.253));
     
     }
 
