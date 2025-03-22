@@ -561,24 +561,99 @@ h2 {
     margin-top: 300px;
     padding: 15px;
     line-height: 20px;
-    transition: all 0s;
+    transition: all .3s;
     font-family: "barlow condensed";
 }
 
 #calamansi-fact-container {
     opacity: 0;
-    width: 0;
+    width: fit-content;
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(-230px, -220px)
+    transform: translate(-230px, -220px);
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     
 }
 
 #calamansi:hover + #calamansi-fact-container{
     opacity: 1;
-    width: fit-content;
+
     
+}
+
+#cow1 {
+    position: absolute; 
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: 17%;
+    aspect-ratio: 2;
+    height: auto;
+    transform: translate(-81%, -170%) rotate(30deg);
+   
+}
+
+#cow2 {
+    position: absolute; 
+    display: block;
+    background-color: rgba(255, 203, 203, 0);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: 17%;
+    aspect-ratio: 2;
+    height: auto;
+    transform: translate(-89%, 27%) rotate(30deg);
+   
+}
+
+#cow3 {
+    position: absolute; 
+    display: block;
+    background-color: rgba(216, 204, 255, 0);
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    width: 17%;
+    aspect-ratio: 2;
+    height: auto;
+    transform: translate(71%, -80%) rotate(30deg);
+   
+}
+
+#cow-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    transform: translate(550px,-375px);
+    box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+}
+
+#cow-fact {
+    width: 350px;
+    height: fit-content;
+    margin-top: 00px;
+    padding: 15px;
+    line-height: 20px;
+    transition: all 0s;
+    font-family: "barlow condensed";
+    
+}
+
+#cow1:hover ~ #cow-fact-container {
+    opacity: 1;
+}
+#cow2:hover ~ #cow-fact-container {
+    opacity: 1;
+}
+#cow3:hover ~ #cow-fact-container {
+    opacity: 1;
 }
 
 #farm {
