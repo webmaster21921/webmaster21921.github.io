@@ -853,215 +853,79 @@ h2 {
 
 /* Basic container */
 .menu-container {
+    display: flex;
+    background: #fff;
+    width: 80%;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
+    top: calc(300px);
+    margin-top: 100px;;      
+}
+
+/* Image Section */
+.menu-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.menu-image img {
     width: 100%;
+    border-radius: 8px;
+}
+
+/* Menu Content */
+.menu-content {
+    flex: 2;
+    padding: 30px;
+}
+
+.fheader {
+    font-size: 28px;
+    color: #8B572A;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.sheader {
+    font-size: 20px;
+    color: #C47C42;
+    text-transform: uppercase;
+    border-bottom: 2px solid #C47C42;
+    
+    margin-bottom: 10px;
+}
+
+/* Menu Items */
+.menu-item {
     display: flex;
-    flex-direction: column; /* Align circles vertically */
-    align-items: center;    /* Center the circles horizontally */
-    position: relative;
-    top: calc(200px);        
+    flex-direction: column;
+    margin-bottom: 15px;
 }
 
-
-
-.circle-menu {
-    position: relative;
-    height: 500px; /* Set the height of each circle menu */
-    width: 500px;  /* Set the width of each circle menu */
-    background-color: #727f71; /* Just an example background color */
-    border-radius: 50%;  /* Make it circular */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 300px;  /* Add gap between circle menus */
-}
-
-.circle-menu h1 {
-    font-family: "Barlow Condensed";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;  /* Adjust text color */
-    font-size: 24px;
-    z-index: 2;
-}
-
-
-
-.dish {
-    position: absolute;
-    width: 30%;
-    height: 180px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #c8a27c;
-    cursor: pointer;
-  
-
-    /* Unique positions for each dish */
-    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
-
-
-}
-
-.dish2 {
-    position: absolute;
-    width: 30%;
-    height: 180px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #c8a27c;
-    cursor: pointer;
-  
-
-    /* Unique positions for each dish */
-    transform: rotate(calc(var(--i) * 60deg)) translate(240px) rotate(calc(var(--i) * -60deg));
-
-}
-
-
-
-.dish .name {
-    color: white;
-    font-family: "Barlow Condensed";
+.item-name {
     font-size: 18px;
     font-weight: bold;
-
-    transition: opacity 0.3s ease;
-    position: absolute;
-    z-index: 2;
-}
-
-.dish .data-description {
-    color: black;
-    font-family: "Barlow Condensed";
-    font-size: 14px;
-    text-align: center;
-    opacity: 0; /* Description is hidden initially */
-    transition: opacity 0.3s ease;
-    position: absolute;
-    width: 80%;
-    line-height: 1.4;
-    z-index: 1; /* Description stays below the name initially */
-}
-
-.dish:hover {
-    transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg)) scale(1.2);
-}
-
-
-.dish:hover .name{
-    visibility: hidden; 
-    opacity: 0; 
-    transition: visibility 0s, opacity 0.5s; 
-
-}
-
-.dish:hover .data-description {
-    opacity: 1; /* Description fades in on hover */
-}
-
-.dish2 .name {
-    color: white;
-    font-family: "Barlow Condensed";
-    font-size: 18px;
-    font-weight: bold;
-
-    transition: opacity 0.3s ease;
-    position: absolute;
-    z-index: 2;
-}
-
-.dish2 .data-description {
-    color: black;
-    font-family: "Barlow Condensed";
-    font-size: 14px;
-    text-align: center;
-    opacity: 0; /* Description is hidden initially */
-    transition: opacity 0.3s ease;
-    position: absolute;
-    width: 80%;
-    line-height: 1.4;
-    z-index: 1; /* Description stays below the name initially */
-}
-
-.dish2:hover {
-    transform: rotate(calc(var(--i) * 60deg)) translate(240px) rotate(calc(var(--i) * -60deg)) scale(1.2);
-}
-
-
-.dish2:hover .name{
-    visibility: hidden; 
-    opacity: 0; 
-    transition: visibility 0s, opacity 0.5s; 
-
-}
-
-.dish2:hover .data-description {
-    opacity: 1; /* Description fades in on hover */
-}
-.dish3 {
-    position: absolute;
-    width: 30%;
-    height: 180px;
-    border-radius: 50%;
+    color: #5C3D2E;
+    text-transform: uppercase;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: #c8a27c;
-    cursor: pointer;
-  
-
-    /* Unique positions for each dish */
-    transform: rotate(calc(var(--i) * 45deg)) translate(270px) rotate(calc(var(--i) * -45deg));
-
+    justify-content: space-between;
 }
-.dish3 .name {
-    color: white;
-    font-family: "Barlow Condensed";
+
+.item-price {
     font-size: 18px;
+    color: #8B572A;
     font-weight: bold;
-
-    transition: opacity 0.3s ease;
-    position: absolute;
-    z-index: 2;
 }
 
-.dish3 .data-description {
-    color: black;
-    font-family: "Barlow Condensed";
+p {
     font-size: 14px;
-    text-align: center;
-    opacity: 0; /* Description is hidden initially */
-    transition: opacity 0.3s ease;
-    position: absolute;
-    width: 80%;
-    line-height: 1.4;
-    z-index: 1; /* Description stays below the name initially */
-}
-
-.dish3:hover {
-    transform: rotate(calc(var(--i) * 45deg)) translate(240px) rotate(calc(var(--i) * -45deg)) scale(1.2);
+    color: #444;
+    margin-top: 5px;
 }
 
 
-.dish3:hover .name{
-    visibility: hidden; 
-    opacity: 0; 
-    transition: visibility 0s, opacity 0.5s; 
 
-}
-
-.dish3:hover .data-description {
-    opacity: 1; /* Description fades in on hover */
-}
 
 
 .dish:nth-child(2) {
