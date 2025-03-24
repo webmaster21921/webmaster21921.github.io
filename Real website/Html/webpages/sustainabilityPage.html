@@ -62,16 +62,13 @@
         <h1 class='name1'>Our Environmental Mission</h1>
     </div>
 
-    <div class = "cont-scroll"></div>
-
     <div class = "map">
         <h1 class="section-heading">Interactive Farm To Table Map</h1>
         <h3 class="caption">Hover over each part of our process to learn more.</h3>
         <div class = "slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides">
-                <div class="numbertext">1 / 3</div>
-                <img src="https://i.postimg.cc/zD9hwfhy/field.png" style="width:100%">
+                <img src="https://i.postimg.cc/zD9hwfhy/field.png" id="slide-img">
                 <div class="text">Local Farms</div>
                 <div id= "farm-interactive">
                     <img src = "../standard format/calamansi.png" id="calamansi" alt="calamansi">
@@ -97,14 +94,12 @@
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">2 / 3</div>
-                <img src = "https://i.postimg.cc/3w7WS4rw/hydroponic-diagram.jpg" style="width:100%">
+                <img src = "https://i.postimg.cc/3w7WS4rw/hydroponic-diagram.jpg" id="slide-img">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">3 / 3</div>
-                <img src="img3.jpg" style="width:100%">
+                <img src="https://i.postimg.cc/8s8Pm5xX/composting.jpg" id="slide-img">
                 <div class="text">Caption Three</div>
             </div>
         
@@ -121,6 +116,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
