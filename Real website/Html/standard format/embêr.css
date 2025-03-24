@@ -858,7 +858,7 @@ h2 {
     flex-direction: column; /* Align circles vertically */
     align-items: center;    /* Center the circles horizontally */
     position: relative;
-    top: calc(775px);        
+    top: calc(200px);        
 }
 
 
@@ -872,7 +872,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;  /* Add gap between circle menus */
+    margin-bottom: 300px;  /* Add gap between circle menus */
 }
 
 .circle-menu h1 {
@@ -904,6 +904,24 @@ h2 {
     /* Unique positions for each dish */
     transform: rotate(calc(var(--i) * 72deg)) translate(240px) rotate(calc(var(--i) * -72deg));
 
+
+}
+
+.dish2 {
+    position: absolute;
+    width: 30%;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #c8a27c;
+    cursor: pointer;
+  
+
+    /* Unique positions for each dish */
+    transform: rotate(calc(var(--i) * 60deg)) translate(240px) rotate(calc(var(--i) * -60deg));
 
 }
 
@@ -945,15 +963,105 @@ h2 {
 
 }
 
-.menu-page {
-    background-color: #727f71;
-}
-
 .dish:hover .data-description {
     opacity: 1; /* Description fades in on hover */
 }
 
+.dish2 .name {
+    color: white;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-weight: bold;
 
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 2;
+}
+
+.dish2 .data-description {
+    color: black;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* Description is hidden initially */
+    transition: opacity 0.3s ease;
+    position: absolute;
+    width: 80%;
+    line-height: 1.4;
+    z-index: 1; /* Description stays below the name initially */
+}
+
+.dish2:hover {
+    transform: rotate(calc(var(--i) * 60deg)) translate(240px) rotate(calc(var(--i) * -60deg)) scale(1.2);
+}
+
+
+.dish2:hover .name{
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.5s; 
+
+}
+
+.dish2:hover .data-description {
+    opacity: 1; /* Description fades in on hover */
+}
+.dish3 {
+    position: absolute;
+    width: 30%;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #c8a27c;
+    cursor: pointer;
+  
+
+    /* Unique positions for each dish */
+    transform: rotate(calc(var(--i) * 45deg)) translate(270px) rotate(calc(var(--i) * -45deg));
+
+}
+.dish3 .name {
+    color: white;
+    font-family: "Barlow Condensed";
+    font-size: 18px;
+    font-weight: bold;
+
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 2;
+}
+
+.dish3 .data-description {
+    color: black;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* Description is hidden initially */
+    transition: opacity 0.3s ease;
+    position: absolute;
+    width: 80%;
+    line-height: 1.4;
+    z-index: 1; /* Description stays below the name initially */
+}
+
+.dish3:hover {
+    transform: rotate(calc(var(--i) * 45deg)) translate(240px) rotate(calc(var(--i) * -45deg)) scale(1.2);
+}
+
+
+.dish3:hover .name{
+    visibility: hidden; 
+    opacity: 0; 
+    transition: visibility 0s, opacity 0.5s; 
+
+}
+
+.dish3:hover .data-description {
+    opacity: 1; /* Description fades in on hover */
+}
 
 
 .dish:nth-child(2) {
@@ -972,4 +1080,13 @@ h2 {
     background: #cebc9c; 
 }
 
+
+
+
+
+
+
+.menu-page {
+    background-color: #727f71;
+}
 
