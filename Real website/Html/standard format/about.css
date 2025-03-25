@@ -6,9 +6,9 @@
   position: absolute;
   z-index: 10;
   width: 100%;
-  background: linear-gradient(to bottom, #727f71, #707b6f, #faf7ed);
+  background: linear-gradient(to bottom, #ede4d3, #e9e2d5, #faf7ed);
   height: 700px;
-  top: 1000px;
+  top: 490px;
   transition: all .3 ease-in-out;
   background-repeat: no-repeat;
 }
@@ -31,7 +31,7 @@
     padding: 0px;
     position: fixed;
     z-index: -1;
-    background-color: #727f71;
+    background-color: #ede4d3;
     background-size: cover;
     background-repeat: no-repeat;
     scrollbar-width: none; 
@@ -65,6 +65,38 @@
 
 .name1 { animation-delay: .3s; }
 
+#creators {
+  font-family: 'playfair display';
+  z-index: 100;
+  position: absolute;
+  color:black;
+  font-weight: 5000000;
+  display: block;
+  font-size: 70px;
+  z-index: 7;
+  width: max-content;
+  height: 570px; 
+  margin-left: 50vw;
+  top: 880px;
+  left: -25%;
+  transform: translateX(-50%);
+  filter: drop-shadow(-2px 5px 2px rgba(0, 0, 0, 0.253));
+  opacity: 0;
+  transition: transform 2s ease-in-out;
+  -webkit-transition: transform 2s ease-in-out;
+  animation: move-up 1s forwards;
+}
+
+@keyframes move-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .img:hover .scrl-text {
   opacity: 1;
@@ -73,13 +105,13 @@
   
 .img-scrl-container {
     width: 100%;
-    height: 420px;
+    height: 320px;
     overflow-x: auto; 
     justify-content: flex-start;
     background-color: #faf7ed;
     position: relative;
     z-index: 8;
-    box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
+    box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.294);
     margin-top: 0;
     overflow-y: hidden;
     user-select: none;
@@ -104,7 +136,7 @@
     top: 0;
     left: 0;
     width: 2350px;
-    height: 5px;
+    height: 1px;
     background: linear-gradient(to left, #3a3100, #3a3100); 
     transition: all .3s ease-in-out;
   }
@@ -114,19 +146,24 @@
     bottom: 0;
     left: 0;
     width: 2350px;
-    height: 5px;
+    height: 1px;
     background: linear-gradient(to left, #3a3100, #3a3100);
     transition: all .3s ease-in-out;
   }
   
 .img {
     width: auto; 
-    height: 280px; 
+    height: 180px; 
     flex: 0 0 auto;
     border-radius: 60px;
-    box-shadow:  0px 0px 20px 5px rgba(0, 0, 0, 0.416);
     transition: all .5s ease-in-out;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
     user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
   
 .text {
@@ -140,18 +177,19 @@
 
 .scrl-text {
 
-  margin-top: 9px;
-  margin-bottom: 9px;
-  line-height: 35px;
+  line-height: 22px;
   font-family: playfair display;
+  font-size: 12px;
   padding-right: 50px;
   max-width: 0px;
-  max-height: 1000px;
+  height: fit-content;
   transition: all .5s ease-in-out;
   opacity: 0;
   white-space: wrap;
   user-select: none;
-
+  background-color: #9a640032;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .img:hover {
@@ -166,3 +204,4 @@
   max-width: 580px;
   max-height: 100%;
 }
+
