@@ -594,7 +594,7 @@ h2 {
 }
 
 #slide-img {
-    height: 750px;
+    height: 500px;
     width:auto;
 }
   
@@ -602,7 +602,7 @@ h2 {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 500px;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -648,6 +648,15 @@ h2 {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.dots{
+    display: block;
+    position: absolute;
+    top: 700px;
+    left: 600px;
+    text-align: center;
+    z-index:200;
 }
   
 .active {
