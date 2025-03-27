@@ -2,6 +2,30 @@
   scroll-behavior: smooth;
 }
 
+.name1 {
+  display: block;
+  font-family: 'Playfair Display';
+  font-weight: 150;
+  font-size: 700%;
+  letter-spacing: 3px;
+  text-shadow: 4px 3px 5px #00000085;
+  text-align:center;
+  color: white;
+  user-select: none;
+  position: relative;
+  margin-top: -200px;
+  font-weight: 0.2;
+  z-index: 20;
+  width: 100%;
+  height:fit-content;
+  transition: transform 2s ease-in-out;
+  -webkit-transition: transform 2s ease-in-out;
+  opacity: 0; 
+  animation: go-up 1s forwards;
+  font-weight: bold;
+}
+
+
 .section-3 {
   position: absolute;
   z-index: 10;
@@ -18,7 +42,7 @@
   width: 100%;
   background-color: #faf7ed;
   height: 2000px;
-  top: 1700px;
+  top: 1170px;
   transition: all .3 ease-in-out;
   background-repeat: no-repeat;
 }
