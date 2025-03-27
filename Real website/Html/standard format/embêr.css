@@ -1026,105 +1026,61 @@ h2 {
 /* MENU STUFFFSSS*/
 
 /* Basic container */
-.menu-container {
-    display: flex;
-    background: #fff;
-    width: 80%;
-    margin: 50px auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; 
-    top: calc(300px);
-    margin-top: 100px;;      
-}
 
-/* Image Section */
-.menu-image {
-    flex: 1;
-    padding: 20px;
-}
-
-.menu-image img {
-    width: 100%;
-    border-radius: 8px;
-}
 
 /* Menu Content */
-.menu-content {
-    flex: 2;
-    padding: 30px;
-}
-
-.fheader {
-    font-size: 28px;
-    color: #8B572A;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.sheader {
-    font-size: 20px;
-    color: #C47C42;
-    text-transform: uppercase;
-    border-bottom: 2px solid #C47C42;
-    
-    margin-bottom: 10px;
-}
 
 /* Menu Items */
-.menu-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
 
-.item-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #5C3D2E;
-    text-transform: uppercase;
+.menu {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #72978d;
+    color: #333;
+    text-align: center;
+    margin-top: 60px;
+    height: 500%;
+}
+.menu-container {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
 }
-
-.item-price {
-    font-size: 18px;
-    color: #8B572A;
+.column {
+    width: 48%;
+    text-align: left;
+}
+.menu-section h1 {
+    font-size: 36px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.menu-section h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-p {
-    font-size: 14px;
-    color: #444;
-    margin-top: 5px;
+.menu-section p{
+    margin-bottom: 40px;
 }
-
-
-
-
-
-.dish:nth-child(2) {
-    background: #c8c2b6; 
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 18px;
 }
-
-.dish:nth-child(3) {
-    background: #ab8b78;
+.menu-description {
+    font-size: 16px;
+    color: #777;
 }
-
-.dish:nth-child(4) {
-    background: #72978d;
-}
-
-.dish:nth-child(5) {
-    background: #cebc9c; 
-}
-
-
-
-
-
-
-
-.menu-page {
-    background-color: #727f71;
-}
-
