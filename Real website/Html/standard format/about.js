@@ -1,3 +1,4 @@
+/*work in progress*/
 const scrollContainer = document.querySelector('.img-scrl-container');
 const scrollContent = document.querySelector('.img-scrl');
 const scrollThreshold = 200;
@@ -37,4 +38,17 @@ function transformScroll(event) {
   }
 }
 
-scrollContainer.addEventListener('wheel', transformScroll, { passive: false });
+scrollContainer.addEventListener('wheel', transformScroll, { passive: false }); 
+
+/*for creators fade animation*/
+window.addEventListener('scroll', () => {
+  const creators = document.querySelector('#creators');
+  const scrollY = window.scrollY; 
+  const fadePoint = 100; 
+  let opacity = 1 - scrollY / fadePoint;
+  opacity = Math.max(opacity, 0);
+  creators.style.opacity = opacity;
+});
+
+
+

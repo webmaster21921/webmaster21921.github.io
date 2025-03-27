@@ -62,49 +62,44 @@
         <h1 class='name1'>Our Environmental Mission</h1>
     </div>
 
-    <div class = "cont-scroll"></div>
-
     <div class = "map">
         <h1 class="section-heading">Interactive Farm To Table Map</h1>
         <h3 class="caption">Hover over each part of our process to learn more.</h3>
         <div class = "slideshow-container">
             <!-- Full-width images with number and caption text -->
             <div class="mySlides">
-                <div class="numbertext">1 / 3</div>
-                <img src="https://i.postimg.cc/zD9hwfhy/field.png" style="width:100%">
+                <img src="https://i.postimg.cc/zD9hwfhy/field.png" id="slide-img">
                 <div class="text">Local Farms</div>
-                <div id= "farm-interactive">
-                    <img src = "../standard format/calamansi.png" id="calamansi" alt="calamansi">
-                    <div id="calamansi-fact-container">
-                        <p id="calamansi-fact">Also known as the Philippine lime, our calamansi is sourced from our own hydroponic farms, 
-                            based in New York City. Following the guidance of farmers from the Zamboanga Peninsula in the Philippines, 
-                            we perform sustainable practices like proper waste management of peels and pulp. This way of proper waste management 
-                            effectively prevents greenhouse gases which they may produce.
-                        </p>
-                    </div>
-                    <div id="cow1"></div>
-                    <div id="cow2"></div>
-                    <div id="cow3"></div>
-                    <div id="cow-fact-container">
-                        <p id="cow-fact">
-                            Our milk is sourced from local cattle that are treated with the utmost care and respect, 
-                            as they are considered sacred in Indian traditions. The cows live in the local grazelands of upstate New York, minimizing travel 
-                            costs and our carbon footprint.
-                            Our ethical approach to dairy farming ensures healthy and stess-free cows that produce milk of the highest quality.
-                        </p>
-                    </div>
+
+                <img src = "../standard format/calamansi.png" id="calamansi" alt="calamansi">
+                <div id="calamansi-fact-container">
+                    <p id="calamansi-fact">Also known as the Philippine lime, our calamansi is sourced from our own hydroponic farms, 
+                        based in New York City. Following the guidance of farmers from the Zamboanga Peninsula in the Philippines, 
+                        we perform sustainable practices like proper waste management of peels and pulp. This way of proper waste management 
+                        effectively prevents greenhouse gases which they may produce.
+                    </p>
                 </div>
+                <div id="cow1"></div>
+                <div id="cow2"></div>
+                <div id="cow3"></div>
+                <div id="cow-fact-container">
+                    <p id="cow-fact">
+                        Our milk is sourced from local cattle that are treated with the utmost care and respect, 
+                        as they are considered sacred in Indian traditions. The cows live in the local grazelands of upstate New York, minimizing travel 
+                        costs and our carbon footprint.
+                        Our ethical approach to dairy farming ensures healthy and stess-free cows that produce milk of the highest quality.
+                    </p>
+                </div>
+
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">2 / 3</div>
-                <img src = "https://i.postimg.cc/3w7WS4rw/hydroponic-diagram.jpg" style="width:100%">
+                <img src = "https://i.postimg.cc/3w7WS4rw/hydroponic-diagram.jpg" id="slide-img">
                 <div class="text">Caption Two</div>
             </div>
 
             <div class="mySlides">
-                <div class="numbertext">3 / 3</div>
-                <img src="img3.jpg" style="width:100%">
+                <img src="https://i.postimg.cc/8s8Pm5xX/composting.jpg" id="slide-img">
                 <div class="text">Caption Three</div>
             </div>
         
@@ -115,12 +110,13 @@
         <br>
 
         <!-- The dots/circles -->
-        <div style="text-align:center">
+        <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </div>
+
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
