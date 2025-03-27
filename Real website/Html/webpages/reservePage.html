@@ -9,44 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">    
-    <script defer>
-        let cart = [];
 
-function addToCart(name, price, image) {
-    cart.push({ name, price, image });
-    updateCart();
-}
-
-function updateCart() {
-    let cartList = document.getElementById("cart-items");
-    cartList.innerHTML = "";
-    cart.forEach((item, index) => {
-        let li = document.createElement("li");
-        li.innerHTML = `${item.name} - $${item.price.toFixed(2)} 
-                        <button class="remove-item" onclick="removeFromCart(${index})">Remove</button>`;
-        cartList.appendChild(li);
-    });
-}
-
-function removeFromCart(index) {
-    cart.splice(index, 1);
-    updateCart();
-}
-
-function submitOrder(event) {
-    event.preventDefault();
-    if (cart.length === 0) {
-        alert("Your cart is empty! Please add some items before submitting.");
-        return;
-    }
-    let orderSummary = cart.map(item => `${item.name} - $${item.price.toFixed(2)}`).join("\n");
-    alert(`Order Submitted! \n\nYour Order:\n${orderSummary}\n\nThank you for ordering!`);
-}
-
-function goBack() {
-    window.location.href = "carryOutPage.html";
-}
-    </script>
 </head>
 
 <div>
@@ -54,7 +17,7 @@ function goBack() {
 </div>
 
 <body>
-
+    <div class="reserve-page">
     <div class="logo-container">
         <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
     </div>
@@ -82,7 +45,7 @@ function goBack() {
         </form>
     </div>
     </nav>
- 
+
 <div class="reserve-container">
     <div>
         <label class="container">
@@ -130,6 +93,7 @@ function goBack() {
         }
     </script>
 
+</div>
 </div>
     <script src="../standard format/embêr.js"></script>
 </body>

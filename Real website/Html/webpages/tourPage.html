@@ -9,9 +9,11 @@
     <link rel="icon" href="../standard format/logo.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="../javascript/calendar.js" defer></script>
+    
 </head>
 
 <body>
+    <div class="reserve-page">
     <div class="logo-container">
         <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
     </div>
@@ -19,7 +21,7 @@
 
     <div class="navlink-container">
         <form action = "index.html">
-            <button class="nav-link">Home</button>
+            <button class="nav-link">HOME</button>
         </form>
         <div class="dropdown">
             <button id='drop-btn'class="nav-link">ABOUT</button>
@@ -29,19 +31,21 @@
             </div>
         </div>
         <form action = "sustainabilityPage.html">
-            <button class="nav-link">Sustainability</button>
+            <button class="nav-link">SUSTAINABILITY</button>
         </form>
         <form action = "menuPage.html">
-            <button class="nav-link">Menu</button>
+            <button class="nav-link">MENU</button>
         </form>
         <form action = "reservePage.html">
-            <button class="nav-link">Reserve</button>
+            <button class="nav-link">RESERVE</button>
         </form>
     </div>
     </nav>
 
+    
 
-<div class="tour-container">
+<div class="reserve-container">
+
     <h1 class="heading">BOOK A TOUR</h1>
 
     <script>
@@ -49,38 +53,40 @@
             window.location.href = "reservePage.html"; }
     </script>
 
-    <button class="goback-button" onclick="goBack()">Go Back</button>
-<br>
-    <div class="wrapper">
-        <header>
-          <p class="current-date"></p>
-          <div class="icons">
-            <span id="prev" class="material-symbols-rounded">chevron_left</span>
-            <span id="next" class="material-symbols-rounded">chevron_right</span>
+   <br>
+    
+        <button class="goback-button" onclick="goBack()">Go Back</button>
+    <br>
+        <div class="wrapper">
+            <header>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                <span id="next" class="material-symbols-rounded">chevron_right</span>
+              </div>
+            </header>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days"></ul>
+            </div>
           </div>
-        </header>
-        <div class="calendar">
-          <ul class="weeks">
-            <li>Sun</li>
-            <li>Mon</li>
-            <li>Tue</li>
-            <li>Wed</li>
-            <li>Thu</li>
-            <li>Fri</li>
-            <li>Sat</li>
-          </ul>
-          <ul class="days"></ul>
+          
+          <div id="confirmation-box" class="hidden">
+            <p id="confirmation-text"></p>
+            <button id="confirm-btn">Confirm</button>
+            <button id="cancel-btn">Cancel</button>
         </div>
-      </div>
-      
-      <div id="confirmation-box" class="hidden">
-        <p id="confirmation-text"></p>
-        <button id="confirm-btn">Confirm</button>
-        <button id="cancel-btn">Cancel</button>
+    
     </div>
-
 </div>
     </body>
     
-
 </html>
