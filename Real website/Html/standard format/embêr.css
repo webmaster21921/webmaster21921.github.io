@@ -1032,16 +1032,17 @@ h2 {
 
 /* Menu Items */
 
-.menu-background{
+.menu {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
     background-color: #72978d;
     color: #333;
     text-align: center;
+    margin-top: 60px;
+    height: 500%;
 }
-
-.menu-page {
+.menu-container {
     width: 80%;
     margin: 40px auto;
     background: white;
@@ -1054,18 +1055,24 @@ h2 {
     width: 48%;
     text-align: left;
 }
-.myh1 {
+.menu-section h1 {
     font-size: 36px;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    margin-bottom: 40px;
 }
-.myh2 {
+.menu-section h3 {
     font-size: 24px;
     margin-top: 20px;
     border-bottom: 2px solid #ccc;
     display: inline-block;
     padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.menu-section p{
+    margin-bottom: 40px;
 }
 .menu-item {
     display: flex;
@@ -1077,25 +1084,3 @@ h2 {
     font-size: 16px;
     color: #777;
 }
-
-
-
-
-
-.dish:nth-child(2) {
-    background: #c8c2b6; 
-}
-
-.dish:nth-child(3) {
-    background: #ab8b78;
-}
-
-.dish:nth-child(4) {
-    background: #72978d;
-}
-
-.dish:nth-child(5) {
-    background: #cebc9c; 
-}
-
-
