@@ -44,42 +44,52 @@ const renderCalendar = () => {
     //update the calendar header
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
     daysTag.innerHTML = liTag;
-
+    let selectedDayElement = null;
     // Add event listener to each day
-    document.querySelectorAll(".days li").forEach(day => {
-        day.addEventListener("click", function () {
-            // Ignore inactive days
-            if (this.classList.contains("inactive")) return;
-    
-            // Get selected date
-            let selectedDay = this.innerText;
-            let selectedMonth = months[currMonth];
-            let selectedYear = currYear;
-    
-            // Check the current page and update the confirmation text
-            let confirmationText = "";
-    
-            if (window.location.pathname.includes("reservationPage")) {
-                confirmationText = `Do you want to book a reservation on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
-            } else if (window.location.pathname.includes("carryOutPage")) {
-                confirmationText = `Do you want to schedule a carry-out on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
-            } else if (window.location.pathname.includes("tourPage")) {
-                confirmationText = `Do you want to book a tour on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
-            }
-    
-            // Update confirmation box text
-            document.getElementById("confirmation-text").innerText = confirmationText;
-    
-            // Show the confirmation box
-            document.getElementById("confirmation-box").style.display = "block";
-        });
+   // Add event listener to all the days (including inactive ones)
+document.querySelectorAll(".days li").forEach(day => {
+    day.addEventListener("click", () => {
+
+  
+      // If the day is already selected, remove the selected class
+      if (selectedDayElement) {
+        selectedDayElement.classList.remove("selected");
+      }
+  
+
+      day.classList.add("selected");
+  
+
+      selectedDayElement = day;
+  
+      // Show the confirmation box
+      let selectedDay = day.innerText;
+      let selectedMonth = months[currMonth];
+      let selectedYear = currYear;
+  
+      let confirmationText = "";
+      if (window.location.pathname.includes("reservationPage")) {
+        confirmationText = `Do you want to book a reservation on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+      } else if (window.location.pathname.includes("carryOutPage")) {
+        confirmationText = `Do you want to schedule a carry-out on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+      } else if (window.location.pathname.includes("tourPage")) {
+        confirmationText = `Do you want to book a tour on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
+      }
+  
+      // Update confirmation box text
+      document.getElementById("confirmation-text").innerText = confirmationText;
+      document.getElementById("confirmation-box").style.display = "block";
     });
+  });
     
 
     // Add event listener to the Cancel button
     document.getElementById("cancel-btn").addEventListener("click", function () {
         // Hide the confirmation box when Cancel is clicked
         document.getElementById("confirmation-box").style.display = "none";
+        if (selectedDayElement) {
+            selectedDayElement.classList.remove("selected");
+          }
     });
 
     document.getElementById("confirm-btn").addEventListener("click", function () {
