@@ -139,6 +139,7 @@
     margin-top: 0;
     overflow-y: hidden;
     user-select: none;
+    scale: .8;
   }
 
 .img-scrl {
@@ -212,7 +213,7 @@
   white-space: wrap;
   user-select: none;
   background-color: #9a640032;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 10px;
 }
 
