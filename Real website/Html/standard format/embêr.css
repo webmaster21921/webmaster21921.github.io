@@ -657,9 +657,7 @@ h2 {
 
 .dots{
     display: block;
-    position: absolute;
-    top: 700px;
-    left: 600px;
+    position: relative;
     text-align: center;
     z-index:200;
 }
@@ -676,6 +674,8 @@ h2 {
 
 .map {
     display: flex;
+    flex-direction: column;
+    justify-content:center;
     position: absolute;
     z-index: 11;
     width: 100%;
