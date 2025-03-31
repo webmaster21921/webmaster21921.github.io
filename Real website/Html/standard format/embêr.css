@@ -749,7 +749,7 @@ h2 {
     position: absolute; /* Absolute positioning within the farm-interactive container */
     width: 10%; /* Set width as percentage to make it responsive */
     object-fit: contain;
-    transform: translate(180%, -540%); /* Fine-tune the position */
+    transform: translate(240%, -515%); /* Fine-tune the position */
     cursor: pointer;
     z-index: 172; /* Ensure it's on top */
 }
@@ -934,9 +934,9 @@ h2 {
 
 #coconut-tree { 
     position: absolute; /* Absolute positioning within the farm-interactive container */
-    width: 20vw; /* Set width as percentage to make it responsive */
+    width: 8vw; /* Set width as percentage to make it responsive */
     object-fit: contain;
-    transform: translate(30%, -20%); /* Fine-tune the position */
+    transform: translate(420%, -400%); /* Fine-tune the position */
     cursor: pointer;
     z-index: 172; /* Ensure it's on top */
 }
