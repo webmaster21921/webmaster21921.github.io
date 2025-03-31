@@ -541,6 +541,7 @@ h2 {
     text-align: center; 
     position: absolute;
     top: 15%;
+    text-wrap: nowrap;
 }
 
 .h2 {
@@ -596,11 +597,13 @@ h2 {
 /* Hide the images by default */
 .mySlides {
     display: none;
+
 }
 
 #slide-img {
-    height: 500px;
+    height: 43vw;
     width:auto;
+
 }
   
 /* Next & previous buttons */
@@ -733,34 +736,36 @@ h2 {
 
 #farm-interactive {
     display: block;
-    position: relative; 
+    position: relative; /* Position relative to this container */
     z-index: 171;
-    width: 50vw;
-    height: 570px; 
+    width: 50vw; /* This makes the farm image responsive */
+    height: auto; 
     margin: auto;
-    top: -10px; 
     left: 25vw;
-    transform: translateX(-50%); 
-    background-image: url('field.png'); 
+    transform: translate(-50%, -40%);  
     background-size: 50vw; 
     background-position: center;
     background-repeat: no-repeat;
 }
 
+#calamansi {
+    position: absolute; /* Absolute positioning within the farm-interactive container */
+    width: 10%; /* Set width as percentage to make it responsive */
+    object-fit: contain;
+    transform: translate(180%, -540%); /* Fine-tune the position */
+    cursor: pointer;
+    z-index: 172; /* Ensure it's on top */
+}
+
 #interactive-2 {
     display: block;
-    position: relative; 
+    position: relative;  /* Make this container the reference for the images */
     z-index: 171;
     width: 50vw;
-    height: 570px; 
-    margin: auto;
-    top: -10px; 
-    left: 25vw;
-    transform: translateX(-50%); 
-    background-image: url("hydroponic diagram.jpg"); 
-    background-size: 50vw; 
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 570px;
+
+
+
 }
 
 
@@ -790,16 +795,6 @@ h2 {
     scrollbar: visible;
   }
 
-#calamansi {
-    position: absolute; 
-    width: 10%; 
-    object-fit: contain;
-    top: 50%;
-    left: 50%;
-    transform: translate(-360%, -87%); 
-    cursor: pointer;
-    
-    }
 
 #farm {
     position: absolute;
@@ -817,11 +812,13 @@ h2 {
 #calamansi-fact-container {
     opacity: 0;
     width: fit-content;
+    height: vw;
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(-230px, -220px);
+    transform: translate(-300px, -920px);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
     
 }
 
@@ -835,42 +832,36 @@ h2 {
     position: absolute; 
     display: block;
     background-color: rgba(255, 255, 255, 0);
-    top: 50%;
-    left: 50%;
     cursor: pointer;
     width: 17%;
     aspect-ratio: 2;
     height: auto;
-    transform: translate(-81%, -170%) rotate(30deg);
-   
+    transform: translate(216%, -1100%) rotate(30deg);
+    z-index: 172;
 }
 
 #cow2 {
     position: absolute; 
     display: block;
     background-color: rgba(255, 203, 203, 0);
-    top: 50%;
-    left: 50%;
     cursor: pointer;
     width: 17%;
     aspect-ratio: 2;
     height: auto;
-    transform: translate(-89%, 27%) rotate(30deg);
-   
+    transform: translate(201%, -900%) rotate(30deg);
+    z-index: 172;
 }
 
 #cow3 {
     position: absolute; 
     display: block;
-    background-color: rgba(216, 204, 255, 0);
-    top: 50%;
-    left: 50%;
+    background-color: rgba(208, 203, 255, 0);
     cursor: pointer;
     width: 17%;
     aspect-ratio: 2;
     height: auto;
-    transform: translate(71%, -80%) rotate(30deg);
-   
+    transform: translate(363%, -1023%) rotate(30deg);
+    z-index: 172;
 }
 
 #cow-fact-container {
@@ -880,7 +871,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(550px,-375px);
+    transform: translate(550px,-875px);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
 }
 
@@ -915,6 +906,15 @@ h2 {
     z-index: 170;
     opacity: 100%;
     
+}
+
+#greenhouse {
+    position: relative; 
+    width: 100%; 
+    object-fit: contain;
+    top: 50%;
+    left: 50%; 
+    cursor: pointer;
 }
 
 .img {
