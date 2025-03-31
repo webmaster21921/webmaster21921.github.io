@@ -1134,7 +1134,7 @@ h2 {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 40px 0;
-    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo-7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo/7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     color: #333;
     display: flex;
     justify-content: center;
@@ -1209,6 +1209,7 @@ h2 {
     color: #777;
 }
 
+/* Image container */
 .menu-images {
     display: flex;
     justify-content: flex-start; /* Aligns images to the left */
@@ -1217,6 +1218,12 @@ h2 {
     flex-wrap: wrap; /* Ensures images wrap on small screens */
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image styling */
 .menu-img {
     width: 45%; /* Keeps images side by side */
     height: auto; /* Prevents stretching */
@@ -1224,6 +1231,33 @@ h2 {
     object-fit: cover; /* Crops instead of stretching */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect - image zoom */
+.menu-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effect - description */
+.image-container::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover::after {
+    opacity: 1;
 }
 
 /* Responsive - Two Columns when screen is 780px or larger */
@@ -1253,4 +1287,3 @@ h2 {
         width: 90%; /* Makes images wider on small screens */
     }
 }
-
