@@ -756,7 +756,7 @@ h2 {
     justify-content:center;
     position: relative;
     width: 100vw;
-    height: 90vw; 
+    height: 100vh; 
     z-index: 11;
     align-items: center;
     background-color: hsl(46, 68%, 93%) ;
@@ -769,7 +769,7 @@ h2 {
     width: 100vw;
     height: 70vh;
     z-index: 230;
-    top: 160vh;
+    top: 100vh;
     background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
