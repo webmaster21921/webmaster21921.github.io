@@ -50,16 +50,21 @@
         </div>
         </nav>
 
+        
     <div class="menu">
+        <script>
+            function goBack() {
+                window.location.href = "carryOutPage.html"; }
+        </script>
+
+<div class="menu-container">
+        <button class="goback-button" onclick="goBack()">Go Back</button>
+        <h3>Select items to add to your cart.</h3>
+        </div>
         <div class="menu-container">
             <h1>Carryout form</h1>
             <div class="column">
-                <script>
-                    function goBack() {
-                        window.location.href = "carryOutPage.html"; }
-                </script>
-                <button class="goback-button" onclick="goBack()">Go Back</button>
-                <h3>Select items to add to your cart.</h3>
+               
                 <div class="menu-section">
                     <h3>Appetizers</h3>
                     <div class="menu-item"><span>Lumpiang Aloo 🇮🇳🇵🇭</span></div>
@@ -94,6 +99,7 @@
                     <p class="menu-description">Served with Biriyani(or Pulao) [indian spiced rice]</p>
                 </div>
             </div>
+            
             <div class="column">
                 <div class="menu-section">
                     <h3>Desserts</h3>
@@ -121,22 +127,24 @@
                     <p class="menu-description">Fusion of matcha and masala chai</p>
                 </div>
             </div>
-<div class="reserve-container">
-            <h2 id="cart-container">Cart</h2>
-            <div id="cart-container">
-                <ul id="cart-list"></ul>
-                <button id="submit-order">Submit Order</button>
-            </div>
+            
+           
+            
         </div>
-            <div id="confirmation-box">
-                <h2>Order Confirmation</h2>
-                <ul id="confirmation-list"></ul>
-                <button id="confirm-btn">Confirm</button>
-                <button id="cancel-btn">Cancel</button>
-            </div>
-        </div>
+
+    <h1 id="cart-container-h1">Cart</h1>
+    <div id="cart-container">
+        <ul id="cart-list"></ul>
+        <button id="submit-order">Submit Order</button>
     </div>
-    
+
+    <div id="confirmation-box">
+        <h2 >Order Confirmation</h2>
+        <ul id="confirmation-list"></ul>
+        <button id="confirm-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+</div>
     </html>
 
 </body>
