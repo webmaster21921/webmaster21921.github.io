@@ -714,7 +714,7 @@ h2 {
     width: 100%;
     background-color: #FAF9F6;
     height: 580px;
-    top: 1900px;
+    top: 1000px;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
@@ -760,9 +760,6 @@ h2 {
     z-index: 171;
     width: 50vw;
     height: 400px;
-
-
-
 }
 
 
