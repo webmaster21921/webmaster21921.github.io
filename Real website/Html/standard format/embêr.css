@@ -584,23 +584,26 @@ h2 {
     text-wrap: nowrap;
 }
 
-.h2 {
-    font-family: "Barlow Condensed";
-    font-size: clamp(1.5rem, 2.5vw, 4rem);
-    width: 60%; 
-    text-align: left; 
-    top: 200px;
-    left: 25px;
-    text-wrap-mode:nowrap;
-}
-
 .caption {
     font-family: "Barlow Condensed";
-    font-size: 26px;
+    font-size: clamp(1rem, 2.5vw, 3rem);
     width: 100%; 
     text-align: center; 
     position:absolute;
     top: 23%;
+}
+
+.statcontainer{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 80vw;
+}
+
+.stats-text {
+    font-family:"Barlow Condensed";
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    text-align: left;
 }
 
 .sustain {
@@ -750,13 +753,22 @@ h2 {
 .gallery {
     position: absolute;
     width: 100vw;
-    height: 580px;
+    height: 70vh;
     z-index: 230;
     top:100vh;
     background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
+}
+
+.statistics{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 170vh;
+    z-index: 300;
+    background-color:#3e8e41;
 }
 
 #hydroponics {
@@ -806,7 +818,7 @@ h2 {
 
 .img-scrl-container {
     width: 100%;
-    height: 420px;
+    height: 50vh;
     overflow-x: auto; 
     justify-content: flex-start;
     background-color: transparent;
@@ -974,17 +986,36 @@ h2 {
 }
 
 #coconut-tree { 
-    position: absolute; /* Absolute positioning within the farm-interactive container */
-    width: 8vw; /* Set width as percentage to make it responsive */
+    position: absolute; 
+    width: 8vw; 
     object-fit: contain;
-    transform: translate(420%, -400%); /* Fine-tune the position */
+    transform: translate(420%, -400%);
     cursor: pointer;
-    z-index: 172; /* Ensure it's on top */
+    z-index: 172;
 }
+
+#compost { 
+    position: absolute; 
+    width: 4vw; 
+    object-fit: contain;
+    transform: translate(1025%, -810%); 
+    cursor: pointer;
+    z-index: 172; 
+}
+
+#chicken { 
+    position: absolute; 
+    width: 2.5vw; 
+    object-fit: contain;
+    transform: translate(970%, -1550%) rotate(20deg);
+    cursor: pointer;
+    z-index: 172; 
+}
+
 
 .img {
     width: auto; 
-    height: 260px; 
+    height: 30vh; 
     flex: 0 0 auto;
     border-radius: 60px;
 }

@@ -19,7 +19,7 @@ const renderCalendar = () => {
         lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
         //finds which day of the week the last date of the month is on
         lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
-        //gives the last day of the eprevious month
+        //gives the last day of the previous month
         lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
     
     let liTag = ""; //liTag is the content that fills up the <ul class="days"> in HTML
@@ -56,10 +56,10 @@ document.querySelectorAll(".days li").forEach(day => {
         selectedDayElement.classList.remove("selected");
       }
   
-
+      //This is just for making the circle purple
       day.classList.add("selected");
   
-
+      
       selectedDayElement = day;
   
       // Show the confirmation box
@@ -67,6 +67,7 @@ document.querySelectorAll(".days li").forEach(day => {
       let selectedMonth = months[currMonth];
       let selectedYear = currYear;
   
+      // Confirmation box text changes, depending on the page you're on
       let confirmationText = "";
       if (window.location.pathname.includes("reservationPage")) {
         confirmationText = `Do you want to book a reservation on ${selectedMonth} ${selectedDay}, ${selectedYear}?`;
@@ -103,7 +104,7 @@ document.querySelectorAll(".days li").forEach(day => {
     }); 
 };
 
-// Call the function initially to render the calendar
+// render the calendar
 renderCalendar();
 
 prevNextIcon.forEach(icon => { // getting prev and next icons
