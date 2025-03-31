@@ -128,7 +128,7 @@
   display: flex;              
   justify-content: center;    
   align-items: center;        
-  overflow-x: auto;          
+  overflow-x: auto;           
   overflow-y: hidden;
   background-color: #faf7ed;
   box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.294);
@@ -137,6 +137,7 @@
   z-index: 8;
   box-sizing: border-box;
   user-select: none;
+  padding: 1rem;  /* Added padding so images/text don't sit flush against the edges */
 }
 
 .img-scrl {
@@ -161,27 +162,32 @@
   -webkit-user-drag: none;
 }
 
+/* Optional hover effect if desired */
 .img:hover {
   transform: scale(1.1) translateY(-10px);
 }
 
+/* Initially, the text is hidden */
 .scrl-text {
   line-height: 1.4;
   font-family: "playfair display";
   font-size: clamp(6.5px, 1.2vw, 15px);
-  max-width: 0px;
+  max-width: 0;
+  overflow: hidden;
   height: fit-content;
   transition: all 0.5s ease-in-out;
   opacity: 0;
   user-select: none;
   background-color: #9a640032;
   border-radius: 6px;
-  padding: 6px;         
+  padding: 6px;
 }
 
-.img:hover + .scrl-text {
+/* When .show is added, display the text */
+.scrl-text.show {
   opacity: 1;
   max-width: 580px;
   max-height: 120%;
 }
+
 
