@@ -616,10 +616,11 @@ h2 {
 
 .background-container {
     display: flex;
-    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
     z-index: 15;
-    width: 100%;
-    height: 850px;
     align-items: center;
     margin: 0;
     top:0px;
@@ -736,25 +737,23 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    position: absolute;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
     z-index: 11;
-    width: 100%;
-    height: 1000px;
     align-items: center;
     background-color: hsl(46, 68%, 93%) ;
-    margin: 0;
-    top: 800px;
     transition: 0.6s ease;
 }
 
 
 .gallery {
     position: absolute;
-    z-index: 230;
-    width: 100%;
-    background-color: #FAF9F6;
+    width: 100vw;
     height: 580px;
-    top: 1000px;
+    z-index: 230;
+    top:100vh;
+    background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
@@ -1153,7 +1152,7 @@ h2 {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 40px 0;
-    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo-7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo/7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     color: #333;
     display: flex;
     justify-content: center;
@@ -1188,8 +1187,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     animation: go-up 1s forwards;
-    opacity: 0%;
-    animation-delay: 0s;
+    opacity: 1; /* Fix: Ensure it's visible */
 }
 
 /* Columns - Default to Single Column */
@@ -1198,8 +1196,7 @@ h2 {
     text-align: left;
     margin-bottom: 20px;
     animation: go-up 1s forwards;
-    opacity: 0%;
-    animation-delay: 0.3s;
+    opacity: 1; /* Fix: Ensure it's visible */
 }
 
 /* Menu sections */
@@ -1230,6 +1227,57 @@ h2 {
     color: #777;
 }
 
+/* Image container */
+.menu-images {
+    display: flex;
+    justify-content: flex-start; /* Aligns images to the left */
+    gap: 10px; /* Space between images */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures images wrap on small screens */
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image styling */
+.menu-img {
+    width: 45%; /* Keeps images side by side */
+    height: auto; /* Prevents stretching */
+    max-height: 200px; /* Limits height */
+    object-fit: cover; /* Crops instead of stretching */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect - image zoom */
+.menu-img:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effect - description */
+.image-container::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover::after {
+    opacity: 1;
+}
+
 /* Responsive - Two Columns when screen is 780px or larger */
 @media (min-width: 780px) {
     .menu-container {
@@ -1243,5 +1291,17 @@ h2 {
 
     .menu-container h1 {
         font-size: 36px;
+    }
+}
+
+/* Responsive - Stack images on small screens */
+@media (max-width: 780px) {
+    .menu-images {
+        flex-direction: column; /* Stacks images vertically */
+        align-items: center;
+    }
+    
+    .menu-img {
+        width: 90%; /* Makes images wider on small screens */
     }
 }
