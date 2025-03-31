@@ -372,7 +372,7 @@ h2 {
     cursor: pointer;
     font-size: 22px;
     user-select: none;
-    color: rgb(190, 182, 182);
+    color: rgb(255, 255, 255);
     gap: 10px;
     width:300px;
   }
@@ -392,16 +392,16 @@ h2 {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #aaa1a1;
+    background-color: #ffffff;
     border-radius: 4px;
   }
   
   .container:hover input ~ .checkmark {
-    background-color: gray;
+    background-color: rgb(180, 180, 180);
   }
   
   .container input:checked ~ .checkmark {
-    background-color: #727f71;
+    background-color: #4CAF50;
   }
   
   .checkmark:after {
@@ -444,7 +444,7 @@ h2 {
 }
 
 .continue-button:hover {
-    background-color: #45a049;
+    background-color:#e7a151;
     transform: scale(1.05);
 }
 
@@ -769,7 +769,7 @@ h2 {
     width: 100vw;
     height: 70vh;
     z-index: 230;
-    top: 100vh;
+    top:100vh;
     background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
