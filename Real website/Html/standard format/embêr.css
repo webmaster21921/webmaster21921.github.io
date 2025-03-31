@@ -975,13 +975,32 @@ h2 {
 }
 
 #coconut-tree { 
-    position: absolute; /* Absolute positioning within the farm-interactive container */
-    width: 8vw; /* Set width as percentage to make it responsive */
+    position: absolute; 
+    width: 8vw; 
     object-fit: contain;
-    transform: translate(420%, -400%); /* Fine-tune the position */
+    transform: translate(420%, -400%);
     cursor: pointer;
-    z-index: 172; /* Ensure it's on top */
+    z-index: 172;
 }
+
+#compost { 
+    position: absolute; 
+    width: 4vw; 
+    object-fit: contain;
+    transform: translate(1025%, -810%); 
+    cursor: pointer;
+    z-index: 172; 
+}
+
+#chicken { 
+    position: absolute; 
+    width: 2.5vw; 
+    object-fit: contain;
+    transform: translate(970%, -1550%) rotate(20deg);
+    cursor: pointer;
+    z-index: 172; 
+}
+
 
 .img {
     width: auto; 
