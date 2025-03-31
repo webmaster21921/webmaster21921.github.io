@@ -797,11 +797,48 @@ h2 {
     opacity: 100%;
 }
 
+#restaurant-large {
+    display: block;
+    position: relative;
+    z-index: 171;
+    width: 30vw; 
+    height: auto; 
+    margin: auto;
+    transform: translate(-20%, -30%);  
+    background-size: 50vw; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+#truck {
+    display: block;
+    position: relative;
+    z-index: 170.5;
+    width: 18vw; 
+    height: auto; 
+    margin: auto;
+    transform: translate(50%, -215%);  
+    cursor: pointer;
+    
+}
+
+#chef {
+    display: block;
+    position: relative;
+    z-index: 174;
+    width: 2.6vw; 
+    transform: translate(1110%, -660%);  
+
+    cursor: pointer;
+    
+}
+
 #farm-interactive {
     display: block;
-    position: relative; /* Position relative to this container */
+    position: relative; 
     z-index: 171;
-    width: 50vw; /* This makes the farm image responsive */
+    width: 50vw; 
     height: auto; 
     margin: auto;
     left: 25vw;
@@ -809,20 +846,21 @@ h2 {
     background-size: 50vw; 
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
 #calamansi {
-    position: absolute; /* Absolute positioning within the farm-interactive container */
-    width: 10%; /* Set width as percentage to make it responsive */
+    position: absolute;
+    width: 10%; 
     object-fit: contain;
-    transform: translate(240%, -515%); /* Fine-tune the position */
+    transform: translate(240%, -515%); 
     cursor: pointer;
-    z-index: 172; /* Ensure it's on top */
+    z-index: 172; 
 }
 
 #interactive-2 {
     display: block;
-    position: relative;  /* Make this container the reference for the images */
+    position: relative;  
     z-index: 171;
     width: 50vw;
     height: 400px;
@@ -1052,6 +1090,7 @@ h2 {
     transform: translate(170%, 37%);
     cursor: pointer;
     z-index: 172; 
+    transition: all .3s ease-in;
 }
 
 #restaurant { 
@@ -1061,6 +1100,7 @@ h2 {
     transform: translate(104%, -40%);
     cursor: pointer;
     z-index: 172; 
+    transition: all .3s ease-in;
 }
 
 #arrow1 {
@@ -1068,24 +1108,45 @@ h2 {
     width: 8vw; 
     object-fit: contain;
     transform: translate(415%, -50%) rotate(25deg);
-    cursor: pointer;
+    
     z-index: 172; 
+    filter: hue-rotate(30deg);
 }
 #arrow2 {
     position: absolute; 
     width: 8vw; 
     object-fit: contain;
     transform: translate(260%, 290%) rotate(176deg);
-    cursor: pointer;
+    
     z-index: 172; 
+    filter: hue-rotate(30deg);
 }
 #arrow3 {
     position: absolute; 
     width: 8vw; 
     object-fit: contain;
     transform: translate(119%, -60%) rotate(315deg);
-    cursor: pointer;
+    
     z-index: 172; 
+    filter: hue-rotate(30deg)
+    
+}
+
+#farm-group {
+    transition: all .3s ease-in;
+}
+
+#farm-group:hover {
+    scale: 1.1;
+}
+
+#composting:hover {
+    scale: 1.1;
+}
+
+#restaurant:hover {
+    scale: 1.1;
+    transform: translate(95%, -50%);
 }
 
 .img {
