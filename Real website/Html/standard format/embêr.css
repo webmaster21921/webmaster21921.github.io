@@ -580,7 +580,7 @@ h2 {
     width: 100%; 
     text-align: center; 
     position: absolute;
-    top: 15%;
+    top: 10%;
     text-wrap: nowrap;
 }
 
@@ -596,11 +596,11 @@ h2 {
 
 .caption {
     font-family: "Barlow Condensed";
-    font-size: 26px;
+    font-size: 2.6vw;
     width: 100%; 
     text-align: center; 
     position:absolute;
-    top: 23%;
+    top: 19%;
 }
 
 .sustain {
@@ -631,6 +631,7 @@ h2 {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+
     position: relative;
     top: 175px;
     margin: auto;
@@ -739,7 +740,7 @@ h2 {
     justify-content:center;
     position: relative;
     width: 100vw;
-    height: 100vh; 
+    height: 90vw; 
     z-index: 11;
     align-items: center;
     background-color: hsl(46, 68%, 93%) ;
@@ -996,6 +997,42 @@ h2 {
     width: 2.5vw; 
     object-fit: contain;
     transform: translate(970%, -1550%) rotate(20deg);
+    cursor: pointer;
+    z-index: 172; 
+}
+
+#field { 
+    position: absolute; 
+    width: 20vw; 
+    object-fit: contain;
+    transform: translate(10%, 10%);
+    cursor: pointer;
+    z-index: 172;
+}
+
+#greenhouse2 { 
+    position: absolute; 
+    width: 8vw; 
+    object-fit: contain;
+    transform: translate(156%, 80%); 
+    cursor: pointer;
+    z-index: 172; 
+}
+
+#composting { 
+    position: absolute; 
+    width: 17vw; 
+    object-fit: contain;
+    transform: translate(170%, 37%);
+    cursor: pointer;
+    z-index: 172; 
+}
+
+#restaurant { 
+    position: absolute; 
+    width: 16vw; 
+    object-fit: contain;
+    transform: translate(104%, -40%);
     cursor: pointer;
     z-index: 172; 
 }
