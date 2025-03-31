@@ -1062,6 +1062,30 @@ h2 {
     z-index: 172; 
 }
 
+#arrow1 {
+    position: absolute; 
+    width: 8vw; 
+    object-fit: contain;
+    transform: translate(415%, -50%) rotate(25deg);
+    cursor: pointer;
+    z-index: 172; 
+}
+#arrow2 {
+    position: absolute; 
+    width: 8vw; 
+    object-fit: contain;
+    transform: translate(260%, 290%) rotate(176deg);
+    cursor: pointer;
+    z-index: 172; 
+}
+#arrow3 {
+    position: absolute; 
+    width: 8vw; 
+    object-fit: contain;
+    transform: translate(119%, -60%) rotate(315deg);
+    cursor: pointer;
+    z-index: 172; 
+}
 
 .img {
     width: auto; 
