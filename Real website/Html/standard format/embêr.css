@@ -46,8 +46,10 @@ h2 {
 .dropcdown{
     position: absolute;
     display: none;
-    
+
 }
+
+
 
 .dropc-link {
     display: inline-block;
@@ -58,6 +60,7 @@ h2 {
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+
 }
 
 .dropc-link::after {
@@ -417,6 +420,7 @@ h2 {
     width: 100vw;
     height: 100vh; 
     overflow: hidden;
+    z-index: 0;
 }
 
 .big-vid {
@@ -942,7 +946,7 @@ h2 {
     font-family: "playfair display";
     font-weight:1000;
     font-size: 85%;
-    width: 10%;
+    width: -200px;
     height: 5px;
     transition: opacity .3s ease-in-out, height .3s ease-in-out;
     justify-content: center;
@@ -951,13 +955,14 @@ h2 {
     background-color: rgb(255, 255, 255);
     border-radius: 12px;
     margin-left: -1.5%;
-    z-index: 500;
+    z-index: 1;
     
 }
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
     opacity: 1;
-    height: 130%;
+    height: 15vh;
+
 }
 
 .dropdown:hover .nav-link {
@@ -973,6 +978,7 @@ h2 {
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
+   
 }
 
 .abt-link::after {
@@ -980,7 +986,7 @@ h2 {
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 70%;               
+    width: 160px;               
     height: 2px;
     background-color: rgb(237, 134, 0);
     transform: scaleX(0);      
