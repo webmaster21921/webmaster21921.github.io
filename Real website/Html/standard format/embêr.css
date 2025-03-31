@@ -584,23 +584,39 @@ h2 {
     text-wrap: nowrap;
 }
 
-.h2 {
-    font-family: "Barlow Condensed";
-    font-size: clamp(1.5rem, 2.5vw, 4rem);
-    width: 60%; 
-    text-align: left; 
-    top: 200px;
-    left: 25px;
-    text-wrap-mode:nowrap;
-}
-
 .caption {
     font-family: "Barlow Condensed";
-    font-size: 2.6vw;
+    font-size: 26px;
     width: 100%; 
     text-align: center; 
     position:absolute;
     top: 19%;
+}
+
+.statcontainer{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 80vw;
+}
+
+.stats-text {
+    font-family:"Barlow Condensed";
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    text-align: left;
+}
+
+.statcontainer{
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 80vw;
+}
+
+.stats-text {
+    font-family:"Barlow Condensed";
+    font-size: clamp(1.5rem, 2.5vw, 4rem);
+    text-align: left;
 }
 
 .sustain {
@@ -751,13 +767,22 @@ h2 {
 .gallery {
     position: absolute;
     width: 100vw;
-    height: 580px;
+    height: 70vh;
     z-index: 230;
     top:100vh;
     background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
+}
+
+.statistics{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 170vh;
+    z-index: 300;
+    background-color:#3e8e41;
 }
 
 #hydroponics {
@@ -807,7 +832,7 @@ h2 {
 
 .img-scrl-container {
     width: 100%;
-    height: 420px;
+    height: 50vh;
     overflow-x: auto; 
     justify-content: flex-start;
     background-color: transparent;
@@ -1040,7 +1065,7 @@ h2 {
 
 .img {
     width: auto; 
-    height: 260px; 
+    height: 30vh; 
     flex: 0 0 auto;
     border-radius: 60px;
 }
@@ -1189,7 +1214,7 @@ h2 {
     font-family: 'Georgia', serif;
     margin: 0;
     padding: 40px 0;
-    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo/7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo-7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     color: #333;
     display: flex;
     justify-content: center;
@@ -1273,48 +1298,51 @@ h2 {
     flex-wrap: wrap; /* Ensures images wrap on small screens */
 }
 
-.image-container {
+.image-wrapper {
     position: relative;
     display: inline-block;
+    width: 45%; /* Makes sure both images are equal width */
+    aspect-ratio: 4 / 3; /* Ensures consistent height-to-width ratio */
+    overflow: hidden; /* Prevents overflow if the image is too large */
+    border-radius: 10px;
 }
 
-/* Image styling */
 .menu-img {
-    width: 45%; /* Keeps images side by side */
-    height: auto; /* Prevents stretching */
-    max-height: 200px; /* Limits height */
-    object-fit: cover; /* Crops instead of stretching */
+    width: 100%;
+    height: 100%; /* Forces it to fill the container */
+    object-fit: cover; /* Ensures it doesn't stretch */
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease; 
+    overflow: hidden;
 }
 
-/* Hover effect - image zoom */
-.menu-img:hover {
-    transform: scale(1.05);
-}
-
-/* Hover effect - description */
-.image-container::after {
+/* Tooltip text */
+.image-wrapper::after {
     content: attr(data-description);
     position: absolute;
-    bottom: 10px;
     left: 50%;
+    bottom: 10px;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 8px;
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
     white-space: nowrap;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
 }
 
-.image-container:hover::after {
+.menu-img:hover {
+    transform: scale(1.05); /* Scales the image up by 1.05 */
+}
+
+/* Show text on hover */
+.image-wrapper:hover::after {
     opacity: 1;
 }
-
 /* Responsive - Two Columns when screen is 780px or larger */
 @media (min-width: 780px) {
     .menu-container {
