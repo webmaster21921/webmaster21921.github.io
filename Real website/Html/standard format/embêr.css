@@ -1026,38 +1026,62 @@ h2 {
 }
 
 
+/* Menu styles */
+/* Menu styles */
 .menu {
     font-family: 'Georgia', serif;
     margin: 0;
-    padding: 0;
-    background-image: url("https://images.pexels.com/photos/5792430/pexels-photo-5792430.jpeg?cs=srgb&dl=pexels-n-voitkevich-5792430.jpg&fm=jpg&_gl=1*1xb1yy6*_ga*MTIzNTIwNzYxMS4xNzQzMzgxMDAy*_ga_8JE65Q40S6*MTc0MzM4MTAwMS4xLjEuMTc0MzM4MTM5MS4wLjAuMA..");
-    color: black;
-    text-align: center;
-    margin-top: 60px;
+    padding: 40px 0;
+    background-image: url("https://images.pexels.com/photos/7794356/pexels-photo-7794356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 300%;
+    min-height: 100vh; /* Ensures it fills the screen properly */
     background-size: cover;
+    background-position: center;
 }
+
+/* Menu container */
 .menu-container {
-    width: 80%;
-    margin: 40px auto;
+    width: 90%;
+    max-width: 1000px; /* Prevents excessive stretching on large screens */
+    min-width: 320px;  /* Ensures it doesn't shrink too much */
     background: white;
-    padding: 40px;
+    padding: 40px;      /* Adds padding around content */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures proper wrapping for small screens */
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto; /* Centers the container horizontally */
+    margin-top: 5%;
 }
-.column {
-    width: 48%;
-    text-align: left;
-}
-.menu-section h1 {
-    font-size: 36px;
+
+/* Menu title */
+.menu-container h1 {
+    font-size: 32px;
     font-weight: bold;
     width: 100%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    animation: go-up 1s forwards;
+    opacity: 0%;
+    animation-delay: 0s;
 }
+
+/* Columns - Default to Single Column */
+.column {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    animation: go-up 1s forwards;
+    opacity: 0%;
+    animation-delay: 0.3s;
+}
+
+/* Menu sections */
 .menu-section h3 {
     font-size: 24px;
     margin-top: 20px;
@@ -1067,16 +1091,36 @@ h2 {
     margin-bottom: 20px;
 }
 
-.menu-section p{
-    margin-bottom: 40px;
+.menu-section p {
+    margin-bottom: 20px;
 }
+
+/* Menu items */
 .menu-item {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
     font-size: 18px;
 }
+
+/* Description text */
 .menu-description {
     font-size: 16px;
     color: #777;
+}
+
+/* Responsive - Two Columns when screen is 780px or larger */
+@media (min-width: 780px) {
+    .menu-container {
+        padding: 40px;
+    }
+    
+    .column {
+        width: 48%; /* Side-by-side layout on larger screens */
+        margin-bottom: 0;
+    }
+
+    .menu-container h1 {
+        font-size: 36px;
+    }
 }
