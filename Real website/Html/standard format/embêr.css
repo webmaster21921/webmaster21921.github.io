@@ -907,8 +907,9 @@ h2 {
     width: 30vw; 
     height: auto;
     object-fit: contain;
-    transform: translate(30%,-10%);
+    transform: translate(35%,-15%);
     cursor: pointer;
+    z-index: 172;
 }
 
 #veggies {
@@ -916,8 +917,9 @@ h2 {
     width: 13vw; 
     height: auto;
     object-fit: contain;
-    transform: translate(-10%,-10%) rotate(0deg);
+    transform: translate(30%,-20%) rotate(0deg);
     cursor: pointer;
+    z-index: 171;
     
 }
 
@@ -928,6 +930,15 @@ h2 {
     transform: translate(140%,-40%);
     height: auto;
     cursor: pointer;
+}
+
+#coconut-tree { 
+    position: absolute; /* Absolute positioning within the farm-interactive container */
+    width: 20vw; /* Set width as percentage to make it responsive */
+    object-fit: contain;
+    transform: translate(30%, -20%); /* Fine-tune the position */
+    cursor: pointer;
+    z-index: 172; /* Ensure it's on top */
 }
 
 .img {
