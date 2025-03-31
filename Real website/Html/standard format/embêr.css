@@ -512,7 +512,7 @@ h2 {
     display: block;
     font-family: 'Playfair Display';
     font-weight: 150;
-    font-size: 700%;
+    font-size: clamp(4.5rem, 6vw, 10rem);
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     text-align:center;
