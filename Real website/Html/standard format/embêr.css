@@ -46,7 +46,6 @@ h2 {
 .dropcdown{
     position: absolute;
     display: none;
-
 }
 
 
@@ -92,22 +91,24 @@ h2 {
     font-family: "playfair display";
     font-weight:1000;
     font-size: 85%;
-    width: 10%;
+    width: auto;
     height: 5px;
     transition: opacity .3s ease-in-out, height .3s ease-in-out;
     justify-content: center;
     align-items: left;
     padding: .5%;
     background-color: rgb(255, 255, 255);
-    border-radius: 12px;
+    border-radius: 6px;
     margin-left: -1.5%;
-    
+    transform: translate(-72px, 2px);
+    opacity: 0;
+    z-index: -5;
 }
 
 .dropcdown:hover .dropc-links, #dropc-btn:hover + .dropc-links {
     opacity: 1;
     height: 20vh;
-    width: auto;
+    transform: translate(-72px, 2px)
 }
 
 .dropdownc:hover .nav-link {
@@ -637,6 +638,8 @@ h2 {
 /* Hide the images by default */
 .mySlides {
     display: none;
+    width: 50vw;
+
 
 }
 
@@ -647,31 +650,44 @@ h2 {
 }
   
 /* Next & previous buttons */
-.prev, .next {
+.prev {
     cursor: pointer;
     position: absolute;
-    top: 500px;
-    width: auto;
-    margin-top: -22px;
     padding: 16px;
-    color: white;
+    padding-left: 28px;
+    padding-right: 30px;
+    color: rgb(69, 69, 69);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 40px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 50%;
     user-select: none;
+    transform: translate(-110%, -500%);
+    z-index: 172;
 }
-  
-/* Position the "next button" to the right */
+
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    padding-left: 30px;
+    padding-right: 28px;
+    color: rgb(69, 69, 69);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    transform: translate(50vw, -500%);
+    z-index: 172;
 }
   
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #a4a4a457;
 }
+
+
   
 /* Caption text */
 .text {
@@ -688,7 +704,6 @@ h2 {
   
 /* The dots/bullets/indicators */
 .dot {
-    cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -696,6 +711,7 @@ h2 {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+    opacity: 0;
 }
 
 .dots{
@@ -703,6 +719,7 @@ h2 {
     position: relative;
     text-align: center;
     z-index:200;
+    opacity: 0;
 }
   
 .active {
@@ -724,10 +741,12 @@ h2 {
     width: 100%;
     height: 1000px;
     align-items: center;
-    background-color: #d5ddd5 ;
+    background-color: hsl(46, 68%, 93%) ;
     margin: 0;
     top: 800px;
+    transition: 0.6s ease;
 }
+
 
 .gallery {
     position: absolute;
@@ -781,6 +800,8 @@ h2 {
     z-index: 171;
     width: 50vw;
     height: 400px;
+    scale: 1.1;
+    transform: translateY(10px);
 }
 
 
@@ -876,7 +897,7 @@ h2 {
     aspect-ratio: 2;
     height: auto;
     transform: translate(363%, -1023%) rotate(30deg);
-    z-index: 172;
+    z-index: 173;
 }
 
 #cow-fact-container {
@@ -928,14 +949,14 @@ h2 {
     width: 30vw; 
     height: auto;
     object-fit: contain;
-    transform: translate(35%,-15%);
+    transform: translate(35%,-25%);
     cursor: pointer;
     z-index: 172;
 }
 
 #veggies {
     position: absolute; 
-    width: 13vw; 
+    width: 12vw; 
     height: auto;
     object-fit: contain;
     transform: translate(30%,-20%) rotate(0deg);
@@ -948,7 +969,7 @@ h2 {
     position: absolute;
     width: 20vw;
     object-fit: contain;
-    transform: translate(140%,-40%);
+    transform: translate(140%,-55%);
     height: auto;
     cursor: pointer;
 }
@@ -998,6 +1019,12 @@ h2 {
     
 }
 
+@media (max-width: 780px) {
+    .drop-links {
+        display: none !important;
+    }
+}
+
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
     opacity: 1;
     height: 15vh;
@@ -1008,7 +1035,7 @@ h2 {
     opacity: 0.5;  
 }
 
-.abt-link {
+.tel-link {
     display: inline-block;
     position: relative;   
     color: rgb(15, 62, 11);
@@ -1020,12 +1047,12 @@ h2 {
    
 }
 
-.abt-link::after {
+.tel-link::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 160px;               
+    width: 81px;               
     height: 2px;
     background-color: rgb(237, 134, 0);
     transform: scaleX(0);      
@@ -1033,9 +1060,39 @@ h2 {
     transition: transform 0.3s ease-in-out;
 }
 
-.abt-link:hover::after {
+.tel-link:hover::after {
     transform: scaleX(1);       
 }
+
+.mail-link {
+    display: inline-block;
+    position: relative;   
+    color: rgb(15, 62, 11);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+   
+}
+
+.mail-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 156px;               
+    height: 2px;
+    background-color: rgb(237, 134, 0);
+    transform: scaleX(0);      
+    transform-origin: left;    
+    transition: transform 0.3s ease-in-out;
+}
+
+.mail-link:hover::after {
+    transform: scaleX(1);       
+}
+
   /*index.html*/
   .text_bottom {
     font-size: clamp(1.3rem, 4vw, 3rem);

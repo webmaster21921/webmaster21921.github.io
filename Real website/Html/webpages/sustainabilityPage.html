@@ -27,7 +27,6 @@
             <button id="dropc-btn" class="navc-link"> ≡ </button>
             <div class="dropc-links">
               <a class="dropc-link" href="index.html"> HOME </a>
-              <a class="dropc-link" href="contactPage.html"> ABOUT </a>
               <a class="dropc-link" href="aboutPage.html"> CONTACT US</a>
               <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
               <a class="dropc-link" href="menuPage.html"> MENU </a>
@@ -39,10 +38,10 @@
                 <button class="nav-link">HOME</button>
             </form>
             <div class="dropdown">
-                <button id='drop-btn'class="nav-link">ABOUT</button>
+                <button id='drop-btn'class="nav-link">CONTACT US</button>
                 <div class="drop-links">
-                    <a class="abt-link" href="contactPage.html">CONTACT US</a>
-                    <a class="abt-link" href="aboutPage.html">OUR STORY</a>
+                    <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
+                    <a href="mailto:lebronjames@yahoo.com"class= 'mail-link'><b>Email:</b><br>lebronjames@yahoo.com</a>
                 </div>
             </div>
             <form action = "sustainabilityPage.html">
@@ -60,6 +59,7 @@
     <div class='background-container'>
         <h1 class='name1'>Our Environmental Mission</h1>
     </div>
+    
 
     <div class="map">
         <h1 class="section-heading">Interactive Farm To Table Map</h1>
@@ -90,7 +90,10 @@
                             that produce milk of the highest quality.
                         </p>
                     </div>
+    
                 </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <div class="mySlides">
@@ -99,11 +102,16 @@
                     <img src="../standard format/greenhouse.png" id="greenhouse" alt="greenhouse">
                     <img src="../standard format/veggies.png" id="veggies" alt="veggies">
                 </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
             <div class="mySlides">
-                <img src="https://i.postimg.cc/8s8Pm5xX/composting.jpg" id="slide-img">
-                <div class="text">Caption Three</div>
+                <div id="interactive-2">
+                    
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
 
         <!-- The dots/circles -->
@@ -112,6 +120,9 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        
+        
+
     </div>
 
     <script>
