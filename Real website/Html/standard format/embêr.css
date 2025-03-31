@@ -769,7 +769,7 @@ h2 {
     width: 100vw;
     height: 70vh;
     z-index: 230;
-    top:100vh;
+    top: 160vh;
     background-color: #FAF9F6;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
