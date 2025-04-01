@@ -1620,6 +1620,7 @@ h2 {
     width: min(90%, 800px);
     height: auto;
     margin-top: 2%;
+    margin-left: 5%;
   }
   
   #green {
@@ -1637,7 +1638,37 @@ h2 {
     height: auto;
   }
   
+.acontainer {
+  position: relative; 
+  display: inline-block; 
+}
 
+.aoverlay {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 94%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+
+.acontainer:hover .aoverlay {
+  opacity: 1;
+}
+
+.atext {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /* Menu styles */
