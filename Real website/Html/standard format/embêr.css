@@ -1,4 +1,5 @@
 /* --GENERAL CSS-- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -88,7 +89,7 @@ h2 {
     border-color: rgba(72, 72, 72, 0);
     border-width: .5px;
     color: rgb(0, 58, 21);
-    font-family: "playfair display";
+    font-family: 'Poppins', sans-serif;
     font-weight:1000;
     font-size: 85%;
     width: auto;
@@ -1196,7 +1197,7 @@ h2 {
     border-color: rgba(72, 72, 72, 0);
     border-width: .5px;
     color: rgb(0, 58, 21);
-    font-family: "playfair display";
+    font-family: 'Poppins', sans-serif;
     font-weight:1000;
     font-size: 85%;
     width: -200px;
