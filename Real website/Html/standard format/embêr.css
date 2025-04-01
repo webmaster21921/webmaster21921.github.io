@@ -628,7 +628,7 @@ h2 {
 .slide-text {
     color: black;
  
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     bottom: 8px;
     width: 80vw;
@@ -649,7 +649,7 @@ h2 {
 
 .stats-text {
     font-size: clamp(1.5rem, 2.5vw, 4rem);
-    font-family: "playfair Display";
+    font-family: " Display";
     text-align: left;
 }
 
