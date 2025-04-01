@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="../standard format/embêr.css">
+    <link rel="stylesheet" href="../standard format/calendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="icon" href="../standard format/logo.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="../javascript/carryOut.js" defer></script>
+</head>
+
+<body>
+  <div class="order-page">
+    <div class="logo-container">
+        <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
+    </div>
+    <nav class="nav-bar">
+      <div class="navlink-container">
+        <div class="dropcdown">
+          <button id="dropc-btn" class="navc-link"> ≡ </button>
+          <div class="dropc-links">
+            <a class="dropc-link" href="index.html"> HOME </a>
+            <a class="dropc-link" href="aboutPage.html"> CONTACT US</a>
+            <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
+            <a class="dropc-link" href="menuPage.html"> MENU </a>
+            <a class="dropc-link" href="reservePage.html"> RESERVE </a>
+          </div>
+      </div>
+  
+          <form action="index.html">
+              <button class="nav-link">HOME</button>
+          </form>
+          <div class="dropdown">
+              <button id='drop-btn'class="nav-link">CONTACT US</button>
+              <div class="drop-links">
+                  <a href="tel:1234567890" class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
+                  <a href="mailto:lebronjames@yahoo.com" class="mail-link"><b>Email:</b><br>lebronjames@yahoo.com</a>
+              </div>
+          </div>
+          <form action="sustainabilityPage.html">
+              <button class="nav-link">SUSTAINABILITY</button>
+          </form>
+          <form action="menuPage.html">
+              <button class="nav-link">MENU</button>
+          </form>
+          <form action="reservePage.html">
+              <button class="nav-link">RESERVE</button>
+          </form>
+      </div>
+    </nav>
+
+<div class="reserve-container">
+
+<h1 class="heading">CONFIRM YOUR ORDER</h1>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById("submit-final-order").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    // Get user inputs
+    const name = document.getElementById("name").value;
+    const selectedTime = document.getElementById("time-select").value;
+
+    // Store name and time in localStorage (for thankyou page)
+    localStorage.setItem("Name", name);
+    localStorage.setItem("selectedTime", selectedTime);
+
+    // Clear cart and total price from localStorage
+    localStorage.removeItem("cart");
+    localStorage.removeItem("totalPrice");
+
+    // Redirect to the thank you page
+    window.location.href = "thankYouOrder.html"; 
+  });
+});
+    </script>
+    
+    <button class="goback-button" onclick="window.location.href='carryOutForm.html';">Change your Order</button>
+<br>
+
+<div class="form-wrapper">
+  <form id="order-form"> 
+
+    <div class="form-group">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" class="form-input" placeholder="Your Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-input" placeholder="Your Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="tel" class="form-label">Phone Number</label>
+      <input type="phone number" id="phone number" class="form-input" placeholder="Your Number: 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </div>
+    
+    <div class="dropdown-group">
+        <label for="time-select" class="dropdown-label">Select a Time</label>
+        <select id="time-select" class="dropdown-select" required>
+            <option value="" disabled selected>Select a time</option>
+            <option value="12:00 PM">12:00 PM</option>
+            <option value="1:00 PM">1:00 PM</option>
+            <option value="2:00 PM">2:00 PM</option>
+            <option value="3:00 PM">3:00 PM</option>
+            <option value="4:00 PM">4:00 PM</option>
+            <option value="5:00 PM">5:00 PM</option>
+            <option value="6:00 PM">6:00 PM</option>
+            <option value="7:00 PM">7:00 PM</option>
+            <option value="8:00 PM">8:00 PM</option>
+        </select>
+    </div>
+
+    <button id="submit-final-order" type="button" class="form-button">Submit</button>
+  </form>
+</div>
+
+</div>
+</div>
+</body>
+
+</html>
