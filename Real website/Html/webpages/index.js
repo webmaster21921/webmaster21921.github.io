@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.img');
+const images = document.querySelectorAll('.img-container');
 
 images.forEach(img => {
   img.addEventListener('click', () => {
@@ -6,15 +6,15 @@ images.forEach(img => {
     
     if (textEl && textEl.classList.contains('scrl-text')) {
       
-      if (textEl.classList.contains('show')) {
-        textEl.classList.remove('show');
-      } else {
-        textEl.classList.add('show');
+      // Remove 'show' from any other open .scrl-text
+      document.querySelectorAll('.scrl-text.show').forEach(otherText => {
+        if (otherText !== textEl) {
+          otherText.classList.remove('show');
+        }
+      });
 
-        setTimeout(() => {
-          textEl.classList.remove('show');
-        }, 3000);
-      }
+      // Toggle 'show' on the clicked one
+      textEl.classList.toggle('show');
     }
   });
 });

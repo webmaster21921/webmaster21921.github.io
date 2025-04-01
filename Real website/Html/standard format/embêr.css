@@ -656,6 +656,8 @@ h2 {
     text-align: left;
 }
 
+
+
 .background-container {
     display: flex;
     position: relative;
@@ -685,7 +687,7 @@ h2 {
 .mySlides {
     display: none;
     width: 50vw;
-
+    transition: all .3s ease-in;
 
 }
 
@@ -1184,6 +1186,14 @@ h2 {
     border-radius: 60px;
 }
 
+.img-caption {
+    position: absolute;
+    font-family: 'playfair display';
+    font-size: 20px;
+    transform: translate(-50%,-300%) rotate(-90deg);
+}   
+
+
   /* about-dropdown */
 
 .drop-links {
@@ -1255,6 +1265,10 @@ h2 {
     }
     .slide-text {
         top: 65%;
+    }
+
+    .img-scrl-container{
+        display: none;
     }
 }
 
@@ -1352,7 +1366,7 @@ h2 {
     width: 100%;
     font-weight: bolder;
     margin: 1rem auto;
-
+    padding: 5vw;
   }
   
   .swiper {
