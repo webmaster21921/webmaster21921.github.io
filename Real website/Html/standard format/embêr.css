@@ -1367,6 +1367,7 @@ h2 {
     font-weight: bolder;
     margin: 1rem auto;
     padding: 5vw;
+    margin-top: -3%;
   }
   .text_morebottom {
     font-size: clamp(1.6rem, 7vw, 4rem);
@@ -1390,6 +1391,8 @@ h2 {
     height: auto;
     z-index: 15;
     border-radius: 20px;
+    margin-top: -4%;
+
     
 }
 
