@@ -606,7 +606,7 @@ h2 {
 
 .slide-caption {
     font-size: clamp(1rem, 5.5vw, 2rem);
-    width: 90%; 
+    width: 140%; 
     text-align: center; 
     position:absolute;
     top: 100%;
@@ -1233,6 +1233,39 @@ h2 {
 @media (max-height: 450px) {
     .section-heading {
         display: none !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .slide-caption {
+        top: 55%;
+    }
+    .slide-text {
+        top: 75%;
+    }
+}
+
+@media (max-width: 550px) {
+    #interactive-2 {
+        margin-top: -15vw !important;
+    }
+    .slide-caption {
+        top: 45%;
+    }
+    .slide-text {
+        top: 65%;
+    }
+}
+
+@media (max-width: 450px) {
+    #interactive-2 {
+        margin-top: -55vw !important;
+    }
+    .slide-caption {
+        top: 15%;
+    }
+    .slide-text {
+        top: 35%;
     }
 }
 
