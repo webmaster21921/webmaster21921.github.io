@@ -597,6 +597,8 @@ h2 {
     text-wrap: wrap;
     font-family: 'playfair display';
     z-index: 172;
+    color:rgb(0, 58, 21);
+    text-shadow: 2px 2px 5px rgba(33, 114, 43, 0.5);
 }
 
 .caption {
@@ -808,7 +810,7 @@ h2 {
     height: 70vh;
     z-index: 230;
     top:180vh;
-    background-color: #FAF9F6;
+    background: linear-gradient(to bottom, #d7d7b5, #faf7ed);
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
@@ -820,7 +822,7 @@ h2 {
     height: 100vh;
     top: 250vh;
     z-index: 300;
-    background-color:hsl(46, 68%, 93%) ;
+    background-color: #faf7ed ;
 }
 
 #hydroponics {
@@ -1381,6 +1383,7 @@ h2 {
     height: 30vh; 
     flex: 0 0 auto;
     border-radius: 60px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.443);
 }
 
 .img-caption {
@@ -1425,6 +1428,7 @@ h2 {
         display: none !important;
     }
 }
+
 
 @media (max-height: 650px) {
     #interactive-2 {
@@ -1491,6 +1495,11 @@ h2 {
     }
     .statistics {
         top: 220vh;
+    }
+
+    .img {
+        width: 20vh;
+        height: 20vh;
     }
     
 }
@@ -1574,7 +1583,7 @@ h2 {
     margin-right: 20px;
     cursor: pointer;
     font-family: 'poppins';
-    font-size: clamp(0.3rem, 3.5vw, 1rem);;
+    font-size: 14px;
 }
 
 .end-link::after {
@@ -1658,6 +1667,21 @@ h2 {
     width: min(90%, 800px);
     height: auto;
     margin-top: 2%;
+  }
+  
+  #forbes {
+    width: min(50%, 400px);
+    height: auto;
+  }
+  
+  #best {
+    width: min(35%, 250px);
+    height: auto;
+  }
+  
+  #award {
+    width: min(45%, 350px);
+    height: auto;
   }
   
   #green {
