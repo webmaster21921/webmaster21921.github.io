@@ -136,7 +136,6 @@
   z-index: 8;
   box-sizing: border-box;
   user-select: none;
-  padding: 1rem;  /* Added padding so images/text don't sit flush against the edges */
 }
 
 .img-scrl {
@@ -159,48 +158,35 @@
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
-
-}
-
-.img-container {
-  margin-left: 6%;
-  transition: .3s ease-in;
 }
 
 /* Optional hover effect if desired */
-.img-container:hover{
+.img:hover {
   transform: scale(1.1) translateY(-10px);
 }
 
-/* Initially, the text is hidden */
 .scrl-text {
+  display: inline-block; 
+  flex-shrink: 0;        
+  white-space: nowrap;   
   line-height: 1.4;
-  font-family: "playfair display";
-  font-size: clamp(6.5px, 1.2vw, 15px);
+  font-family: "playfair display", serif;
+  font-size: 15px;
   max-width: 0;
   overflow: hidden;
-  height: fit-content;
-  transition: all 0.5s ease-in-out;
   opacity: 0;
-  user-select: none;
+  transition: max-width 0.5s ease-in-out, opacity 0.5s ease-in-out;
   background-color: #9a640032;
   border-radius: 6px;
   padding: 6px;
+  width: fit-content;
+  height: fit-content;
 }
 
-/* When .show is added, display the text */
+/* Expanded state physically grows the text box, pushing other items */
 .scrl-text.show {
   opacity: 1;
-  max-width: 580px;
-  max-height: 120%;
+  max-width: 580px; /* pick any max you like */
 }
 
-
-@media (max-width: 870px) {
-
-
-  .img-scrl-container{
-      display: none;
-  }
-}
 
