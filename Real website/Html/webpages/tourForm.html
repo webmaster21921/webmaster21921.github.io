@@ -57,18 +57,34 @@
   <h1 class="heading">BOOK A TOUR</h1>
 
   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          document.getElementById("submit-tour").addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Get user inputs
+            const name = document.getElementById("name").value;
+            const selectedTime = document.getElementById("time-select").value;
+
+            // Store name and time in localStorage (for thank you page)
+            localStorage.setItem("Name", name);
+            localStorage.setItem("selectedTime", selectedTime);
+
+            // Redirect to the thank you page
+            window.location.href = "thankYouTour.html"; 
+          });
+        });
+
       function goBack() {
           window.location.href = "tourPage.html"; }
   </script>
 
     <button class="goback-button" onclick="goBack()">Go Back</button>
 <br>
-
 <div class="form-wrapper">
-    <form action="#" method="POST">
+    <form id="tour-form">
   
       <div class="form-group">
-        <label for="name" class="form-label">Username</label>
+        <label for="name" class="form-label">Name</label>
         <input type="text" id="name" class="form-input" placeholder="Your Name" required>
       </div>
   
@@ -93,8 +109,25 @@
           <input type="number" id="adults" class="number_input-input" placeholder="Enter a number" min="0" max="15" step="1" required>
         </div>
       </div>
+
+      <div class="dropdown-group">
+        <label for="time-select" class="dropdown-label">Select a Time</label>
+        <select id="time-select" class="dropdown-select" required>
+          <option value="" disabled selected>Select a time</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="1:00 PM">1:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="5:00 PM">5:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+          <option value="7:00 PM">7:00 PM</option>
+          <option value="8:00 PM">8:00 PM</option>
+        </select>
+      </div>
+
   
-      <button class="form-button">Submit</button>
+      <button id="submit-tour" type="button" class="form-button">Submit</button>
     </form>
   </div>
 
