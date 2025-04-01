@@ -568,7 +568,7 @@ h2 {
 .name1 {
     display: block;
     font-weight: 150;
-    font-size: clamp(4rem, 6vw, 10rem);
+    font-size: clamp(2.5rem, 6vw, 10rem);
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     text-align:center;
@@ -589,12 +589,12 @@ h2 {
 }
 
 .section-heading {
-    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-size: clamp(1.7rem, 6vw, 3rem);
     width: 100%; 
     text-align: center; 
     position: absolute;
     top: 10%;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     font-family: 'playfair display';
     z-index: 172;
 }
@@ -625,8 +625,8 @@ h2 {
 }
 .slide-text {
     color: black;
-    font-size: 20px;
-
+ 
+    font-size: clamp(1rem, 3vw, 2rem);
     position: absolute;
     bottom: 8px;
     width: 80vw;
@@ -1009,6 +1009,7 @@ h2 {
     
 }
 
+
 #cow1 {
     position: absolute; 
     display: block;
@@ -1068,6 +1069,77 @@ h2 {
     
 }
 
+#chicken-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    transform: translate(-260px,-775px);
+    box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+
+}
+
+#chicken-fact {
+    width: 320px;
+    height: fit-content;
+    margin-top: 00px;
+    padding: 15px;
+    line-height: 20px;
+    transition: all 0s;
+    font-family: "barlow condensed";
+    
+}
+
+#compost-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+    transform: translate(680px,-705px);
+    box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+
+}
+
+#compost-fact {
+    width: 320px;
+    height: fit-content;
+    margin-top: 00px;
+    padding: 15px;
+    line-height: 20px;
+    transition: all 0s;
+    font-family: "barlow condensed";
+    
+}
+
+#chef-fact-container {
+    opacity: 0;
+    width: 270px;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    transform: translate(730px, -920px);
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
+    z-index: 170;
+
+}
+
+#chef-fact {
+    width: 270px;
+    height: fit-content;
+    margin-top: 00px;
+    padding: 15px;
+    line-height: 20px;
+    transition: all 0s;
+    font-family: "barlow condensed";
+    
+}
+
 #coconut-fact-container {
     opacity: 0;
     width: fit-content;
@@ -1080,6 +1152,7 @@ h2 {
     position: absolute;
 
 }
+
 
 #coconut-fact {
     width: 320px;
@@ -1104,6 +1177,15 @@ h2 {
     opacity: 1;
 }
 #cow3:hover ~ #cow-fact-container {
+    opacity: 1;
+}
+#compost:hover ~ #compost-fact-container {
+    opacity: 1;
+}
+#chef:hover ~ #chef-fact-container {
+    opacity: 1;
+}
+#chicken:hover ~ #chicken-fact-container {
     opacity: 1;
 }
 
@@ -1353,9 +1435,10 @@ h2 {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     #interactive-2 {
-        margin-top: -55vw !important;
+        margin-top: -10vw !important;
+        scale: 2.0;
     }
     .slide-caption {
         top: 15%;
@@ -1363,6 +1446,14 @@ h2 {
     .slide-text {
         top: 35%;
     }
+    .caption {
+        display: none;
+    }
+    .section-heading{
+        top: 70px;
+    }
+
+    
 }
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
