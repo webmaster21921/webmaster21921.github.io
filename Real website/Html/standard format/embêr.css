@@ -1574,7 +1574,7 @@ h2 {
     margin-right: 20px;
     cursor: pointer;
     font-family: 'poppins';
-    font-size: 14px;
+    font-size: clamp(0.3rem, 3.5vw, 1rem);;
 }
 
 .end-link::after {
@@ -1658,21 +1658,6 @@ h2 {
     width: min(90%, 800px);
     height: auto;
     margin-top: 2%;
-  }
-  
-  #forbes {
-    width: min(50%, 400px);
-    height: auto;
-  }
-  
-  #best {
-    width: min(35%, 250px);
-    height: auto;
-  }
-  
-  #award {
-    width: min(45%, 350px);
-    height: auto;
   }
   
   #green {
