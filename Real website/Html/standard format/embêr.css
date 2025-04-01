@@ -647,6 +647,7 @@ h2 {
 
 .stats-text {
     font-size: clamp(1.5rem, 2.5vw, 4rem);
+    font-family: "playfair Display";
     text-align: left;
 }
 
@@ -819,7 +820,7 @@ h2 {
     height: 100vh;
     top: 250vh;
     z-index: 300;
-    background-color:#3e8e41;
+    background-color:hsl(46, 68%, 93%) ;
 }
 
 #hydroponics {
@@ -1611,7 +1612,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;         
+    gap: 0.1rem;         
     margin-top: 1%;
   }
   
@@ -1637,17 +1638,17 @@ h2 {
   }
   
   #green {
-    width: min(40%, 300px);
+    width: min(30%, 300px);
     height: auto;
   }
   
   #certified {
-    width: min(45%, 650px);
+    width: min(35%, 350px);
     height: auto;
   }
   
   #snail {
-    width: min(45%, 650px);
+    width: min(35%, 350px);
     height: auto;
   }
   
