@@ -1119,7 +1119,7 @@ h2 {
 }
 
 #chicken-fact {
-    width: clamp(5rem, 5vw, 6rem);
+    width: clamp(7rem, 5vw, 6rem);
     max-height: 30vw;
     padding: clamp(.3rem, 1.5vw, 3rem);
     line-height: clamp(.3rem, 1.5vw, 3.2rem);
@@ -1147,7 +1147,7 @@ h2 {
 }
 
 #compost-fact {
-    width: clamp(5rem, 5vw, 6rem);
+    width: clamp(7rem, 5vw, 6rem);
     max-height: 30vw;
     padding: clamp(.3rem, 1.5vw, 3rem);
     line-height: clamp(.3rem, 1.5vw, 3.2rem);
