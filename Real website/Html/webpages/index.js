@@ -18,3 +18,4 @@ images.forEach(img => {
     }
   });
 });
+
