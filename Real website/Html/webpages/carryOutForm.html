@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../standard format/calendar.css">
     <link rel="stylesheet" href="../standard format/embêr.css">
     <script src="../javascript/carryOut.js" defer></script>
+    <style>
+        h1, .heading{
+        font-family: 'Playfair Display', serif;
+        }    
+        </style>
 </head>
 
 <body>
@@ -59,70 +64,83 @@
 
         
     <div class="menu">
-        <script>
-            function goBack() {
-                window.location.href = "carryOutPage.html"; }
-        </script>
-
-<div class="menu-container">
-        <button class="goback-button" onclick="goBack()">Go Back</button>
-        <h3>Select items to add to your cart.</h3>
-        </div>
         <div class="menu-container">
-            <h1>Carryout Form</h1>
+            <h1>Menu</h1>
             <div class="column">
-               
                 <div class="menu-section">
                     <h3>Appetizers</h3>
-                    <div class="menu-item"><span>Lumpiang Aloo 🇮🇳🇵🇭</span></div>
-                    <p class="menu-description">Potato + pea-filled spring rolls with Indian dipping sauces</p>
-                    <div class="menu-item"><span>Paneer Siumai 🇨🇳🇮🇳</span></div>
-                    <p class="menu-description">Steamed dumplings with paneer inside</p>
+                    <p class="menu-description">All appetizers (except for salad) are served with Indian dipping sauces unless otherwise mentioned</p>
+                    <div class="menu-item"><span>Aloo Lumpiang 🇮🇳🇵🇭</span></div>
+                    <p class="menu-description">Potato and pea filled spring rolls</p>
+                    <div class="menu-item"><span>Paneer Siu Mai 🇨🇳🇮🇳</span></div>
+                    <p class="menu-description">Steamed dumplings stuffed with paneer mixture</p>
                     <div class="menu-item"><span>Light Calamansi Chaat Salad 🇵🇭🇮🇳</span></div>
-                    <p class="menu-description">Chickpea salad with calamansi dressing</p>
+                    <p class="menu-description">Chickpea salad served with calamansi dressing</p>
                     <div class="menu-item"><span>Masala Nian Gao  🇨🇳🇮🇳</span></div>
                     <p class="menu-description">Sticky rice cake with spicy masala flavoring</p>
-                    <div class="menu-item"><span>Jackfruit Siopao or bao buns with chutney sauce 🇵🇭🇨🇳🇮🇳</span></div>
-                    <p class="menu-description">Steamed dumplings with jackfruit inside and mint-coriander sauce</p>
-                    <div class="menu-item"><span>Dim Sum Samosas 🇮🇳🇨🇳
+                    <div class="menu-item"><span>Jackfruit Siopao 🇵🇭🇨🇳🇮🇳</span></div>
+                    <p class="menu-description">Bao Buns stuffed with jackfruit and mint-coriander chutney</p>
+                    <div class="menu-item"><span>Aloo Dim Sum 🇮🇳🇨🇳
                     </span></div>
-                    <p class="menu-description">Dim sum with samosa aloo filling</p>
+                    <p class="menu-description">Dim sum with Aloo filling</p>
+                    <div class="menu-images">
+                        <div class="image-wrapper" data-description="Lumpiang Aloo">
+                            <img src="https://images.pexels.com/photos/4001867/pexels-photo-4001867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="menu-img">
+                        </div>
+                        <div class="image-wrapper" data-description="Jackfruit Siopao">
+                            <img class="menu-img" src="https://images.pexels.com/photos/5672398/pexels-photo-5672398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Appetizer 2">
+                        </div>
+                    </div>
                 </div>
                 <div class="menu-section">
                     <h3>Main Dishes</h3>
+                    <p class="menu-description">All main dishes (except for noodles and dumplings) are served with choice of jasmine rice, vegetarian pulao, or vegetarian fried rice </p>
                     <div class="menu-item"><span>Tofu Eggplant Kare Kare 🇵🇭🇨🇳</span></div>
-                    <p class="menu-description">Filipino peanut stew with Indian masala and jasmine rice</p>
-                    <div class="menu-item"><span>Mapo Tofu Laing 🇵🇭🇨🇳</span></div>
-                    <p class="menu-description">Tofu soaked in taro leaf coconut sauce with Indian spices</p>
-                    <div class="menu-item"><span>Stir-Fried Noodles with Paneer 🇮🇳🇨🇳</span></div>
-                    <p class="menu-description">Vegetable stir-fry noodles with paneer and sweet chili sauce</p>
-                    <div class="menu-item"><span>Stir-Fried Noodles with Paneer 🇮🇳🇨🇳</span></div>
-                    <p class="menu-description">Palak (Spinach) Dumplings 🇮🇳🇨🇳                    </p>
-                    <div class="menu-item"><span>Served with soy-ginger dipping sauce</span></div>
-                    <p class="menu-description">Vegetable stir-fry noodles with paneer and sweet chili sauce</p>
-                    <div class="menu-item"><span>Sweet and sour tofu served with Mango Chutney 🇮🇳🇨🇳</span></div>
+                    <p class="menu-description">Filipino Peanut Stew mixed with Indian masala</p>
+                    <div class="menu-item"><span> Tofu Laing 🇵🇭🇨🇳</span></div>
+                    <p class="menu-description">Tofu mixed in sauce of taro leaves and coconut</p>
+                    <div class="menu-item"><span>Stir-Fried Noodles 🇮🇳🇨🇳</span></div>
+                    <p class="menu-description">Vegetable stir-fry noodles mixed with paneer and sweet chili sauce</p>
+                    <div class="menu-item"><span>Palak Dumplings 🇮🇳🇨🇳</span></div>
+                    <p class="menu-description">Dumplings stuffed with spinach and served with soy ginger dipping sauces</p>
+                    <div class="menu-item"><span>Sweet and Sour Tofu 🇮🇳🇨🇳</span></div>
+                    <p class="menu-description">Fried tofu marinated in sweet and sour sauce</p>
                     <div class="menu-item"><span>Gobi Manchurian 🇮🇳🇨🇳</span></div>
+                    <p class="menu-description">Deep-fried Cauliflower mixed with sweet, spicy, and tangy sauce</p>
                     <div class="menu-item"><span>Tofu Sisig 🇮🇳🇵🇭</span></div>
-                    <p class="menu-description">Served with Biriyani(or Pulao) [indian spiced rice]</p>
+                    <p class="menu-description">Grilled, crispy tofu</p>
+                    <div class="menu-images">
+                        <div class="image-wrapper" data-description="Stir-Fried Noodles with Paneer">
+                            <img class="menu-img" src="https://images.pexels.com/photos/28895971/pexels-photo-28895971/free-photo-of-delicious-asian-stir-fry-noodles-in-white-bowl.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Main Dish 1">
+                        </div>
+                        <div class="image-wrapper" data-description="Palak Dumplings">
+                            <img class="menu-img" src="https://images.pexels.com/photos/7745368/pexels-photo-7745368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Main Dish 2">
+                        </div>   
+                    </div>
                 </div>
             </div>
-            
             <div class="column">
                 <div class="menu-section">
                     <h3>Desserts</h3>
-                    <div class="menu-item"><span>Kheer (Rice Pudding) 🇮🇳</span></div>
+                    <div class="menu-item"><span>Kheer 🇮🇳</span></div>
                     <p class="menu-description">Traditional Indian rice pudding with cardamom</p>
                     <div class="menu-item"><span>Ube Coconut Mochi 🇵🇭🇨🇳</span></div>
                     <p class="menu-description">Soft mochi infused with ube and coconut</p>
                     <div class="menu-item"><span>Chai Leche Flan 🇮🇳🇵🇭</span></div>
                     <p class="menu-description">Caramel custard with chai spices</p>
                     <div class="menu-item"><span>Black Sesame Halwa 🇮🇳🇨🇳</span></div>
-                    <p class="menu-description">Sesame seeds mixed with ghee, jaggery, and nuts</p>
-                    <div class="menu-item"><span>Taro Coconut Kulfi</span></div>
-                    <p class="menu-description">Pureed taro and coconut milk and sweetener (condensed milk) frozen (basically a popsicle)</p>
+                    <p class="menu-description">Halwa made with ghee, jaggery, semolina, and lots of sesame seeds</p>
+                    <div class="menu-item"><span>Ube Coconut Kulfi 🇮🇳🇵🇭</span></div>
+                    <p class="menu-description">Pureed Ube, Coconut Milk, and Condensed Milk frozen into popsicle form</p>
                     <div class="menu-item"><span>Ice Cream</span></div>
                     <p class="menu-description">Coconut, ube, vanilla, chocolate flavors available</p>
-
+                    <div class="menu-images">
+                        <div class="image-wrapper" data-description="Ube Coconut Mochi">
+                            <img class="menu-img" src="https://images.pexels.com/photos/31297741/pexels-photo-31297741/free-photo-of-traditional-japanese-mochi-on-black-plate.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dessert 1">
+                        </div>
+                        <div class="image-wrapper" data-description="Chai Leche Flan">
+                            <img class="menu-img" src="https://images.pexels.com/photos/14665242/pexels-photo-14665242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Dessert 2">
+                    </div>
                 </div>
                 <div class="menu-section">
                     <h3>Drinks</h3>
@@ -132,12 +150,25 @@
                     <p class="menu-description">Traditional Indian spiced tea</p>
                     <div class="menu-item"><span>Matcha Chai Latte 🇨🇳🇮🇳</span></div>
                     <p class="menu-description">Fusion of matcha and masala chai</p>
+                    <div class="menu-images">
+                        <div class="image-wrapper" data-description="Masala Chai">
+                            <img class="menu-img" src="https://images.pexels.com/photos/20270270/pexels-photo-20270270/free-photo-of-tea-and-ginger-roots.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Drink 1">
+                        </div>
+                        <div class="image-wrapper" data-description="Mango Lassi">
+                            <img class="menu-img" src="https://images.pexels.com/photos/14509267/pexels-photo-14509267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Drink 2">    
+                    </div>
+                    <br>
+                    <p class="menu-description"><em>Each season, we also serve  dishes that match with cultural celebrations. Ask your waiter for more details. </em></p>
+                    <br>
+                    <p class="menu-description"><em>Please tell your waiter about any allergies or preferences when you place your order!!</em></p>
+                    <br>
+                    <p class="menu-description"><em>As a restaurant that tries to fuse several cuisines, we love to hear your feedback on our dishes and possible dishes we can add to our menu. Ask your waiter for the form to submit ideas and feedback to our management team, and we will be sure to look into it.</em></p>
                 </div>
             </div>
-            
-           
-            
         </div>
+    </div>
+
+
 
     <h1 id="cart-container-h1">Cart</h1>
     <div id="cart-container">
@@ -150,7 +181,7 @@
         <button id="confirm-btn">Confirm</button>
         <button id="cancel-btn">Cancel</button>
     </div>
-</div>
+
     </html>
 
 </body>

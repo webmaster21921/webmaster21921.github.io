@@ -9,6 +9,11 @@
     <link rel="icon" href="../standard format/logo.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="../javascript/calendar.js" defer></script>
+    <style>
+      h1, .heading{
+      font-family: 'Playfair Display', serif;
+      }    
+      </style>
 </head>
 
 <body>
@@ -59,31 +64,63 @@
   </nav>
 
     <div class="reserve-container">
-        <h1 class="heading">BOOK A RESERVATION</h1>
+        <h1 class="heading">Book a Reservation</h1>
 
-        <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          document.getElementById("submit-reservation").addEventListener("click", function (event) {
-            event.preventDefault();
+<script>
+  window.onload = function () {
+    const submitButton = document.getElementById("submit-reservation");
+    const nameInput = document.getElementById("name");
+    const phoneInput = document.getElementById("phone-number");
+    const guestInput = document.getElementById("children");
+    const timeSelect = document.getElementById("time-select");
 
-            // Get user inputs
-            const name = document.getElementById("name").value;
-            const selectedTime = document.getElementById("time-select").value;
+    function checkInputs() {
+      if (
+        nameInput.value.trim() !== "" &&
+        phoneInput.value.trim() !== "" &&
+        guestInput.value.trim() !== "" &&
+        timeSelect.value.trim() !== ""
+      ) {
+        submitButton.disabled = false; 
+      } else {
+        submitButton.disabled = true; 
+      }
+    }
 
-            // Store name and time in localStorage (for thank you page)
-            localStorage.setItem("Name", name);
-            localStorage.setItem("selectedTime", selectedTime);
+    nameInput.addEventListener("input", checkInputs);
+    phoneInput.addEventListener("input", checkInputs);
+    guestInput.addEventListener("input", checkInputs);
+    timeSelect.addEventListener("change", checkInputs);
 
-            // Redirect to the thank you page
-            window.location.href = "thankYouReservation.html"; 
-          });
-        });
+    submitButton.disabled = true;
 
-        function goBack() {
-            window.location.href = "reservationPage.html"; 
-        }
-        </script>
+    submitButton.addEventListener("click", function (event) {
+      event.preventDefault();
 
+      if (
+        nameInput.value.trim() === "" ||
+        phoneInput.value.trim() === "" ||
+        guestInput.value.trim() === "" ||
+        timeSelect.value.trim() === ""
+      ) {
+        alert("Please complete the entire form before submitting.");
+        return;
+      }
+
+      localStorage.setItem("Name", nameInput.value);
+      localStorage.setItem("selectedTime", timeSelect.value);
+
+      window.location.href = "thankYouReservation.html";
+    });
+  };
+
+  function goBack() {
+    window.location.href = "reservationPage.html";
+  }
+</script>
+
+        
+<br>
         <button class="goback-button" onclick="goBack()">Go Back</button><br>
 
         <div class="form-wrapper">

@@ -299,7 +299,7 @@ header .current-date {
 
 
 .dropdown-group {
-  width: 45%; 
+  width: 45%;
 }
 
 
@@ -368,7 +368,7 @@ header .current-date {
 
 #cart-container {
   display: flex;
-  width: 52.5%;
+  width: 100%;
   background: #f5f5f5;
   padding: 15px;
   border-bottom-right-radius: 16px;
@@ -384,7 +384,7 @@ header .current-date {
 
 #cart-container-h1 {
   display: flex;
-  width: 52.5%;
+  width: 100%;
   background: #f5f5f5;
   padding: 15px;
   border-top-right-radius: 16px;
@@ -394,7 +394,6 @@ header .current-date {
   top: 100px;    
   z-index: 10;
   flex-direction:column;
-  margin-top: 5vw;
   text-align: center;
 }
 

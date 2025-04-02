@@ -18,7 +18,7 @@
   }
 
 h2 {
-    font-family: "Barlow Condensed";
+    font-family: 'Playfair Display', serif;
     font-size: 40px;
     width: 50%; 
     text-align: left; 
@@ -54,7 +54,9 @@ h2 {
     display: none;
 }
 
-
+.dropdown-select {
+    color: #555;
+  }
 
 .dropc-link {
     display: inline-block;
@@ -255,7 +257,7 @@ h2 {
 
 #heading {
     display: flex;
-    font-family: 'Barlow Condensed';
+    font-family: 'Playfair Display', serif;
     font-weight: 250;
     font-size: 180%;
     letter-spacing: 3px;
@@ -1082,7 +1084,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: opacity .3s ease-in-out;
-    transform: translate(10vw, -75vw);
+    transform: translate(10vw, -70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     z-index: 174;
     position: absolute;
@@ -1119,7 +1121,7 @@ h2 {
 }
 
 #chicken-fact {
-    width: clamp(5rem, 5vw, 6rem);
+    width: clamp(7rem, 5vw, 6rem);
     max-height: 30vw;
     padding: clamp(.3rem, 1.5vw, 3rem);
     line-height: clamp(.3rem, 1.5vw, 3.2rem);
@@ -1147,7 +1149,7 @@ h2 {
 }
 
 #compost-fact {
-    width: clamp(5rem, 5vw, 6rem);
+    width: clamp(7rem, 5vw, 6rem);
     max-height: 30vw;
     padding: clamp(.3rem, 1.5vw, 3rem);
     line-height: clamp(.3rem, 1.5vw, 3.2rem);
@@ -1170,17 +1172,20 @@ h2 {
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 170;
+    display: none;
 
 }
 
 #chef-fact {
-    width: 270px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(7rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
     
 }
 
@@ -1201,6 +1206,34 @@ h2 {
 
 
 #coconut-fact {
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: fit-content;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
+    transition: all 0s;
+    font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
+    
+}
+
+#greenhouse-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    transform: translate();
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
+    z-index: 173;
+    display: none;
+
+}
+
+#greenhouse-fact {
     width: clamp(5rem, 5vw, 6rem);
     max-height: fit-content;
     padding: clamp(.3rem, 1.5vw, 3rem);
@@ -1238,6 +1271,7 @@ h2 {
 }
 #chef:hover ~ #chef-fact-container {
     opacity: 1;
+    display: block;
 }
 #chicken:hover ~ #chicken-fact-container {
     opacity: 1;
@@ -1258,6 +1292,11 @@ h2 {
 
 #chicken:hover {
     filter: brightness(.8);
+}
+
+#greenhouse:hover ~ #greenhouse-fact-container {
+    opacity: 1;
+    display: block;
 }
 
 #farm {
@@ -1289,10 +1328,8 @@ h2 {
     height: auto;
     object-fit: contain;
     transform: translate(30%,-20%) rotate(0deg);
-    cursor: pointer;
     z-index: 171;
     transition: all .3s ease-in;
-    
 }
 
 #watering {
@@ -1301,7 +1338,6 @@ h2 {
     object-fit: contain;
     transform: translate(140%,-55%);
     height: auto;
-    cursor: pointer;
     transition: all .3s ease-in;
 }
 
@@ -1587,6 +1623,85 @@ h2 {
 }
 
 @media (min-width: 1150px){
+    #greenhouse-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(500px, 250px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 173;
+        display: none;
+    
+    }
+    
+    #greenhouse-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        
+    }
+    #chef-fact-container {
+        opacity: 0;
+        width: 270px;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(730px, -920px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 170;
+        display: none;
+    
+    }
+    
+    #chef-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        
+    }
+    
+    #truck-fact-container {
+        opacity: 0;
+        width: 270px;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(730px, -920px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 170;
+        transition: all .3s ease-in;
+        display: block
+     }
+     
+     
+     #truck-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        transition: all .3s ease-in;
+     }
+     
+    
     #coconut-fact-container {
         opacity: 0;
         width: fit-content;
@@ -1594,7 +1709,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(680px,-475px);
+        transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         display: block;
@@ -1630,7 +1745,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .5s ease-in-out;
-        transform: translate(-300px, -990px);
+        transform: translate(580px,-700px);
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         scale: .9;
@@ -1644,7 +1759,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(-260px,-775px);
+        transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: block;
      
@@ -1671,10 +1786,9 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(580px,-475px);
+        transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
- 
+        display: block;        
     }
  
  
@@ -1695,9 +1809,9 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(680px,-705px);
+        transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
+        display: none;
 
      
      }
@@ -2210,4 +2324,8 @@ h2 {
     z-index: 300;
     left: 10vw;
     top: 10vh;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+
 }
