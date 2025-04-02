@@ -18,7 +18,7 @@
   }
 
 h2 {
-    font-family: "Barlow Condensed";
+    font-family: 'Playfair Display', serif;
     font-size: 40px;
     width: 50%; 
     text-align: left; 
@@ -54,7 +54,9 @@ h2 {
     display: none;
 }
 
-
+.dropdown-select {
+    color: #555;
+  }
 
 .dropc-link {
     display: inline-block;
@@ -255,7 +257,7 @@ h2 {
 
 #heading {
     display: flex;
-    font-family: 'Barlow Condensed';
+    font-family: 'Playfair Display', serif;
     font-weight: 250;
     font-size: 180%;
     letter-spacing: 3px;
@@ -1673,8 +1675,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(580px,-475px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
- 
+        display: block;        
     }
  
  
