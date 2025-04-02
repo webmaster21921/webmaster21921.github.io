@@ -276,7 +276,7 @@ header .current-date {
 }
 
 .number_input-input:focus {
-  border-color: #9B59B6;
+  border-color: #4CAF50;
   outline: none;
   box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
 }
@@ -316,7 +316,7 @@ header .current-date {
 }
 
 .dropdown-select:focus {
-  border-color: #9B59B6;
+  border-color: #4CAF50;
   outline: none;
   box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
 }
@@ -368,7 +368,7 @@ header .current-date {
 
 #cart-container {
   display: flex;
-  width: 100%;
+  width: 60%;
   background: #f5f5f5;
   padding: 15px;
   border-bottom-right-radius: 16px;
@@ -384,7 +384,7 @@ header .current-date {
 
 #cart-container-h1 {
   display: flex;
-  width: 100%;
+  width: 60%;
   background: #f5f5f5;
   padding: 15px;
   border-top-right-radius: 16px;

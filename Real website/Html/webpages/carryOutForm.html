@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    
     <div class = "left side"> 
         <p id="heading"> EMBÊR </p>
         <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
@@ -63,9 +64,21 @@
     </nav>
 
         
+    
+        <script>
+            function goBack() {
+                window.location.href = "carryOutPage.html"; }
+        </script>
+
+
+<div class="carryout-top-container">
+    <button class="goback-button" onclick="goBack()">Go Back</button>
+    <h3>Select items to add to your cart.</h3>
+</div>
+       
     <div class="menu">
         <div class="menu-container">
-            <h1>Menu</h1>
+            <h1>Carryout Menu</h1>
             <div class="column">
                 <div class="menu-section">
                     <h3>Appetizers</h3>
@@ -167,9 +180,12 @@
             </div>
         </div>
     </div>
+    </div>
 
 
-
+<br>
+<br>
+<br>
     <h1 id="cart-container-h1">Cart</h1>
     <div id="cart-container">
         <ul id="cart-list"></ul>
@@ -181,7 +197,7 @@
         <button id="confirm-btn">Confirm</button>
         <button id="cancel-btn">Cancel</button>
     </div>
-
+</div>
     </html>
 
 </body>

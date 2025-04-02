@@ -396,6 +396,23 @@ h2 {
     padding-bottom: 3%
 }
 
+.carryout-top-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    top: 20%;
+    left: 38%;
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white; 
+    padding-bottom: 3%;
+    margin-top: -100px;
+    height: 120px
+}
+
 .container {
     display: flex;
     position: relative;
@@ -1168,7 +1185,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(730px, -920px);
+    transform: translate(20px, -280px);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 170;
@@ -1320,6 +1337,19 @@ h2 {
 #chicken:hover {
     filter: brightness(.8);
 }
+
+#greenhouse:hover {
+    filter: brightness(.8);
+}
+
+#chef:hover {
+    filter: brightness(.8);
+}
+
+#truck:hover {
+    filter: brightness(.8);
+}
+
 
 #greenhouse:hover ~ #greenhouse-fact-container {
     opacity: 1;
@@ -2168,8 +2198,7 @@ h2 {
     justify-content: center;
     text-align: center;
     margin: 0 auto; /* Centers the container horizontally */
-    margin-top: 5%;
-
+    margin-top: 10%
 }
 
 /* Menu title */
