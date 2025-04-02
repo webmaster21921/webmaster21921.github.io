@@ -1246,6 +1246,34 @@ h2 {
     
 }
 
+#chef-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    transform: translate();
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
+    z-index: 173;
+    display: none;
+
+}
+
+#chef-fact {
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: fit-content;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
+    transition: all 0s;
+    font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
+    
+}
+
 #coconut-tree:hover ~ #coconut-fact-container {
     opacity: 1;
     display: block;
@@ -1658,7 +1686,7 @@ h2 {
         transform: translate(730px, -920px);
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
-        z-index: 170;
+        z-index: 173;
         display: none;
     
     }
