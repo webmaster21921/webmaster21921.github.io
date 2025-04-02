@@ -402,20 +402,22 @@ h2 {
 
 .carryout-top-container {
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
-    width: 480px;
-    top: 20%;
-    left: 38%;
-    background: rgba(0, 0, 0, 0.7); 
+    text-align: center;
+    width: clamp(400px,25vw,990px);
+    position: relative;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
-    color: white; 
+    color: white;
     padding-bottom: 3%;
+    height: 120px;
     margin-top: -100px;
-    height: 120px
-}
+  }
 
 .container {
     display: flex;
