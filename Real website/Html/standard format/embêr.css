@@ -264,7 +264,7 @@ h2 {
     text-shadow: 1px 0px 10px #0000002c;
     color: rgb(0, 52, 10);
     user-select: none;
-    top:.5%;
+    top:0.2%;
     left: 60px;
     position: fixed;
     font-weight: 0.2;
