@@ -2009,7 +2009,7 @@ h2 {
     margin-left: 5%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
@@ -2045,7 +2045,7 @@ h2 {
     margin-left: 6%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
@@ -2072,7 +2072,7 @@ h2 {
   .composte-container {
     position: relative;
     display: inline-block;
-    width: clamp(80px, 21.5vw, 527px);
+    width: clamp(110px, 25vw, 410px);
   }
   
   .composte-container .composte-text {
@@ -2081,7 +2081,7 @@ h2 {
     margin-left: 6%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
