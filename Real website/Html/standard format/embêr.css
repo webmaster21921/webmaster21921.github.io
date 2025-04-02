@@ -683,6 +683,19 @@ h2 {
 
 }
 
+.references-back {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top:0px;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -1390,6 +1403,17 @@ h2 {
     margin-top: 30vh;
     overflow-y: hidden;
     user-select: none;
+}
+
+.prep-paragraph {
+    color: black;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    position: absolute;
+    width: 40vw;
+    text-align: left;
+    z-index: 200;
+    font-weight: 0;
+    top: 30%;
 }
 
 .img {
