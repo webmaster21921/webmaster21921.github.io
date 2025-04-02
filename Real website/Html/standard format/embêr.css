@@ -2399,13 +2399,14 @@ h2 {
 
 .embed-container {
     position: absolute;
-    width: 80vw;
+    width: 56vw;
     height: 120vh;
     z-index: 300;
-    left: 10vw;
+    left: 22vw;
     top: 10vh;
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;      /* Center vertically */
+    
 
 }

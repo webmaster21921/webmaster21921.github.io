@@ -19,47 +19,68 @@
     
 
     <nav class="nav-bar">
-    <div class="navlink-container">
-      <div class="dropcdown">
-        <button id="dropc-btn" class="navc-link"> ≡ </button>
-        <div class="dropc-links">
-          <a class="dropc-link" href="index.html"> HOME </a>
-          <a class="dropc-link" href="#" onclick="scrollToAbout()"> ABOUT </a>
-          <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
-          <a class="dropc-link" href="menuPage.html"> MENU </a>
-          <a class="dropc-link" href="reservePage.html"> RESERVE </a>
-          <a class ="dropc-link" href="referencePage.html"> REFERENCES </a>
-
-        </div>
-      </div>
-
-        <form action = "index.html">
-            <button class="nav-link">HOME</button>
-        </form>
-        <form>
-            <button class="nav-link" onclick="scrollToAbout()">ABOUT</button>
-        </form>
-        <div class="dropdown">
-            <button id='drop-btn'class="nav-link">CONTACT US</button>
-            <div class="drop-links">
-                <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
-                <a href="mailto:emberdining@gamil.com"class= 'mail-link'><b>Email:</b><br>emberdining@gamil.com</a>
+        <div class="navlink-container">
+          <div class="dropcdown">
+            <button id="dropc-btn" class="navc-link"> ≡ </button>
+            <div class="dropc-links">
+              <a class="dropc-link" href="index.html"> HOME </a>
+              <a class="dropc-link" href="index.html?scroll=about"> ABOUT </a>
+              <a class="dropc-link"> CONTACT US</a> <!-- jase code work here -->
+              <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
+              <a class="dropc-link" href="menuPage.html"> MENU </a>
+              <a class="dropc-link" href="reservePage.html"> RESERVE </a>
+              <form onsubmit="goToAbout(event)">
+                <a onsubmit="goToAbout(event)" class ="dropc-link" href="referencePage.html"> REFERENCES </a>
+              </form>
             </div>
-        </div>
-        <form action = "sustainabilityPage.html">
-            <button class="nav-link">SUSTAINABILITY</button>
-        </form>
-        <form action = "menuPage.html">
-            <button class="nav-link">MENU</button>
-        </form>
-        <form action = "reservePage.html">
-            <button class="nav-link">RESERVE</button>
-        </form>
-        <form action = "referencePage.html">
-          <button class="nav-link">REFERENCES</button>
-        </form>
-      </div>
-    </nav>
+          </div>
+    
+            <form action = "index.html">
+                <button class="nav-link">HOME</button>
+            </form>
+            <form onsubmit="goToAbout(event)">
+                <button class="nav-link" type="submit">ABOUT</button>
+            </form>
+          
+            <div class="dropdown">
+                <button id='drop-btn'class="nav-link">CONTACT US</button>
+                <div class="drop-links">
+                    <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
+                    <a href="mailto:emberdining@gmail.com"class= 'mail-link'><b>Email:</b><br>emberdining@gmail.com</a>
+                </div>
+            </div>
+            <form action = "sustainabilityPage.html">
+                <button class="nav-link">SUSTAINABILITY</button>
+            </form>
+            <form action = "menuPage.html">
+                <button class="nav-link">MENU</button>
+            </form>
+            <form action = "reservePage.html">
+                <button class="nav-link">RESERVE</button>
+            </form>
+            <form action = "referencePage.html">
+              <button class="nav-link">REFERENCES</button>
+            </form>
+          </div>
+          
+          <script>
+            function goToAbout(event) {
+                event.preventDefault(); 
+                window.location.href = "index.html?scroll=about";
+            }
+        </script>
+        
+        <script>
+          window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('scroll') === 'about') {
+              document.getElementById("end-container").scrollIntoView({ behavior: "smooth" });
+            }
+          };
+        </script>
+    
+        </nav>
+
 
     <div class="menu">
         <div class="menu-container">
