@@ -680,7 +680,6 @@ h2 {
 }
 .slide-text {
     color: black;
- 
     font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     bottom: 8px;
@@ -1269,6 +1268,9 @@ h2 {
 }
 
 #greenhouse-fact {
+    display: flex;
+    justify-items: center;
+    align-items: center;
     width: clamp(5rem, 5vw, 6rem);
     max-height: fit-content;
     padding: clamp(.3rem, 1.5vw, 3rem);
