@@ -130,7 +130,7 @@
   align-items: center;        
   overflow-x: auto;           
   overflow-y: hidden;
-  background: linear-gradient(to bottom, white, #faf7ed, #faf7ed, #faf7ed);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #faf7ed, #faf7ed, #faf7ed);
   margin: 0;
   position: relative;
   z-index: 8;

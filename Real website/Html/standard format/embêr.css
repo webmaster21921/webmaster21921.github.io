@@ -1071,7 +1071,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: opacity .3s ease-in-out;
-    transform: translate(10vw, -45vw);
+    transform: translate(10vw, -75vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     z-index: 174;
     position: absolute;
@@ -1191,7 +1191,7 @@ h2 {
 
 #coconut-fact {
     width: clamp(5rem, 5vw, 6rem);
-    max-height: 30vw;
+    max-height: fit-content;
     padding: clamp(.3rem, 1.5vw, 3rem);
     line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
@@ -1667,7 +1667,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(680px,-475px);
+        transform: translate(580px,-475px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: block;
  
@@ -1694,6 +1694,7 @@ h2 {
         transform: translate(680px,-705px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: block;
+
      
      }
      
