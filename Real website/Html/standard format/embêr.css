@@ -10,6 +10,11 @@
     width: 100%;
     height: 100%;
     overflow-x: hidden; 
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
   }
 
 h2 {
@@ -597,7 +602,7 @@ h2 {
     text-wrap: wrap;
     font-family: 'playfair display';
     z-index: 172;
-    color:rgb(0, 58, 21);
+    color:black;
     text-shadow: 2px 2px 5px rgba(33, 114, 43, 0.5);
 }
 
@@ -607,7 +612,7 @@ h2 {
     text-align: center; 
     position:absolute;
     top: 14%;
-    color: #004702;
+    color: black;
     font-family: 'playfair display';
     z-index: 172;
 }
@@ -618,7 +623,7 @@ h2 {
     text-align: center; 
     position:absolute;
     top: 100%;
-    color: #003902;
+    color: black;
     left: -12vw;
     text-align: left;
     align-content: left;
@@ -628,7 +633,7 @@ h2 {
 .slide-text {
     color: black;
  
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     bottom: 8px;
     width: 80vw;
@@ -649,7 +654,7 @@ h2 {
 
 .stats-text {
     font-size: clamp(1.5rem, 2.5vw, 4rem);
-    font-family: "playfair Display";
+    font-family: " Display";
     text-align: left;
 }
 
@@ -681,6 +686,19 @@ h2 {
     background-image: url('bamboo.jpg');
     background-size: cover;
 
+}
+
+.references-back {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top:0px;
 }
 
 /* Slideshow container */
@@ -810,19 +828,19 @@ h2 {
     height: 70vh;
     z-index: 230;
     top:180vh;
-    background: linear-gradient(to bottom, #d7d7b5, #faf7ed);
+    background: white;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
+    box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
 }
 
-.statistics{
+.food-preparation{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     top: 250vh;
-    z-index: 300;
-    background-color: #faf7ed ;
+    z-index: 100;
+    background-color: hsl(46, 68%, 93%) ;
 }
 
 #hydroponics {
@@ -919,27 +937,27 @@ h2 {
 
 #truck-fact-container {
     opacity: 0;
-    width: 270px;
+    width: fit-content;
     height: fit-content;
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(730px, -920px);
+    transform: translate(10vw, -30vw);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
-    z-index: 170;
+    z-index: 173;
     transition: all .3s ease-in;
 }
 
 #truck-fact {
-    width: 270px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
     transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
 }
 
 .end-container {
@@ -991,12 +1009,14 @@ h2 {
 }
 
 #calamansi-fact {
-    width: 300px;
-
-    padding: 15px;
-    line-height: 20px;
-    transition: all .3s;
+    width: clamp(7rem, 5vw, 6rem);
+    max-height: fit-content;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
+    transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
 }
 
 #calamansi-fact-container {
@@ -1006,16 +1026,17 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(-300px, -990px);
+    transform: translate(20%,-230%);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     scale: .9;
-    
+    z-index: 173;
+    display: none;
 }
 
 #calamansi:hover + #calamansi-fact-container{
     opacity: 1;
-
+    display: block;
     
 }
 
@@ -1062,20 +1083,25 @@ h2 {
     height: fit-content;
     background-color: #c0ced4;
     border-radius: 3px;
-    transition: all .3s ease-in-out;
-    transform: translate(680px,-475px);
+    transition: opacity .3s ease-in-out;
+    transform: translate(10vw, -45vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+    z-index: 174;
+    position: absolute;
+    display: none;
 
 }
 
 #cow-fact {
-    width: 320px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(7rem, 5vw, 6rem);
+    max-height: fit-content;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
     
 }
 
@@ -1086,42 +1112,52 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(-260px,-775px);
+    transform: translate(60px,-240px);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-
+    display: block;
+    z-index: 173;
+    position: absolute;
+    display: none;
 }
 
 #chicken-fact {
-    width: 320px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
     
 }
 
 #compost-fact-container {
     opacity: 0;
     width: fit-content;
-    height: fit-content;
+    height: 1000;
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(680px,-705px);
+    transform: translate(16vw,-30vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
+    z-index: 174;
+    display: none;
+
 
 }
 
 #compost-fact {
-    width: 320px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
     
 }
 
@@ -1157,46 +1193,57 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(680px,-475px);
+    transform: translate(25vw,-40vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
+    z-index: 174;
+    display: none;
 
 }
 
 
 #coconut-fact {
-    width: 320px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
-    position: relative;
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
     
 }
 
 #coconut-tree:hover ~ #coconut-fact-container {
     opacity: 1;
+    display: block;
 }
 
-#cow1:hover ~ #cow-fact-container {
+ #cow3:hover  ~ #cow-fact-container {
     opacity: 1;
+    display: block;
 }
-#cow2:hover ~ #cow-fact-container {
+
+#cow2:hover  ~ #cow-fact-container {
     opacity: 1;
+    display: block;
 }
-#cow3:hover ~ #cow-fact-container {
+#cow1:hover  ~ #cow-fact-container {
     opacity: 1;
+    display: block;
 }
+
 #compost:hover ~ #compost-fact-container {
     opacity: 1;
+    display: block;
 }
 #chef:hover ~ #chef-fact-container {
     opacity: 1;
 }
 #chicken:hover ~ #chicken-fact-container {
     opacity: 1;
+    display: block;
 }
 
 #coconut-tree:hover {
@@ -1378,7 +1425,51 @@ h2 {
     transform: translate(95%, -50%);
 }
 
+.steaming-container {
+    width: 30vw;
+    aspect-ratio: 3 / 4;
+    overflow-x: auto; 
+    justify-content: flex-start;
+    background-color: transparent;
+    position: absolute;
+    left: 55vw;
+    z-index: 208;
+    margin-top: 60vh;
+    overflow-y: hidden;
+    user-select: none;
+}
+
+.prep-paragraph1 {
+    color: black;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    position: absolute;
+    width: 80vw;
+    text-align: left;
+    z-index: 200;
+    font-weight: 0;
+    top: 0;
+}
+
+.prep-paragraph2 {
+    color: black;
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    position: absolute;
+    width: 40vw;
+    text-align: left;
+    z-index: 200;
+    font-weight: 0;
+    top: 30vh;
+}
+
 .img {
+    width: auto; 
+    height: 30vh; 
+    flex: 0 0 auto;
+    border-radius: 60px;
+    
+}
+
+.img2 {
     width: auto; 
     height: 30vh; 
     flex: 0 0 auto;
@@ -1493,7 +1584,7 @@ h2 {
     .gallery {
         top: 150vh;
     }
-    .statistics {
+    .food-preparation {
         top: 220vh;
     }
 
@@ -1502,6 +1593,137 @@ h2 {
         height: 20vh;
     }
     
+}
+
+@media (min-width: 1150px){
+    #coconut-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+        transform: translate(680px,-475px);
+        box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        display: block;
+     
+     
+     }
+     
+     #coconut-fact {
+        width: 320px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        position: relative;
+       
+     }
+     
+     #calamansi-fact {
+        width: 300px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all .3s;
+        font-family: "barlow condensed";
+     }
+     
+     
+     #calamansi-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(-300px, -990px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        scale: .9;
+        display: block;
+       
+     }
+     #chicken-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+        transform: translate(-260px,-775px);
+        box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+        display: block;
+     
+     }
+     
+     
+     #chicken-fact {
+        width: 320px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+       
+     }
+     
+    
+
+    #cow-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+        transform: translate(680px,-475px);
+        box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+        display: block;
+ 
+    }
+ 
+ 
+    #cow-fact {
+        width: 320px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+   
+    }
+    #compost-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .3s ease-in-out;
+        transform: translate(680px,-705px);
+        box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
+        display: block;
+     
+     }
+     
+     
+     #compost-fact {
+        width: 320px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        
+     }
+     
+ 
+     
 }
 
 .dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
