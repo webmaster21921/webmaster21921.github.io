@@ -356,7 +356,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('stirfry.jpg');
+    background-color: #faf7ed;
     background-size: cover;
     background-position: center;
     z-index: 0; 
@@ -1037,6 +1037,10 @@ h2 {
     overflow-y: hidden;
     user-select: none;
     font-family: "barlow condensed";
+    clear: both;
+    bottom: 0;
+    margin-bottom: 0px;
+    position: relative;
   }
 
 
