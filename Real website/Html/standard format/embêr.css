@@ -1172,17 +1172,20 @@ h2 {
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 170;
+    display: none;
 
 }
 
 #chef-fact {
-    width: 270px;
-    height: fit-content;
-    margin-top: 00px;
-    padding: 15px;
-    line-height: 20px;
+    width: clamp(7rem, 5vw, 6rem);
+    max-height: 30vw;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
     transition: all 0s;
     font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
     
 }
 
@@ -1240,6 +1243,7 @@ h2 {
 }
 #chef:hover ~ #chef-fact-container {
     opacity: 1;
+    display: block;
 }
 #chicken:hover ~ #chicken-fact-container {
     opacity: 1;
@@ -1589,6 +1593,32 @@ h2 {
 }
 
 @media (min-width: 1150px){
+    #chef-fact-container {
+        opacity: 0;
+        width: 270px;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(730px, -920px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 170;
+        display: none;
+    
+    }
+    
+    #chef-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        
+    }
+    
     #truck-fact-container {
         opacity: 0;
         width: 270px;
