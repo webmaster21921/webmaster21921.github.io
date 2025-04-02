@@ -2064,25 +2064,30 @@ h2 {
   
   .green-container .green-text {
     position: absolute;
+    margin-top: -0.8vw;
     top: 0;
+    height: 27vw;
     margin-left: 5%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     border-radius: 20px;
     font-size:clamp(0.6rem, 2.7vw, 1.8rem);
+    border: 2px solid transparent;
 
   }
   
   .green-container:hover .green-text {
     opacity: 1;                 /* shows on hover */
+    border-color: rgb(150, 199, 149); 
+    
   }
   /* water award stuff */
 
@@ -2101,24 +2106,27 @@ h2 {
   .water-container .water-text {
     position: absolute;
     top: 0;
+    height: 27vw;
     margin-left: 6%;
+    margin-top: 4%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
     border-radius: 20px;
     font-size:clamp(0.56rem, 2.3vw, 1.8rem);
-
+    border: 2px solid transparent;
   }
   
   .water-container:hover .water-text {
     opacity: 1;                 /* shows on hover */
+    border-color: rgb(149, 175, 199); 
   }
 
   /* composte stuff */ 
@@ -2132,29 +2140,33 @@ h2 {
     position: relative;
     display: inline-block;
     width: clamp(110px, 25vw, 410px);
+    
   }
   
   .composte-container .composte-text {
     position: absolute;
     top: 0;
+    height: 27vw;
     margin-left: 6%;
+    margin-top: 5%;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: opacity 0.3s ease;
+    transition: all 0.5s ease;
     border-radius: 20px;
     font-size:clamp(0.56rem, 2.3vw, 1.8rem);
-
+    border: 2px solid transparent;
   }
   
   .composte-container:hover .composte-text {
     opacity: 1;                 /* shows on hover */
+    border-color: rgb(199, 170, 149); 
   }
 
   .row {
