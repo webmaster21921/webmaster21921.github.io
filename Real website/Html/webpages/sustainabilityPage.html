@@ -17,47 +17,50 @@
 
 <body>
    
-    <div class="left side">
+    <div class = "left side"> 
         <p id="heading"> EMBÊR </p>
         <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
     </div>
+
     <nav class="nav-bar">
-        <div class="navlink-container">
-          <div class="dropcdown">
-            <button id="dropc-btn" class="navc-link"> ≡ </button>
-            <div class="dropc-links">
-              <a class="dropc-link" href="index.html"> HOME </a>
-              <a class="dropc-link" href="aboutPage.html"> CONTACT US</a>
-              <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
-              <a class="dropc-link" href="menuPage.html"> MENU </a>
-              <a class="dropc-link" href="reservePage.html"> RESERVE </a>
+    <div class="navlink-container">
+      <div class="dropcdown">
+        <button id="dropc-btn" class="navc-link"> ≡ </button>
+        <div class="dropc-links">
+          <a class="dropc-link" href="index.html"> HOME </a>
+          <a class="dropc-link" id="drop-btn"> CONTACT US</a> <!-- jase code work here -->
+          <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
+          <a class="dropc-link" href="menuPage.html"> MENU </a>
+          <a class="dropc-link" href="reservePage.html"> RESERVE </a>
+          <a class ="dropc-link" href="referencePage.html"> REFERENCES </a>
+
+        </div>
+      </div>
+
+        <form action = "index.html">
+            <button class="nav-link">HOME</button>
+        </form>
+        <div class="dropdown">
+            <button id='drop-btn'class="nav-link">CONTACT US</button>
+            <div class="drop-links">
+                <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
+                <a href="mailto:emberdining@gamil.com"class= 'mail-link'><b>Email:</b><br>emberdining@gamil.com</a>
             </div>
         </div>
-    
-            <form action = "index.html">
-                <button class="nav-link">HOME</button>
-            </form>
-            <div class="dropdown">
-                <button id='drop-btn'class="nav-link">CONTACT US</button>
-                <div class="drop-links">
-                    <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
-                    <a href="mailto:lebronjames@yahoo.com"class= 'mail-link'><b>Email:</b><br>lebronjames@yahoo.com</a>
-                </div>
-            </div>
-            <form action = "sustainabilityPage.html">
-                <button class="nav-link">SUSTAINABILITY</button>
-            </form>
-            <form action = "menuPage.html">
-                <button class="nav-link">MENU</button>
-            </form>
-            <form action = "reservePage.html">
-                <button class="nav-link">RESERVE</button>
-            </form>
-            <form action = "referencePage.html">
-                <button class="nav-link">REFERENCES</button>
-            </form>
-        </div>
-        </nav>
+        <form action = "sustainabilityPage.html">
+            <button class="nav-link">SUSTAINABILITY</button>
+        </form>
+        <form action = "menuPage.html">
+            <button class="nav-link">MENU</button>
+        </form>
+        <form action = "reservePage.html">
+            <button class="nav-link">RESERVE</button>
+        </form>
+        <form action = "referencePage.html">
+          <button class="nav-link">REFERENCES</button>
+        </form>
+      </div>
+    </nav>
 
     <div class="background-container">
         <h1 class='name1'>Our Environmental Mission</h1>
