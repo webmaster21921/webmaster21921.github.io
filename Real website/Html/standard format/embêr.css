@@ -1218,6 +1218,34 @@ h2 {
     
 }
 
+#greenhouse-fact-container {
+    opacity: 0;
+    width: fit-content;
+    height: fit-content;
+    background-color: #c0ced4;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+    transform: translate();
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+    position: absolute;
+    z-index: 173;
+    display: none;
+
+}
+
+#greenhouse-fact {
+    width: clamp(5rem, 5vw, 6rem);
+    max-height: fit-content;
+    padding: clamp(.3rem, 1.5vw, 3rem);
+    line-height: clamp(.3rem, 1.5vw, 3.2rem);
+    transition: all 0s;
+    font-family: "barlow condensed";
+    transition: all .3s ease-in;
+    font-size: clamp(.3rem, 1.3vw, 3rem);
+    z-index: 174
+    
+}
+
 #coconut-tree:hover ~ #coconut-fact-container {
     opacity: 1;
     display: block;
@@ -1266,6 +1294,11 @@ h2 {
     filter: brightness(.8);
 }
 
+#greenhouse:hover ~ #greenhouse-fact-container {
+    opacity: 1;
+    display: block;
+}
+
 #farm {
     top: 300px;
     right: 150px;
@@ -1295,10 +1328,8 @@ h2 {
     height: auto;
     object-fit: contain;
     transform: translate(30%,-20%) rotate(0deg);
-    cursor: pointer;
     z-index: 171;
     transition: all .3s ease-in;
-    
 }
 
 #watering {
@@ -1307,7 +1338,6 @@ h2 {
     object-fit: contain;
     transform: translate(140%,-55%);
     height: auto;
-    cursor: pointer;
     transition: all .3s ease-in;
 }
 
@@ -1593,6 +1623,31 @@ h2 {
 }
 
 @media (min-width: 1150px){
+    #greenhouse-fact-container {
+        opacity: 0;
+        width: fit-content;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(500px, 250px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 173;
+        display: none;
+    
+    }
+    
+    #greenhouse-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        
+    }
     #chef-fact-container {
         opacity: 0;
         width: 270px;
