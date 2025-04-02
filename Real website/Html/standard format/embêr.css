@@ -819,7 +819,7 @@ h2 {
 .food-preparation{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     top: 250vh;
     z-index: 100;
     background-color: hsl(46, 68%, 93%) ;
@@ -1378,6 +1378,20 @@ h2 {
     transform: translate(95%, -50%);
 }
 
+.steaming-container {
+    width: 30vw;
+    aspect-ratio: 3 / 4;
+    overflow-x: auto; 
+    justify-content: flex-start;
+    background-color: transparent;
+    position: absolute;
+    left: 55vw;
+    z-index: 208;
+    margin-top: 30vh;
+    overflow-y: hidden;
+    user-select: none;
+}
+
 .img {
     width: auto; 
     height: 30vh; 
@@ -1493,7 +1507,7 @@ h2 {
     .gallery {
         top: 150vh;
     }
-    .statistics {
+    .food-preparation {
         top: 220vh;
     }
 
