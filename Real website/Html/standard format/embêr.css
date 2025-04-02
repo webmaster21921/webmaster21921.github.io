@@ -688,20 +688,6 @@ h2 {
 
 }
 
-.references-back {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    height: 100vh; 
-    overflow: hidden;
-    z-index: 15;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    top:0px;
-    background-color: black;
-}
-
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -2091,4 +2077,35 @@ h2 {
     .menu-img {
         width: 90%; /* Makes images wider on small screens */
     }
+}
+
+/* referencesPage ids and classes */
+
+.references-back {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: 15;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top:0px;
+    background-color: black;
+}
+
+.works-cited {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 230;
+    background: white;
+    transition: all .3 ease-in-out;
+    background-repeat: no-repeat;
+    box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
+}
+
+.mla-format {
+
 }
