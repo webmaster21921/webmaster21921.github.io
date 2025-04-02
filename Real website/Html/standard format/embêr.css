@@ -713,11 +713,12 @@ h2 {
     position: absolute;
     bottom: 8px;
     width: 80vw;
-    text-align: left;
+    text-align: justify;
     z-index: 200;
     font-weight: 0;
     left: -12vw;
     top: 120%;
+    
 
 }
 
@@ -1590,10 +1591,11 @@ h2 {
     font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     width: 80vw;
-    text-align: left;
+    text-align: justify;
     z-index: 200;
     font-weight: 0;
     top: 0;
+
 }
 
 .prep-paragraph2 {
@@ -1601,7 +1603,7 @@ h2 {
     font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     width: 40vw;
-    text-align: left;
+    text-align: justify;
     z-index: 200;
     font-weight: 0;
     top: 30vh;
