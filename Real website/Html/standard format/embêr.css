@@ -608,6 +608,7 @@ h2 {
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     text-align:center;
+    justify-content: center;
     color: white;
     user-select: none;
     position: relative;
