@@ -547,12 +547,13 @@ h2 {
   }
   
   .undername {
-    font-size: clamp(1.3rem, 6vw, 4rem);
+    font-size: clamp(1.3rem, 6vw, 3.8rem);
     color: white;
     text-shadow: 4px 3px 5px #000000;
     animation: go-up 1s forwards;
     opacity: 0;
     animation-delay: 0.3s;
+    text-wrap: nowrap;
   }
   
   @keyframes go-up {
@@ -1535,7 +1536,7 @@ h2 {
 
 .steaming-container {
     width: 30vw;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 3;
     height: auto;
     justify-content: flex-start;
     background-color: transparent;
@@ -1545,7 +1546,7 @@ h2 {
     margin-top: 60vh;
     overflow-y: hidden;
     user-select: none;
-    border-radius: 12px;
+    border-radius: 6vw;
 }
 
 .prep-paragraph1 {
@@ -2389,7 +2390,8 @@ h2 {
     justify-content: center;
     margin: 0;
     top:0px;
-    background-color: black;
+    background-image: url('terraces.jpg');
+    background-size: cover;
 }
 
 .works-cited {
