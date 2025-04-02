@@ -1026,7 +1026,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(20%,-230%);
+    transform: translate(15vw,-80vw);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     scale: .9;
@@ -1112,7 +1112,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(60px,-240px);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     display: block;
     z-index: 173;
@@ -1139,7 +1139,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(16vw,-30vw);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 174;
@@ -1196,12 +1196,11 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(25vw,-40vw);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 174;
     display: none;
-
 }
 
 
@@ -1225,7 +1224,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate();
+    transform: translate(10vw, -25vw);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 173;
@@ -1740,7 +1739,7 @@ h2 {
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
-        display: block;
+        display: none;
      
      
      }
@@ -1777,7 +1776,7 @@ h2 {
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         scale: .9;
-        display: block;
+        display: none;
        
      }
      #chicken-fact-container {
@@ -1789,7 +1788,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
+        display: none;
      
      }
      
@@ -1816,7 +1815,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;        
+        display: none;        
     }
  
  
@@ -1932,8 +1931,9 @@ h2 {
 
 
 .end-link {
-    display: inline-block;
+    display: flex;
     position: relative;   
+    text-align: center;        /* Center the lines of text within the block */
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
@@ -2018,23 +2018,112 @@ h2 {
     height: auto;
     margin-top: 2%;
   }
-  
+  /* green award stuff */
   #green {
     margin-top: 10%;
-    width: min(40%, 450px);
+    margin-left: 5%;
+    width: clamp(130px, 37vw, 500px);
     height: auto;
   }
+  .green-container {
+    position: relative;
+    display: inline-block;
+    width: clamp(130px, 40vw, 527px);
+  }
+  
+  .green-container .green-text {
+    position: absolute;
+    top: 0;
+    margin-left: 5%;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;        /* Center the lines of text within the block */
+    opacity: 0;                 /* hidden by default */
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    font-size:clamp(0.6rem, 2.7vw, 1.8rem);
+
+  }
+  
+  .green-container:hover .green-text {
+    opacity: 1;                 /* shows on hover */
+  }
+  /* water award stuff */
 
   #water {
     margin-top: 10%;
-    width: min(26%, 350px);
+    width: clamp(80px, 20vw, 500px);
     height: auto;
+    margin-left: 6%;
   }
- 
+  .water-container {
+    position: relative;
+    display: inline-block;
+    width: clamp(80px, 21.5vw, 527px);
+  }
+  
+  .water-container .water-text {
+    position: absolute;
+    top: 0;
+    margin-left: 6%;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;        /* Center the lines of text within the block */
+    opacity: 0;                 /* hidden by default */
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    font-size:clamp(0.56rem, 2.3vw, 1.8rem);
+
+  }
+  
+  .water-container:hover .water-text {
+    opacity: 1;                 /* shows on hover */
+  }
+
+  /* composte stuff */ 
   #composte {
-    margin-top: 10%;
-    width: min(35%, 400px);
+    margin-top: 1%;
+    width: clamp(110px, 30vw, 500px);
     height: auto;
+    margin-left: -4%;
+  }
+  .composte-container {
+    position: relative;
+    display: inline-block;
+    width: clamp(80px, 21.5vw, 527px);
+  }
+  
+  .composte-container .composte-text {
+    position: absolute;
+    top: 0;
+    margin-left: 6%;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;        /* Center the lines of text within the block */
+    opacity: 0;                 /* hidden by default */
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+    font-size:clamp(0.56rem, 2.3vw, 1.8rem);
+
+  }
+  
+  .composte-container:hover .composte-text {
+    opacity: 1;                 /* shows on hover */
   }
 
   .row {
@@ -2043,7 +2132,7 @@ h2 {
     align-items: center;
     gap: 0.3rem;
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: -5%;
   }
 
 
