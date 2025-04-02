@@ -2098,7 +2098,7 @@ h2 {
 .works-cited {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     z-index: 230;
     background: white;
     transition: all .3 ease-in-out;
@@ -2106,6 +2106,11 @@ h2 {
     box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
 }
 
-.mla-format {
-
+.embed-container {
+    position: absolute;
+    width: 80vw;
+    height: 120vh;
+    z-index: 300;
+    left: 10vw;
+    top: 20vw;
 }
