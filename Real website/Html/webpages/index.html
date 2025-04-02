@@ -31,16 +31,22 @@
         <button id="dropc-btn" class="navc-link"> ≡ </button>
         <div class="dropc-links">
           <a class="dropc-link" href="index.html"> HOME </a>
+          <a class="dropc-link" href="#" onclick="scrollToAbout()"> ABOUT </a>
           <a class="dropc-link"> CONTACT US</a> <!-- jase code work here -->
           <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
           <a class="dropc-link" href="menuPage.html"> MENU </a>
           <a class="dropc-link" href="reservePage.html"> RESERVE </a>
-          <a class ="dropc-link" href="referencePage.html"> REFERENCES </a>
+          <form onsubmit="goToAbout(event)">
+            <a onsubmit="goToAbout(event)" class ="dropc-link" href="referencePage.html"> REFERENCES </a>
+          </form>
         </div>
       </div>
 
         <form action = "index.html">
             <button class="nav-link">HOME</button>
+        </form>
+        <form>
+          <button class="nav-link" onclick="scrollToAbout()">ABOUT</button>
         </form>
         <div class="dropdown">
             <button id='drop-btn'class="nav-link">CONTACT US</button>
@@ -62,6 +68,21 @@
           <button class="nav-link">REFERENCES</button>
         </form>
       </div>
+      
+<script>
+  function scrollToAbout() {
+      document.getElementById("end-container").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
+<script>
+  window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('scroll') === 'about') {
+          document.getElementById("end-container").scrollIntoView({ behavior: "smooth" });
+      }
+  };
+</script>
+
     </nav>
     
     <div class="hero-section">
@@ -78,9 +99,6 @@
     </div>
       
   
-      
-      
-   
 
 
     <div class="text_bottom">
@@ -118,6 +136,7 @@
 
 
     <div class="img-scrl-container">
+      <p class="caption1">Click the images below to learn <b>about</b> Embêr.</p>
       <div class="img-scrl">
         
         <!-- First button (Clock) -->
@@ -157,7 +176,7 @@
       
     </div>
     
-    <div class="end-container">
+    <div id="end-container">
       <a target="_blank" rel="noopener noreferrer" href="https://tsaweb.org/competitions/computer-science/lists/high-school-computer-science---information-technology-competitions/webmaster" class = 'end-link'>This website was created by TSA's UCVTS chapter.</a>
     </div>
 
