@@ -602,7 +602,7 @@ h2 {
     text-wrap: wrap;
     font-family: 'playfair display';
     z-index: 172;
-    color:rgb(0, 58, 21);
+    color:black;
     text-shadow: 2px 2px 5px rgba(33, 114, 43, 0.5);
 }
 
@@ -612,7 +612,7 @@ h2 {
     text-align: center; 
     position:absolute;
     top: 14%;
-    color: #004702;
+    color: black;
     font-family: 'playfair display';
     z-index: 172;
 }
@@ -623,7 +623,7 @@ h2 {
     text-align: center; 
     position:absolute;
     top: 100%;
-    color: #003902;
+    color: black;
     left: -12vw;
     text-align: left;
     align-content: left;
@@ -633,7 +633,7 @@ h2 {
 .slide-text {
     color: black;
  
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
     position: absolute;
     bottom: 8px;
     width: 80vw;
@@ -654,7 +654,7 @@ h2 {
 
 .stats-text {
     font-size: clamp(1.5rem, 2.5vw, 4rem);
-    font-family: "playfair Display";
+    font-family: " Display";
     text-align: left;
 }
 
@@ -815,19 +815,19 @@ h2 {
     height: 70vh;
     z-index: 230;
     top:180vh;
-    background: linear-gradient(to bottom, #6a8d50, #979076);
+    background: white;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 50px 20px rgba(6, 39, 0, 0.294);
+    box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
 }
 
-.statistics{
+.food-preparation{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     top: 250vh;
-    z-index: 300;
-    background-color: #979076 ;
+    z-index: 100;
+    background-color: hsl(46, 68%, 93%) ;
 }
 
 #hydroponics {
@@ -1412,6 +1412,20 @@ h2 {
     transform: translate(95%, -50%);
 }
 
+.steaming-container {
+    width: 30vw;
+    aspect-ratio: 3 / 4;
+    overflow-x: auto; 
+    justify-content: flex-start;
+    background-color: transparent;
+    position: absolute;
+    left: 55vw;
+    z-index: 208;
+    margin-top: 30vh;
+    overflow-y: hidden;
+    user-select: none;
+}
+
 .img {
     width: auto; 
     height: 30vh; 
@@ -1535,7 +1549,7 @@ h2 {
     .gallery {
         top: 150vh;
     }
-    .statistics {
+    .food-preparation {
         top: 220vh;
     }
 
@@ -1709,6 +1723,7 @@ h2 {
     width: min(90%, 800px);
     height: auto;
     margin-top: 2%;
+    margin-left: 5%;
   }
   
   #forbes {
@@ -1741,7 +1756,37 @@ h2 {
     height: auto;
   }
   
+.acontainer {
+  position: relative; 
+  display: inline-block; 
+}
 
+.aoverlay {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 94%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+}
+
+.acontainer:hover .aoverlay {
+  opacity: 1;
+}
+
+.atext {
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 /* Menu styles */
