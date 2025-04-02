@@ -709,7 +709,7 @@ h2 {
 }
 .slide-text {
     color: black;
-    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-size: clamp(0.7rem, 2vw, 1.17rem);
     position: absolute;
     bottom: 8px;
     width: 80vw;
@@ -2158,7 +2158,7 @@ h2 {
     position: absolute;
     top: 0;
     height: clamp(110px, 27vw, 530px);
-    margin-left: 4%;
+    margin-left: 3%;
     margin-top: 4%;
     right: 0;
     bottom: 0;
