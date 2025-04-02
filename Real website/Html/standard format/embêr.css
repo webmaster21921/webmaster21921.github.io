@@ -1589,6 +1589,34 @@ h2 {
 }
 
 @media (min-width: 1150px){
+    #truck-fact-container {
+        opacity: 0;
+        width: 270px;
+        height: fit-content;
+        background-color: #c0ced4;
+        border-radius: 3px;
+        transition: all .5s ease-in-out;
+        transform: translate(730px, -920px);
+        box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
+        position: absolute;
+        z-index: 170;
+        transition: all .3s ease-in;
+        display: block
+     }
+     
+     
+     #truck-fact {
+        width: 270px;
+        height: fit-content;
+        margin-top: 00px;
+        padding: 15px;
+        line-height: 20px;
+        transition: all 0s;
+        font-family: "barlow condensed";
+        transition: all .3s ease-in;
+     }
+     
+    
     #coconut-fact-container {
         opacity: 0;
         width: fit-content;
@@ -1698,7 +1726,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(680px,-705px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
+        display: none;
 
      
      }
@@ -2121,4 +2149,8 @@ h2 {
     z-index: 300;
     left: 10vw;
     top: 10vh;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+
 }
