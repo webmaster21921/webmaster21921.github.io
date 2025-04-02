@@ -1224,7 +1224,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate();
+    transform: translate(10vw, -25vw);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 173;
