@@ -193,17 +193,17 @@ h2 {
 
 /* collapse features */
 
-@media (max-width: 985px) {
+@media (max-width: 1113px) {
     .dropcdown {
       display: block;
     }
   }
-@media (max-width: 985px) {
+@media (max-width: 1113px) {
     .nav-link {
       display: none !important;
     }
   }
-  @media (max-width: 985px) {
+  @media (max-width: 1113px) {
     .drop-links {
         pointer-events: none; 
     }
@@ -2076,9 +2076,9 @@ h2 {
   
   .green-container .green-text {
     position: absolute;
-    margin-top: -0.8vw;
+    margin-top: 1.9vw;
     top: 0;
-    height: 27vw;
+    height: clamp(90px, 25vw, 330px);
     margin-left: 5%;
     right: 0;
     bottom: 0;
@@ -2092,7 +2092,7 @@ h2 {
     transition: all 0.3s ease;
     border-radius: 20px;
     font-size:clamp(0.6rem, 2.7vw, 1.8rem);
-    border: 2px solid transparent;
+    border: 5px solid transparent;
 
   }
   
@@ -2107,7 +2107,7 @@ h2 {
     margin-top: 10%;
     width: clamp(80px, 20vw, 500px);
     height: auto;
-    margin-left: 6%;
+    margin-left: 4%;
   }
   .water-container {
     position: relative;
@@ -2118,8 +2118,8 @@ h2 {
   .water-container .water-text {
     position: absolute;
     top: 0;
-    height: 27vw;
-    margin-left: 6%;
+    height: clamp(110px, 27vw, 530px);
+    margin-left: 4%;
     margin-top: 4%;
     right: 0;
     bottom: 0;
@@ -2132,8 +2132,8 @@ h2 {
     opacity: 0;                 /* hidden by default */
     transition: all 0.3s ease;
     border-radius: 20px;
-    font-size:clamp(0.56rem, 2.3vw, 1.8rem);
-    border: 2px solid transparent;
+    font-size:clamp(0.5rem, 2.2vw, 1.8rem);
+    border: 5px solid transparent;
   }
   
   .water-container:hover .water-text {
@@ -2151,15 +2151,15 @@ h2 {
   .composte-container {
     position: relative;
     display: inline-block;
-    width: clamp(110px, 25vw, 410px);
+    width: clamp(90px, 25vw, 410px);
     
   }
   
   .composte-container .composte-text {
     position: absolute;
     top: 0;
-    height: 27vw;
-    margin-left: 6%;
+    height: clamp(100px, 27vw, 440px);
+    margin-left: 7%;
     margin-top: 5%;
     right: 0;
     bottom: 0;
@@ -2173,7 +2173,7 @@ h2 {
     transition: all 0.5s ease;
     border-radius: 20px;
     font-size:clamp(0.56rem, 2.3vw, 1.8rem);
-    border: 2px solid transparent;
+    border: 5px solid transparent;
   }
   
   .composte-container:hover .composte-text {
@@ -2186,8 +2186,7 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
-    margin-top: 1%;
-    margin-left: -5%;
+    margin-top: 2%;
   }
 
 
