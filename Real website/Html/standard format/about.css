@@ -133,7 +133,7 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #faf7ed, #faf7ed, #faf7ed);
   margin: 0;
   position: relative;
-  z-index: 8;
+  z-index: 173;
   box-sizing: border-box;
   user-select: none;
 }
@@ -148,6 +148,7 @@
   padding: 0;               
   box-sizing: border-box;
   transform: translateY(33px);
+  z-index: 173;
 }
 
 .img {
@@ -159,11 +160,12 @@
   cursor: pointer;
   user-select: none;
   -webkit-user-drag: none;
+  z-index: 173;
 }
 
 /* Optional hover effect if desired */
 .img:hover {
-  transform: scale(1.1) translateY(-10px);
+  transform: scale(1.085) translateY(1.5px);
 }
 
 .scrl-text {

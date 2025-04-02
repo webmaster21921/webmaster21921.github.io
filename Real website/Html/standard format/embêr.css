@@ -48,6 +48,10 @@ h2 {
     position: relative;
 }
 
+.img-container{
+    z-index: 173;
+}
+
 /* dropdown feature */
 .dropcdown{
     position: absolute;
@@ -656,7 +660,7 @@ h2 {
     top: 9%;
     color: #004500;
     font-family: 'playfair display';
-    z-index: 172;
+    z-index: 00;
 }
 
 .slide-caption {
@@ -1030,6 +1034,7 @@ h2 {
     padding: 10%;
     overflow-y: hidden;
     scrollbar: visible;
+    z-index: 173;
   }
 
 
@@ -1570,6 +1575,7 @@ h2 {
     height: 30vh; 
     flex: 0 0 auto;
     border-radius: 60px;
+    z-index: 170;
     
 }
 
