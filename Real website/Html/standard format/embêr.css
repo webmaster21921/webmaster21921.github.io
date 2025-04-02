@@ -1026,7 +1026,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .5s ease-in-out;
-    transform: translate(20%,-230%);
+    transform: translate(15vw,-80vw);
     box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     scale: .9;
@@ -1112,7 +1112,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(60px,-240px);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     display: block;
     z-index: 173;
@@ -1139,7 +1139,7 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(16vw,-30vw);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 174;
@@ -1196,12 +1196,11 @@ h2 {
     background-color: #c0ced4;
     border-radius: 3px;
     transition: all .3s ease-in-out;
-    transform: translate(25vw,-40vw);
+    transform: translate(15vw,-70vw);
     box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
     position: absolute;
     z-index: 174;
     display: none;
-
 }
 
 
@@ -1657,7 +1656,7 @@ h2 {
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
-        display: block;
+        display: none;
      
      
      }
@@ -1694,7 +1693,7 @@ h2 {
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         scale: .9;
-        display: block;
+        display: none;
        
      }
      #chicken-fact-container {
@@ -1706,7 +1705,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;
+        display: none;
      
      }
      
@@ -1733,7 +1732,7 @@ h2 {
         transition: all .3s ease-in-out;
         transform: translate(580px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
-        display: block;        
+        display: none;        
     }
  
  
