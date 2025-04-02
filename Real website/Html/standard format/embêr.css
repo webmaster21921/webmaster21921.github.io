@@ -433,8 +433,8 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: clamp(300px,25vw,990px);
-    position: absolute;
+    width: clamp(400px,25vw,990px);
+    position: relative;
     top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -443,10 +443,8 @@ h2 {
     border-radius: 10px;
     color: white;
     padding-bottom: 3%;
+    height: 120px;
     margin-top: -100px;
-    min-width: 50px;
-    height: 15%;
-    z-index: 10;
   }
 
 .container {
@@ -1826,7 +1824,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(300px,-600px);
+        transform: translate(-100px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         display: none;
@@ -1862,7 +1860,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .5s ease-in-out;
-        transform: translate(300px,-600px);
+        transform: translate(-20px,-700px);
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         scale: .9;
@@ -1876,7 +1874,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(300px,-600px);
+        transform: translate(-20px,-850px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: none;
      
@@ -1903,7 +1901,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(300px,-600px);
+        transform: translate(-100px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: none;        
     }
@@ -1926,7 +1924,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .3s ease-in-out;
-        transform: translate(300px,-600px);
+        transform: translate(-100px,-600px);
         box-shadow: -2px 2px .1px rgba(0, 0, 0, 0.253);
         display: none;
 
@@ -2269,9 +2267,8 @@ h2 {
     justify-content: center;
     text-align: center;
     margin: 0 auto; /* Centers the container horizontally */
-    margin-top: 200px;
+    margin-top: 10%
 }
-
 
 /* Menu title */
 .menu-container h1 {
