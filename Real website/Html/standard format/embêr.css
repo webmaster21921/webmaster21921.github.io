@@ -668,7 +668,7 @@ h2 {
     top: 10%;
     text-wrap: wrap;
     font-family: 'playfair display';
-    z-index: 172;
+    z-index: 40;
     color:black;
     text-shadow: 2px 2px 5px rgba(33, 114, 43, 0.5);
 }
@@ -681,7 +681,7 @@ h2 {
     top: 14%;
     color: black;
     font-family: 'playfair display';
-    z-index: 172;
+    z-index: 40;
 }
 
 .caption1 {
@@ -715,7 +715,7 @@ h2 {
     bottom: 8px;
     width: 80vw;
     text-align: justify;
-    z-index: 200;
+    z-index: 40;
     font-weight: 0;
     left: -15vw;
     top: 120%;
@@ -763,6 +763,7 @@ h2 {
     top:0px;
     background-image: url('bamboo.jpg');
     background-size: cover;
+    z-index: 40;
 
 }
 
@@ -780,7 +781,7 @@ h2 {
     display: none;
     width: 50vw;
     transition: all .3s ease-in;
-
+    z-index: 40
 }
 
 #slide-img {
@@ -897,6 +898,7 @@ h2 {
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
+    z-index: 40;
 }
 
 .food-preparation{
@@ -992,7 +994,7 @@ h2 {
 #interactive-2 {
     display: block;
     position: relative;
-    z-index: 171;
+    z-index: 40;
     width: 50vw;
     height: 400px;
     scale: 1.1;
@@ -2544,3 +2546,73 @@ footer a {
     font-family: 'poppins', sans-serif;
 }
 
+<<<<<<< Updated upstream
+=======
+@media (max-width: 1190px) {
+    .slide-text {
+        font-size: 1.29rem;
+        z-index: 40
+    }
+}
+
+@media (max-width: 915px) {
+    .slide-text {
+        font-size: 1.2rem;
+        z-index: 40
+    }
+}
+@media (max-width: 880px) {
+    .slide-text {
+        font-size: 1.15rem;
+        z-index: 40
+    }
+}
+@media (max-width: 785px) {
+    .slide-text {
+        font-size: 1.1rem;
+        z-index: 40
+    }
+}
+@media (max-width: 720px) {
+    .slide-text {
+        font-size: 0.96rem;
+        z-index: 40
+    }
+}
+@media (max-width: 592px) {
+    .slide-text {
+        font-size: 0.92rem;
+        z-index: 40
+    }
+}
+@media (max-width: 505px) {
+    .slide-text {
+        font-size: 0.85rem;
+        z-index: 40
+    }
+}
+@media (max-width: 460px) {
+    .slide-text {
+        font-size: 0.82rem;
+        z-index: 40
+    }
+}
+@media (max-width: 415px) {
+    .slide-text {
+        font-size: 0.75rem;
+        z-index: 40
+    }
+}
+@media (max-width: 356px) {
+    .slide-text {
+        font-size: 0.7rem;
+        z-index: 40
+    }
+}
+@media (max-width: 328px) {
+    .slide-text {
+        font-size: 0.7rem;
+        z-index: 40
+    }
+}
+>>>>>>> Stashed changes
