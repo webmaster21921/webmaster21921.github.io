@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Book your Tour</title>
+    <title>Book a Tour</title>
     <link rel="stylesheet" href="../standard format/embêr.css">
     <link rel="stylesheet" href="../standard format/calendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
@@ -11,103 +11,121 @@
     <script src="../javascript/calendar.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="../standard format/embêr.css">
     <link rel="stylesheet" href="../standard format/about.css">
+    <link rel="icon" href="../standard format/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Barlow+Condensed&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <style>
-    h1, .heading{
-      font-family: 'Playfair Display', serif;
-      }    
-      </style>
+        h1, .heading{
+        font-family: 'Playfair Display', serif;
+        }    
+
+        footer {
+    background-color: #faf7ed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    z-index:1000;
+}
+        </style>
 </head>
 
 <body>
-<div class="tour-page">
-    <div class = "left side"> 
-        <p id="heading"> EMBÊR </p>
-        <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
-    </div>
-
-    <nav class="nav-bar">
-      <div class="navlink-container">
-        <div class="dropcdown">
-          <button id="dropc-btn" class="navc-link"> ≡ </button>
-          <div class="dropc-links">
-            <a class="dropc-link" href="index.html"> HOME </a>
-            <a class="dropc-link" href="index.html?scroll=about"> ABOUT </a>
-            <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
-            <a class="dropc-link" href="menuPage.html"> MENU </a>
-            <a class="dropc-link" href="reservePage.html"> RESERVE </a>
-            <form onsubmit="goToAbout(event)">
-              <a onsubmit="goToAbout(event)" class ="dropc-link" href="referencePage.html"> REFERENCES </a>
-            </form>
-          </div>
+    <div class="tour-page">
+        <div class = "left side"> 
+            <p id="heading"> EMBÊR </p>
+            <img class="hover-rotate" src="../standard format/logo.png" id="logo" />
         </div>
-  
-          <form action = "index.html">
-              <button class="nav-link">HOME</button>
-          </form>
-          <form onsubmit="goToAbout(event)">
-              <button class="nav-link" type="submit">ABOUT</button>
-          </form>
-        
-          <div class="dropdown">
-              <button id='drop-btn'class="nav-link">CONTACT US</button>
-              <div class="drop-links">
-                  <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
-                  <a href="mailto:emberdining@gmail.com"class= 'mail-link'><b>Email:</b><br>emberdining@gmail.com</a>
+    
+        <nav class="nav-bar">
+          <div class="navlink-container">
+            <div class="dropcdown">
+              <button id="dropc-btn" class="navc-link"> ≡ </button>
+              <div class="dropc-links">
+                <a class="dropc-link" href="index.html"> HOME </a>
+                <a class="dropc-link" href="index.html?scroll=about"> ABOUT </a>
+                <a class="dropc-link" href="sustainabilityPage.html"> SUSTAINABILITY</a>
+                <a class="dropc-link" href="menuPage.html"> MENU </a>
+                <a class="dropc-link" href="reservePage.html"> RESERVE </a>
+                <form onsubmit="goToAbout(event)">
+                  <a onsubmit="goToAbout(event)" class ="dropc-link" href="referencePage.html"> REFERENCES </a>
+                </form>
               </div>
-          </div>
-          <form action = "sustainabilityPage.html">
-              <button class="nav-link">SUSTAINABILITY</button>
-          </form>
-          <form action = "menuPage.html">
-              <button class="nav-link">MENU</button>
-          </form>
-          <form action = "reservePage.html">
-              <button class="nav-link">RESERVE</button>
-          </form>
-          <form action = "referencePage.html">
-            <button class="nav-link">REFERENCES</button>
-          </form>
-        </div>
-        
-        <script>
-          function goToAbout(event) {
-              event.preventDefault(); 
-              window.location.href = "index.html?scroll=about";
-          }
-      </script>
+            </div>
       
-      <script>
-        window.onload = function() {
-          const urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.get('scroll') === 'about') {
-            document.getElementById("end-container").scrollIntoView({ behavior: "smooth" });
-          }
-        };
-      </script>
+              <form action = "index.html">
+                  <button class="nav-link">HOME</button>
+              </form>
+              <form onsubmit="goToAbout(event)">
+                  <button class="nav-link" type="submit">ABOUT</button>
+              </form>
+            
+              <div class="dropdown">
+                  <button id='drop-btn'class="nav-link">CONTACT US</button>
+                  <div class="drop-links">
+                      <a Href=tel:1234567890 class="tel-link"><b>Phone:</b><br>123-456-7890<br></a>
+                      <a href="mailto:emberdining@gmail.com"class= 'mail-link'><b>Email:</b><br>emberdining@gmail.com</a>
+                  </div>
+              </div>
+              <form action = "sustainabilityPage.html">
+                  <button class="nav-link">SUSTAINABILITY</button>
+              </form>
+              <form action = "menuPage.html">
+                  <button class="nav-link">MENU</button>
+              </form>
+              <form action = "reservePage.html">
+                  <button class="nav-link">RESERVE</button>
+              </form>
+              <form action = "referencePage.html">
+                <button class="nav-link">REFERENCES</button>
+              </form>
+            </div>
+            
+            <script>
+              function goToAbout(event) {
+                  event.preventDefault(); // Prevent default form submission
+                  window.location.href = "index.html?scroll=about";
+              }
+          </script>
+          
+          <script>
+            window.onload = function() {
+              const urlParams = new URLSearchParams(window.location.search);
+              if (urlParams.get('scroll') === 'about') {
+                document.getElementById("end-container").scrollIntoView({ behavior: "smooth" });
+              }
+            };
+          </script>
+      
+          </nav>
   
-      </nav>
-
 
     
 
-<div class="reserve-container">
+        <div class="reserve-container">
 
-    <h1 class="heading">Book a Tour</h1>
-    <script>
-        function goBack() {
-            window.location.href = "reservePage.html"; }
-    </script>
+         <h1 class="heading">Book a Tour</h1>
 
-   <br>
+             <script>
+             function goBack() {
+             window.location.href = "reservePage.html"; }
+                </script>
+
+             <br>
     
-        <button class="goback-button" onclick="goBack()">Go Back</button>
-    <br>
-
-        <div class="wrapper">
+            <button class="goback-button" onclick="goBack()">Go Back</button>
+            <br>
+             <div class="wrapper">
             <header>
               <p class="current-date"></p>
               <div class="icons">
@@ -134,9 +152,15 @@
             <button id="confirm-btn">Confirm</button>
             <button id="cancel-btn">Cancel</button>
         </div>
+    
     </div>
-    </div>
-</div>
+
+
+    <footer>
+    <p><a href="https://tsaweb.org/competitions/computer-science/lists/high-school-computer-science---information-technology-competitions/webmaster" class="end-link">This website was created by UCVTS's TSA chapter.</a></p>
+    </footer>
+
+
     </body>
     
 </html>

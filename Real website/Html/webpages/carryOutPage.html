@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Carry Out</title>
+    <title>Carryout</title>
     <link rel="stylesheet" href="../standard format/embêr.css">
     <link rel="stylesheet" href="../standard format/calendar.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
@@ -11,7 +11,9 @@
     <script src="../javascript/calendar.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <script src="index.js" defer></script>
+    <link rel="stylesheet" href="../standard format/embêr.css">
     <link rel="stylesheet" href="../standard format/about.css">
+    <link rel="icon" href="../standard format/logo.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Barlow+Condensed&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -19,6 +21,22 @@
         h1, .heading{
         font-family: 'Playfair Display', serif;
         }    
+
+        footer {
+    background-color: #faf7ed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    z-index:1000;
+}
         </style>
 </head>
 
@@ -75,7 +93,7 @@
             
             <script>
               function goToAbout(event) {
-                  event.preventDefault(); 
+                  event.preventDefault(); // Prevent default form submission
                   window.location.href = "index.html?scroll=about";
               }
           </script>
@@ -91,22 +109,23 @@
       
           </nav>
   
+
     
 
-<div class="reserve-container">
+        <div class="reserve-container">
 
-    <h1 class="heading">Carry Out</h1>
+         <h1 class="heading">Schedule your Carryout</h1>
 
-    <script>
-        function goBack() {
-            window.location.href = "reservePage.html"; }
-    </script>
+             <script>
+             function goBack() {
+             window.location.href = "reservePage.html"; }
+                </script>
 
-   <br>
+             <br>
     
-        <button class="goback-button" onclick="goBack()">Go Back</button>
-    <br>
-        <div class="wrapper">
+            <button class="goback-button" onclick="goBack()">Go Back</button>
+            <br>
+             <div class="wrapper">
             <header>
               <p class="current-date"></p>
               <div class="icons">
@@ -135,7 +154,13 @@
         </div>
     
     </div>
-</div>
+
+
+    <footer>
+    <p><a href="https://tsaweb.org/competitions/computer-science/lists/high-school-computer-science---information-technology-competitions/webmaster" class="end-link">This website was created by UCVTS's TSA chapter.</a></p>
+    </footer>
+
+
     </body>
     
 </html>

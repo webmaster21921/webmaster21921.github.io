@@ -444,7 +444,7 @@ h2 {
     border-radius: 10px;
     color: white;
     padding-bottom: 3%;
-    height: 120px;
+    height: 140px;
     margin-top: -100px;
   }
 
@@ -2332,7 +2332,7 @@ h2 {
     justify-content: center;
     text-align: center;
     margin: 0 auto; /* Centers the container horizontally */
-    margin-top: 10%
+    margin-top: 160px;
 }
 
 /* Menu title */
@@ -2521,3 +2521,26 @@ h2 {
     
 
 }
+
+footer {
+    background-color: #faf7ed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    z-index:1000;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
