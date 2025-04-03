@@ -18,7 +18,28 @@
     <style>
       h1, .heading{
       font-family: 'Playfair Display', serif;
-      }    
+      }
+        
+      #user-name, #user-time {
+    font-family: 'Playfair Display', serif;
+}
+  
+
+      footer {
+            background-color:hsl(46, 68%, 93%) ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    z-index:1000;
+}
       </style>
 </head>
 
@@ -107,7 +128,9 @@
           document.getElementById("user-time").textContent = userTime;
         });
         </script>
-
+<footer>
+  <p><a href="https://tsaweb.org/competitions/computer-science/lists/high-school-computer-science---information-technology-competitions/webmaster" class="end-link">This website was created by Webmaster Team #2192-1.</a></p>
+  </footer>
     </body>
     
 </html>
