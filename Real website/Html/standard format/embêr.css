@@ -1031,7 +1031,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 0px;
     overflow-x: auto; 
     transform: translateX (-50%);
     background-color: #faf7ed;
