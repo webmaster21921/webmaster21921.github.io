@@ -804,7 +804,7 @@ h2 {
     border-radius: 50%;
     user-select: none;
     transform: translate(-110%, -500%);
-    z-index: 40;
+    z-index: 172;
 }
 
 .next {
@@ -820,7 +820,7 @@ h2 {
     border-radius: 50%;
     user-select: none;
     transform: translate(50vw, -500%);
-    z-index: 40;
+    z-index: 172;
 }
   
 /* On hover, add a black background color with a little bit see-through */
@@ -1533,7 +1533,7 @@ h2 {
     object-fit: contain;
     transform: translate(415%, -50%) rotate(5deg);
     transition: all .3s ease-in;
-    z-index: 40; 
+    z-index: 172; 
 
 }
 #arrow2 {
@@ -1542,7 +1542,7 @@ h2 {
     object-fit: contain;
     transform: translate(260%, 250%) rotate(156deg);
     transition: all .3s ease-in;
-    z-index: 40; 
+    z-index: 172; 
 
 }
 #arrow3 {
@@ -1551,7 +1551,8 @@ h2 {
     object-fit: contain;
     transform: translate(89%, -50%) rotate(295deg);
     transition: all .3s ease-in;
-    z-index: 40; 
+    z-index: 172; 
+
     
 }
 
@@ -2545,6 +2546,8 @@ footer a {
     font-family: 'poppins', sans-serif;
 }
 
+<<<<<<< Updated upstream
+=======
 @media (max-width: 1190px) {
     .slide-text {
         font-size: 1.29rem;
@@ -2612,3 +2615,4 @@ footer a {
         z-index: 40
     }
 }
+>>>>>>> Stashed changes
