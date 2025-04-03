@@ -2096,6 +2096,68 @@ h2 {
     font-size: 14px;
 }
 
+.end-link3 {
+    display: flex;
+    position: absolute;   
+    text-align: center;        /* Center the lines of text within the block */
+    color: rgb(15, 62, 11);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 133vh;
+    margin-left: 25vw;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-size: 14px;
+}
+.end-link3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 119px;               
+    height: 2px;
+    background-color: rgb(237, 134, 0);
+    transform: scaleX(0);      
+    transform-origin: left;    
+    transition: transform 0.3s ease-in-out;
+}
+
+.end-link3:hover::after {
+    transform: scaleX(1);       
+}
+
+.end-link4 {
+    display: flex;
+    position: absolute;   
+    text-align: center;        /* Center the lines of text within the block */
+    color: rgb(15, 62, 11);
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 138vh;
+    margin-left: 25vw;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'poppins';
+    font-size: 14px;
+}
+.end-link4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 169px;               
+    height: 2px;
+    background-color: rgb(237, 134, 0);
+    transform: scaleX(0);      
+    transform-origin: left;    
+    transition: transform 0.3s ease-in-out;
+}
+
+.end-link4:hover::after {
+    transform: scaleX(1);       
+}
+
 .end-link::after {
     content: "";
     position: absolute;
