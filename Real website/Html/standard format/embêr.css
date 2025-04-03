@@ -2291,11 +2291,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: justify;        /* Center the lines of text within the block */
+    text-align: center;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
     transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.56rem, 2.1vw, 1.8rem);
+    font-size:clamp(0.5rem, 2.1vw, 2.3rem);
     border: 5px solid transparent;
   }
   
