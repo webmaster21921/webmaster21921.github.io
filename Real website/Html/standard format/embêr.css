@@ -904,7 +904,7 @@ h2 {
 .food-preparation{
     position: absolute;
     width: 100vw;
-    height: 125vh;
+    height: 128vh;
     top: 250vh;
     z-index: 100;
     background-color: hsl(46, 68%, 93%) ;
