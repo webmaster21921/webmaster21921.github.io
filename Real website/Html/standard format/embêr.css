@@ -81,7 +81,7 @@ h2 {
     position: absolute;
     left: 0;
     bottom: -5px;
-    width: 70%;               
+    width: 100%;               
     height: 2px;
     background-color: rgb(237, 134, 0);
     transform: scaleX(0);      
@@ -125,6 +125,8 @@ h2 {
     margin-top:10%;
 }
 
+
+
 .dropcdown:hover .dropc-links, #dropc-btn:hover + .dropc-links {
     opacity: 1;
     height: 200px;
@@ -138,6 +140,9 @@ h2 {
 .dropdownc:hover .navc-link {
     opacity: 0.5;  
 }
+
+
+
 
   
 .nav-bar.hide-nav {
@@ -181,6 +186,7 @@ h2 {
     border: .3px solid rgba(0, 0, 0, 0.314); 
     display: inline-block;
     z-index: 500;
+    margin-top: 6px;
 }
 .navlink-container {
     display: flex;
@@ -1590,6 +1596,15 @@ h2 {
     transform: translate(95%, -50%);
 }
 
+#prep-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(250px - 54vw);
+    left: 50vw;
+    margin-top: 30vh;
+    position: absolute;
+}
+
 .steaming-container {
     width: 30vw;
     aspect-ratio: 3 / 3;
@@ -1603,6 +1618,26 @@ h2 {
     overflow-y: hidden;
     user-select: none;
     border-radius: 6vw;
+    display: none;
+    box-shadow:  -2px 2px 2px rgba(0, 0, 0, 0.771);
+}
+
+.prep-img {
+    width: 110px;
+    aspect-ratio: 3 / 3;
+    height: auto;
+    justify-content: flex-start;
+    background-color: transparent;
+    position: relative;
+    z-index: 208;
+    overflow-y: hidden;
+    user-select: none;
+    border-radius: 20%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow:  -2px 2px 2px rgba(0, 0, 0, 0.771);
+
+
 }
 
 .prep-paragraph1 {
@@ -1683,7 +1718,15 @@ h2 {
 }
 
 
+@media (min-width: 450px) {
+    #prep-container {
+        display: none;
+    }
 
+    .steaming-container {
+        display: block;
+    }
+}
 
 @media (max-height: 650px) {
     #interactive-2 {
