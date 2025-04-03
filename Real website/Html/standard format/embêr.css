@@ -1692,119 +1692,64 @@ h2 {
     }
 }
 
-@media (max-width: 1000px) {
-    .slide-caption {
-        top: 55%;
-    }
+@media (max-width: 1190px) {
     .slide-text {
-        top: 70%;
+        font-size: 1.29rem;
     }
 }
-@media (max-width: 1200px) {
-    .slide-caption {
-        top: 55%;
-    }
+
+@media (max-width: 915px) {
     .slide-text {
-        top: 70%;
+        font-size: 1.2rem;
     }
 }
-@media (max-width: 780px) {
-    .slide-caption {
-        top: 55%;
-    }
+@media (max-width: 880px) {
     .slide-text {
-        top: 70%;
-        font-size: 0.95rem;
+        font-size: 1.15rem;
     }
 }
-@media (max-width: 610px) {
-    .slide-caption {
-        top: 55%;
-    }
+@media (max-width: 785px) {
     .slide-text {
-        top: 70%;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 720px) {
+    .slide-text {
+        font-size: 0.96rem;
+    }
+}
+@media (max-width: 592px) {
+    .slide-text {
+        font-size: 0.92rem;
     }
 }
 @media (max-width: 505px) {
-    .slide-caption {
-        top: 55%;
-    }
     .slide-text {
-        top: 70%;
-        font-size: 0.87rem;
-    }
-}
-@media (max-width: 500px) {
-    .slide-caption {
-        top: 55%;
-    }
-    .slide-text {
-        top: 70%;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 }
 @media (max-width: 460px) {
-    .slide-caption {
-        top: 55%;
-    }
     .slide-text {
-        top: 70%;
+        font-size: 0.82rem;
+    }
+}
+@media (max-width: 415px) {
+    .slide-text {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 356px) {
+    .slide-text {
         font-size: 0.7rem;
     }
 }
-@media (max-width: 430px) {
-    .slide-caption {
-        top: 55%;
-    }
+@media (max-width: 328px) {
     .slide-text {
-        top: 70%;
-        font-size: 0.625rem;
+        font-size: 0.7rem;
     }
 }
-@media (max-width: 550px) {
-    #interactive-2 {
-        margin-top: -15vw !important;
-    }
-    .slide-caption {
-        top: 45%;
-    }
-    .slide-text {
-        top: 65%;
-    }
-
-}
-
-@media (max-width: 500px) {
-    #interactive-2 {
-        margin-top: 00vw !important;
-        scale: 2.0;
-    }
-    .slide-caption {
-        top: 15%;
-    }
-    .slide-text {
-        top: 35%;
-    }
-    .caption {
-        display: none;
-    }
-    .section-heading{
-        top: 70px;
-    }
-    .gallery {
-        top: 150vh;
-    }
-    .food-preparation {
-        top: 220vh;
-    }
-
-    .img {
-        width: 20vh;
-        height: 20vh;
-    }
     
-}
+
 
 @media (min-width: 1150px){
     #greenhouse-fact-container {
