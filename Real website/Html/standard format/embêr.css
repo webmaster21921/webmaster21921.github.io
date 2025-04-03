@@ -2187,18 +2187,19 @@ h2 {
     top: 0;
     height: clamp(90px, 25vw, 330px);
     margin-left: 5%;
+    padding: 7%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
-    color: #fff;
+    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    color: #c5cfc2;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;        /* Center the lines of text within the block */
+    text-align: justify;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.6rem, 2.7vw, 1.8rem);
+    font-size:clamp(0.6rem, 2.4vw, 1.8rem);
     border: 5px solid transparent;
 
   }
@@ -2228,18 +2229,19 @@ h2 {
     height: clamp(110px, 27vw, 530px);
     margin-left: 3%;
     margin-top: 4%;
+    padding: 6%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
-    color: #fff;
+    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    color: #b1bed1;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;        /* Center the lines of text within the block */
+    text-align: justify;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.5rem, 2.2vw, 1.8rem);
+    font-size:clamp(0.4rem, 1.9vw, 1.8rem);
     border: 5px solid transparent;
   }
   
@@ -2268,18 +2270,19 @@ h2 {
     height: clamp(100px, 27vw, 440px);
     margin-left: 7%;
     margin-top: 5%;
+    padding: 6.5%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.795); /* semi-transparent overlay */
-    color: #fff;
+    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    color: #ccc9bf;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;        /* Center the lines of text within the block */
+    text-align: justify;        /* Center the lines of text within the block */
     opacity: 0;                 /* hidden by default */
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.56rem, 2.3vw, 1.8rem);
+    font-size:clamp(0.56rem, 2.1vw, 1.8rem);
     border: 5px solid transparent;
   }
   
