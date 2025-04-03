@@ -883,7 +883,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 180vh; 
     z-index: 11;
@@ -2310,6 +2310,7 @@ h2 {
     align-items: center;
     gap: 0.3rem;
     margin-top: 2%;
+    margin-left: -11%;
   }
 
 
