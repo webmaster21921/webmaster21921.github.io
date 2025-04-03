@@ -2608,73 +2608,8 @@ footer a {
     font-family: 'poppins', sans-serif;
 }
 
-<<<<<<< Updated upstream
-=======
-@media (max-width: 1190px) {
-    .slide-text {
-        font-size: 1.29rem;
-        z-index: 40
+@media (max-width: 500px) {
+    footer {
+      display: none !important;
     }
-}
-
-@media (max-width: 915px) {
-    .slide-text {
-        font-size: 1.2rem;
-        z-index: 40
-    }
-}
-@media (max-width: 880px) {
-    .slide-text {
-        font-size: 1.15rem;
-        z-index: 40
-    }
-}
-@media (max-width: 785px) {
-    .slide-text {
-        font-size: 1.1rem;
-        z-index: 40
-    }
-}
-@media (max-width: 720px) {
-    .slide-text {
-        font-size: 0.96rem;
-        z-index: 40
-    }
-}
-@media (max-width: 592px) {
-    .slide-text {
-        font-size: 0.92rem;
-        z-index: 40
-    }
-}
-@media (max-width: 505px) {
-    .slide-text {
-        font-size: 0.85rem;
-        z-index: 40
-    }
-}
-@media (max-width: 460px) {
-    .slide-text {
-        font-size: 0.82rem;
-        z-index: 40
-    }
-}
-@media (max-width: 415px) {
-    .slide-text {
-        font-size: 0.75rem;
-        z-index: 40
-    }
-}
-@media (max-width: 356px) {
-    .slide-text {
-        font-size: 0.7rem;
-        z-index: 40
-    }
-}
-@media (max-width: 328px) {
-    .slide-text {
-        font-size: 0.7rem;
-        z-index: 40
-    }
-}
->>>>>>> Stashed changes
+  }
