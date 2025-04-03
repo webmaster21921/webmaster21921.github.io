@@ -276,6 +276,22 @@ h2 {
     z-index: 1000000;
     padding: 10px;
 }
+#heading1 {
+    display: none;
+    font-family: 'Playfair Display', serif;
+    font-weight: 250;
+    font-size: 180%;
+    letter-spacing: 3px;
+    text-shadow: 1px 0px 10px #0000002c;
+    color: rgb(0, 52, 10);
+    user-select: none;
+    top:0.2%;
+    left: 60px;
+    position: fixed;
+    font-weight: 0.2;
+    z-index: 1000000;
+    padding: 10px;
+}
 
 .img-group {
     display: flex; 
@@ -2612,4 +2628,11 @@ footer a {
     footer {
       display: none !important;
     }
+    #heading {
+        display: none !important;
+    }
+    #heading1{
+        display: flex !important;
+    }
+
   }
