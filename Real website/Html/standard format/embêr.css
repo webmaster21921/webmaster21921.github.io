@@ -2204,22 +2204,19 @@ h2 {
     padding: 7%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.867); 
     color: #c5cfc2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;        /* Center the lines of text within the block */
-    opacity: 0;                 /* hidden by default */
+    text-align: center;       
+    opacity: 0;                
     transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.6rem, 2.4vw, 1.8rem);
+    font-size:clamp(0.52rem, 2.4vw, 2rem);
     border: 5px solid transparent;
 
   }
   
   .green-container:hover .green-text {
-    opacity: 1;                 /* shows on hover */
+    opacity: 1;                 
     border-color: rgb(150, 199, 149); 
     
   }
@@ -2246,18 +2243,20 @@ h2 {
     padding: 6%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.867); 
     color: #b1bed1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;        /* Center the lines of text within the block */
-    opacity: 0;                 /* hidden by default */
+    text-align: center;        
+    opacity: 0;                
     transition: all 0.7s ease;
     border-radius: 20px;
-    font-size:clamp(0.4rem, 1.9vw, 1.8rem);
+    font-size:clamp(0.457rem, 2vw, 3rem);
     border: 5px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
+ 
   
   .water-container:hover .water-text {
     opacity: 1;                 /* shows on hover */
