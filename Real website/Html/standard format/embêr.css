@@ -56,6 +56,7 @@ h2 {
 .dropcdown{
     position: absolute;
     display: none;
+    
 }
 
 .dropdown-select {
@@ -126,8 +127,8 @@ h2 {
 
 .dropcdown:hover .dropc-links, #dropc-btn:hover + .dropc-links {
     opacity: 1;
-    height: 170px;
-    transform: translate(-72px, 2px);
+    height: 200px;
+    transform: translate(-72px, -2px);
     pointer-events: auto !important; 
 }
 
@@ -1860,7 +1861,7 @@ h2 {
         background-color: #c0ced4;
         border-radius: 3px;
         transition: all .5s ease-in-out;
-        transform: translate(-20px,-700px);
+        transform: translate(-10vw,-700px);
         box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
         position: absolute;
         scale: .9;
