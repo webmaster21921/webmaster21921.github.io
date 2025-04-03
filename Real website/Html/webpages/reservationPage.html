@@ -21,6 +21,22 @@
         h1, .heading{
         font-family: 'Playfair Display', serif;
         }    
+
+        footer {
+    background-color: #faf7ed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+    z-index:1000;
+}
         </style>
 </head>
 
@@ -96,20 +112,20 @@
 
     
 
-<div class="reserve-container">
+        <div class="reserve-container">
 
-    <h1 class="heading">Book a Reservation</h1>
+         <h1 class="heading">Book a Reservation</h1>
 
-    <script>
-        function goBack() {
-            window.location.href = "reservePage.html"; }
-    </script>
+             <script>
+             function goBack() {
+             window.location.href = "reservePage.html"; }
+                </script>
 
-   <br>
+             <br>
     
-        <button class="goback-button" onclick="goBack()">Go Back</button>
-    <br>
-        <div class="wrapper">
+            <button class="goback-button" onclick="goBack()">Go Back</button>
+            <br>
+             <div class="wrapper">
             <header>
               <p class="current-date"></p>
               <div class="icons">
@@ -138,7 +154,13 @@
         </div>
     
     </div>
-</div>
+
+
+    <footer>
+    <p><a href="https://tsaweb.org/competitions/computer-science/lists/high-school-computer-science---information-technology-competitions/webmaster" class="end-link">This website was created by Webmaster Team #2192-1.</a></p>
+    </footer>
+
+
     </body>
     
 </html>
