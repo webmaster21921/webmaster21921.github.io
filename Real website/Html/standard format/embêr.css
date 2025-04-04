@@ -2593,7 +2593,7 @@ h2 {
 .works-cited {
     position: relative;
     width: 100vw;
-    height: 260vw;
+    height: calc(270vw + 150px);
     z-index: 230;
     background: #faf7ed;
     transition: all .3 ease-in-out;
