@@ -172,7 +172,7 @@
   z-index: 173;
 }
 
-/* Optional hover effect if desired */
+
 .img:hover {
   transform: scale(1.085) translateY(1.5px);
 }
@@ -195,6 +195,7 @@
   height: fit-content;
   
 }
+
 
 
 .scrl-text.show {
