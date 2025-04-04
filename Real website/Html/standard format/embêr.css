@@ -711,7 +711,7 @@ h2 {
     font-size: clamp(1rem, 5.5vw, 2rem);
     width: 140%; 
     text-align: center; 
-    position:absolute;
+    position:relative;
     top: 100%;
     color: black;
     left: -15vw;
@@ -1682,11 +1682,16 @@ h2 {
 
 .img2 {
     width: auto; 
-    height: 40vh; 
+    max-height: 200px;
+    height: clamp(40vw); 
+    
     flex: 0 0 auto;
-    border-radius: 60px;
+    border-radius: 50%;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.443);
     margin-left: -2%;
+    top:50%;
+    transform: translatey(50%);
+
 }
 
 .img-caption {
@@ -1726,7 +1731,17 @@ h2 {
     
 }
 
-
+@media (max-width: 500px) {
+    #interactive-2 {
+        transform: translatey(35vw) !important;
+        margin-top: -40vw;
+        scale: 2.0;
+    }
+    #img-2 {
+        top: 50%;
+    }
+    
+}
 @media (min-width: 450px) {
     #prep-container {
         display: none;
