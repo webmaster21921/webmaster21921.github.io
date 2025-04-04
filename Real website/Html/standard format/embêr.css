@@ -1711,32 +1711,7 @@ h2 {
 
   /* about-dropdown */
 
-.drop-links {
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    opacity: 50px;
-    gap: 20%;
-    position: absolute;
-    border-style: solid;
-    border-color: rgba(72, 72, 72, 0);
-    border-width: .5px;
-    color: rgb(0, 58, 21);
-    font-family: 'Poppins', sans-serif;
-    font-weight:1000;
-    font-size: 85%;
-    transition: opacity .3s ease-in-out, height .3s ease-in-out;
-    justify-content: center;
-    align-items: left;
-    padding: .5%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 12px;
-    margin-left: -1.5%;
-    z-index: 1;
-    margin-top: 0.5%;
-    height: 20px;
-    
-}
+
 
 @media (max-width: 500px) {
     #interactive-2 {
@@ -2070,13 +2045,36 @@ h2 {
      
 }
 
-.dropdown:hover .drop-links, #drop-btn:hover + .drop-links {
+.drop-links {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    gap: 20px; /* Fixed gap size */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: 0.5px solid rgba(72, 72, 72, 0);
+    color: rgb(0, 58, 21);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    font-size: 85%;
+    transition: opacity 0.4s ease, max-height 0.4s ease, gap 0.4s ease;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    margin-left: -1.5%;
+    margin-top: 0.5%;
+    z-index: 1;
+}
+
+.dropdown:hover .drop-links,
+#drop-btn:hover + .drop-links {
     opacity: 1;
-    height: 20vh;
-    width: 17vw;
-    pointer-events: auto; 
-
-
+    max-height: 500px; /* Large enough to fit your content */
+    gap: 20px;
+    pointer-events: auto;
 }
 
 .dropdown:hover .nav-link {
