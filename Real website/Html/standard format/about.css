@@ -150,7 +150,7 @@
     
   box-sizing: border-box;
   
-  transform: translate(0%,-70px);
+  transform: translate(0%,90px);
   z-index: 173;
   overflow-x: scroll !important;
   scroll-behavior:auto;
