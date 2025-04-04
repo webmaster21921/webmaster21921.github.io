@@ -2132,7 +2132,7 @@ h2 {
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
-    margin-top: 133vh;
+    margin-top: 14vh;
     margin-left: 25vw;
     margin-right: 20px;
     cursor: pointer;
@@ -2163,7 +2163,7 @@ h2 {
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
-    margin-top: 138vh;
+    margin-top: 19vh;
     margin-left: 25vw;
     margin-right: 20px;
     cursor: pointer;
@@ -2593,24 +2593,22 @@ h2 {
 .works-cited {
     position: relative;
     width: 100vw;
-    height: 200vh;
+    height: 260vw;
     z-index: 230;
-    background: white;
+    background: #faf7ed;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
-    box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
+    
 }
 
 .embed-container {
-    position: absolute;
-    width: 56vw;
-    height: 120vh;
+    position: relative;
+    width: 60vw;
+    height: 75vw;
     z-index: 300;
-    left: 22vw;
-    top: 10vh;
-    display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
+    left: 20vw;
+    top: 30vh;
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     
 
 }
