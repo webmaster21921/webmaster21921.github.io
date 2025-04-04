@@ -9,6 +9,7 @@
   html, body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden; 
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -26,6 +27,9 @@ h2 {
     left: 50px
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* --INDEX CSS--*/
 .nav-bar {
@@ -288,7 +292,7 @@ h2 {
     color: rgb(0, 52, 10);
     user-select: none;
     top:0.2%;
-    left: 40px;
+    left: 60px;
     position: fixed;
     font-weight: 0.2;
     z-index: 1000000;
@@ -648,7 +652,7 @@ h2 {
 .name1 {
     display: flex;
     font-weight: 150;
-    font-size: clamp(2.5rem, 14vw, 10rem);
+    font-size: clamp(2.5rem, 9vw, 10rem);
     letter-spacing: 3px;
     text-shadow: 4px 3px 5px #00000085;
     text-align:center;
@@ -673,7 +677,7 @@ h2 {
     width: 100%; 
     text-align: center; 
     position: absolute;
-    top: 5%;
+    top: 10%;
     text-wrap: wrap;
     font-family: 'playfair display';
     z-index: 40;
@@ -899,30 +903,24 @@ h2 {
 .gallery {
     position: absolute;
     width: 100vw;
-    height: auto;
+    height: 70vh;
     z-index: 230;
-    top:202vh;
+    top:180vh;
     background: white;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
     box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
     z-index: 40;
-    overflow-y: hide;
-    max-height: 38vh;
 }
 
 .food-preparation{
     position: absolute;
     width: 100vw;
-    height: max-content;
-    max-height: 50vh;
-    top: 240%;
+    height: 128vh;
+    top: 250vh;
     z-index: 100;
     background-color: hsl(46, 68%, 93%) ;
-    padding-bottom: 120vh;
-    overflow: hidden;
 }
-
 
 #hydroponics {
     top: 300px;
@@ -1063,9 +1061,21 @@ h2 {
     scroll-behavior: auto;
     z-index: 173;
     margin-top: -6%;
-
+    scrollbar-width: 10px;
+    scrollbar-color: #000000 #000000;
+  }
+  .img-scrl::-webkit-scrollbar {
+    height: 8px;               /* scrollbar thickness */
   }
   
+  .img-scrl::-webkit-scrollbar-track {
+    background: #000000;          /* track color */
+  }
+  
+  .img-scrl::-webkit-scrollbar-thumb {
+    background-color: #000000;    /* scrollbar thumb color */
+    border-radius: 4px;
+  }
 
 .img-scrl-container {
     width: 100%;
@@ -1074,44 +1084,26 @@ h2 {
     background-color: transparent;
     position: relative;
     z-index: 8;
-    margin-top: -4vw;
+    margin-top: 80px;
     overflow-y: hidden;
     user-select: none;
     overflow-x: scroll !important;
-    font-weight: normal;
-    display: flex;
-    white-space: nowrap
-    
 
   }
-  .gallery {
-
-}
-
-::-webkit-scrollbar {
-    display: none;
-  }
-
-
 
 .img-scrl {
     display: flex;
-    width: 2000px;
+    width: 100%;
+    height: 180%;
     gap: 80px;
     display: flex;
+    overflow-x: scroll !important;
     scroll-behavior:auto;
     padding: 10%;
     overflow-y: hidden;
     z-index: 173;
-    margin-top: -9%;
-    font-weight: normal;
-    white-space: nowrap;
-
+    margin-top: -6%;
   }
-  @media (min-width: 558px) {
-    .img-scrl {
-        margin-top: -6%;
-    }}
 
 
 #farm {
@@ -1616,14 +1608,27 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: calc(250px - 54vw);
-    left: 45vw;
+    left: 50vw;
+    margin-top: 30vh;
     position: absolute;
-    top: 169px;
-    top: calc(169px + (800px - 100vw));
-
 }
 
-
+.steaming-container {
+    width: 30vw;
+    aspect-ratio: 3 / 3;
+    height: auto;
+    justify-content: flex-start;
+    background-color: transparent;
+    position: absolute;
+    left: 45vw;
+    z-index: 208;
+    margin-top: 30vh;
+    overflow-y: hidden;
+    user-select: none;
+    border-radius: 6vw;
+    display: none;
+    box-shadow:  -2px 2px 2px rgba(0, 0, 0, 0.771);
+}
 
 .prep-img {
     width: 110px;
@@ -1639,7 +1644,6 @@ h2 {
     object-fit: cover;
     object-position: center;
     box-shadow:  -2px 2px 2px rgba(0, 0, 0, 0.771);
-    top: -15vh;
 
 
 }
@@ -1647,24 +1651,24 @@ h2 {
 .prep-paragraph1 {
     color: black;
     font-size: clamp(0.7rem, 2vw, 1.5rem);
-    position: relative;
+    position: absolute;
     width: 80vw;
-    text-align: center;
+    text-align: justify;
     z-index: 200;
     font-weight: 0;
-    top: -10vh;
+    top: 0;
 
 }
 
 .prep-paragraph2 {
     color: black;
     font-size: clamp(0.7rem, 2vw, 1.5rem);
-    position: center;
-    width: 80vw;
-    text-align: center;
+    position: absolute;
+    width: 40vw;
+    text-align: justify;
     z-index: 200;
     font-weight: 0;
-    top: -8vh;
+    top: 30vh;
 }
 
 .img {
@@ -1678,11 +1682,13 @@ h2 {
 
 .img2 {
     width: auto; 
-    max-height: 220px;
-    height: clamp(380px,45vw,200px); 
+    max-height: 200px;
+    height: clamp(40vw); 
+    
     flex: 0 0 auto;
-    border-radius: 30px;
+    border-radius: 50%;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.443);
+    margin-left: -2%;
     top:50%;
     transform: translatey(50%);
 
@@ -1736,38 +1742,14 @@ h2 {
     }
     
 }
-
 @media (min-width: 450px) {
     #prep-container {
-        flex-direction: row;
-        position: absolute;
-        gap: calc(10vw + 40px);
-        left: -1.5vw;
-        top: calc(780px + (1000px - 100vw) * 0.3);
+        display: none;
     }
 
-    .prep-img {
-        width: 20vw;
+    .steaming-container {
+        display: block;
     }
-
-}
-
-@media (max-width: 1359px) {
-    #prep-container {
-
-    top: calc(780px + (1000px - 100vw) * 0.4);}}
-
-@media (max-width: 430px) {
-    #prep-container{
-    top: 170px;}
-}
-@media (max-width: 369px) {
-    #prep-container{
-    top: 193px;}
-}
-@media (max-width: 345px) {
-    #prep-container{
-    top: 210px;}
 }
 
 @media (max-height: 650px) {
@@ -2632,17 +2614,23 @@ h2 {
     
 
 }
+
 footer {
-    background-color: hsl(46, 68%, 93%);
-    color: black; /* better contrast on light background */
+    background-color: #faf7ed;
+    color: white;
     text-align: center;
     padding: 20px;
+    position: sticky;
+    bottom: 0;
     width: 100%;
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    bottom: 0;
+    z-index:2000;
+}
+
 footer a {
     color: #000000;
     text-decoration: none;
