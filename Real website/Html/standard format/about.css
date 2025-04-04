@@ -163,7 +163,7 @@
   z-index: 173;
 }
 
-
+/* Optional hover effect if desired */
 .img:hover {
   transform: scale(1.085) translateY(1.5px);
 }
@@ -186,10 +186,10 @@
   height: fit-content;
 }
 
-
+/* Expanded state physically grows the text box, pushing other items */
 .scrl-text.show {
   opacity: 1;
-
+  max-width: 580px; /* pick any max you like */
 }
 
 

@@ -1,4 +1,4 @@
-
+/* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 * {
@@ -225,13 +225,7 @@ header .current-date {
   box-shadow: 0 0 5px rgba(89, 182, 89, 0.5);
 }
 
-
-<div class = "left side">
-       <p id="heading"> EMBÊR </p>
-       <p id="heading1"> EMBÊR #2192-1 </p>
-       <img class="hover-rotate" src="Real website/Html/standard format/logo.png" id="logo" />
-   </div>
- Submit Button */
+/* Submit Button */
 .form-button {
   width: 100%;
   padding: 12px;
