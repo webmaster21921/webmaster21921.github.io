@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14Real website/Html32,100Real website/Html900;1,14Real website/Html32,100Real website/Html900&family=Playfair+Display:ital,wght@0,400Real website/Html900;1,400Real website/Html900&family=Quattrocento:wght@400;700&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">    
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!-- initalize the script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
     <script src="embêr.js"></script>
     <style>
          footer {
@@ -19,7 +19,7 @@
     color: white;
     text-align: center;
     padding: 20px;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-family: 'Inter', sans-serif;
@@ -112,7 +112,7 @@
         <h1 class="section-heading">Interactive Farm To Table Map</h1>
         <h3 class="caption">Hover over each part of our process to learn more.</h3>
         <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
+            
             <div class="mySlides">
                 <div id="interactive-2">
                     <div id = "bg-square"></div>
@@ -287,7 +287,7 @@
 
 
 
-        <!-- The dots/circles -->
+       
         <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -329,7 +329,7 @@
     <div class="gallery">
         <h1 class="section-heading">The Growth of Our Plants (Scroll) </h1>
         <div class="img-scrl-container">
-            <div class="img-scrl">
+            <div id="img-scrl">
                 <img class="img2" src="https://i.postimg.cc/SRLS8b4C/composting.jpg">
                 <img class="img2" src="https://i.postimg.cc/nVqcNBmr/farmer.jpg">
                 <img class="img2" src="https://i.postimg.cc/dVVs7fxZ/indoor-garden.jpg">
@@ -342,6 +342,24 @@
     </div>
 </div>
 <div class = "foodtotale">
+
+    <script>
+        const scrollContainer = document.getElementById("img-scrl");
+
+        scrollContainer.addEventListener("scroll", () => {
+        const firstImage = scrollContainer.children[0];
+         const lastImage = scrollContainer.children[scrollContainer.children.length - 1];
+            if (firstImage.getBoundingClientRect().right < scrollContainer.getBoundingClientRect().left) {
+                scrollContainer.appendChild(firstImage);
+                scrollContainer.scrollLeft -= firstImage.offsetWidth + 80;
+            }
+            if (lastImage.getBoundingClientRect().left > scrollContainer.getBoundingClientRect().right) {
+                scrollContainer.prepend(lastImage);
+                scrollContainer.scrollLeft += lastImage.offsetWidth + 80; 
+            }
+        });
+    </script>
+
     <div class="food-preparation">
         <h1 class="section-heading">Our Preparation Process</h1>
         <div class="statcontainer">

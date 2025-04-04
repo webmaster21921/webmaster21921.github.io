@@ -344,7 +344,7 @@ h2 {
 }
 
 .bg-video {
-    flex: 1; /* Equal width for all sections */
+    flex: 1; 
     position: relative;
     overflow: hidden;
     height: 100vh;
@@ -353,7 +353,7 @@ h2 {
 .bg-video video {
     width: 110%;
     height: 100%;
-    object-fit: cover; /* Ensures video fills the div */
+    object-fit: cover; 
 }
 
 
@@ -642,6 +642,7 @@ h2 {
 }
 
 
+
 /* sustainabilityPage ids and classes */
 
 
@@ -775,7 +776,7 @@ h2 {
 
 }
 
-/* Slideshow container */
+
 .slideshow-container {
     max-width: 900px;
 
@@ -784,7 +785,7 @@ h2 {
     margin: auto;
   }
   
-/* Hide the images by default */
+
 .mySlides {
     display: none;
     width: 50vw;
@@ -798,7 +799,7 @@ h2 {
 
 }
   
-/* Next & previous buttons */
+
 .prev {
     cursor: pointer;
     position: absolute;
@@ -831,14 +832,14 @@ h2 {
     z-index: 172;
 }
   
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
     background-color: #a4a4a457;
 }
 
 
   
-/* Caption text */
+
 .text {
     color: black;
     font-size: 20px;
@@ -852,7 +853,7 @@ h2 {
     font-weight: 0;
  }
   
-/* The dots/bullets/indicators */
+
 .dot {
     height: 15px;
     width: 15px;
@@ -1063,9 +1064,21 @@ h2 {
     scroll-behavior: auto;
     z-index: 173;
     margin-top: -6%;
-
+    scrollbar-width: 10px;
+    scrollbar-color: #000000 #000000;
+  }
+  #img-scrl::-webkit-scrollbar {
+    height: 8px;              
   }
   
+  #img-scrl::-webkit-scrollbar-track {
+    background: #000000;         
+  }
+  
+  #img-scrl::-webkit-scrollbar-thumb {
+    background-color: #000000;    
+    border-radius: 4px;
+  }
 
 .img-scrl-container {
     width: 100%;
@@ -1094,7 +1107,7 @@ h2 {
 
 
 
-.img-scrl {
+#img-scrl {
     display: flex;
     width: 2000px;
     gap: 80px;
@@ -2061,7 +2074,7 @@ h2 {
     opacity: 1;
     height: 20vh;
     width: 17vw;
-    pointer-events: auto; /* Now links are clickable */
+    pointer-events: auto; 
 
 
 }
@@ -2132,7 +2145,6 @@ h2 {
 .end-link {
     display: flex;
     position: relative;   
-    text-align: center;        /* Center the lines of text within the block */
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
@@ -2146,11 +2158,11 @@ h2 {
 .end-link3 {
     display: flex;
     position: absolute;   
-    text-align: center;        /* Center the lines of text within the block */
+    text-align: center;        
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
-    margin-top: 133vh;
+    margin-top: 14vh;
     margin-left: 25vw;
     margin-right: 20px;
     cursor: pointer;
@@ -2177,11 +2189,11 @@ h2 {
 .end-link4 {
     display: flex;
     position: absolute;   
-    text-align: center;        /* Center the lines of text within the block */
+    text-align: center;       
     color: rgb(15, 62, 11);
     text-decoration: none;
     font-weight: 500;
-    margin-top: 138vh;
+    margin-top: 19vh;
     margin-left: 25vw;
     margin-right: 20px;
     cursor: pointer;
@@ -2356,7 +2368,7 @@ h2 {
  
   
   .water-container:hover .water-text {
-    opacity: 1;                 /* shows on hover */
+    opacity: 1;           
     border-color: rgb(149, 175, 199); 
   }
 
@@ -2383,13 +2395,13 @@ h2 {
     padding: 6.5%;
     right: 0;
     bottom: 0;
-    background: rgba(1, 23, 6, 0.867); /* semi-transparent overlay */
+    background: rgba(1, 23, 6, 0.867); 
     color: #ccc9bf;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;        /* Center the lines of text within the block */
-    opacity: 0;                 /* hidden by default */
+    text-align: center;       
+    opacity: 0;                
     transition: all 0.7s ease;
     border-radius: 20px;
     font-size:clamp(0.5rem, 2.1vw, 2.3rem);
@@ -2397,7 +2409,7 @@ h2 {
   }
   
   .composte-container:hover .composte-text {
-    opacity: 1;                 /* shows on hover */
+    opacity: 1;         
     border-color: rgb(199, 170, 149); 
   }
 
@@ -2411,7 +2423,7 @@ h2 {
   }
 
 
-/* Menu styles */
+
 .menu {
     font-family: 'Georgia', serif;
     margin: 0;
@@ -2422,7 +2434,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh; /* Ensures it fills the screen properly */
+    min-height: 100vh; 
     background-size: cover;
     background-position: center;
     flex-direction:column;
@@ -2430,23 +2442,23 @@ h2 {
 }
 
 
-/* Menu container */
+
 .menu-container {
     width: 90%;
-    max-width: 1000px; /* Prevents excessive stretching on large screens */
-    min-width: 320px;  /* Ensures it doesn't shrink too much */
+    max-width: 1000px; 
+    min-width: 320px; 
     background: white;
-    padding: 40px;      /* Adds padding around content */
+    padding: 40px;      
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-wrap: wrap; /* Ensures proper wrapping for small screens */
+    flex-wrap: wrap; 
     justify-content: center;
     text-align: center;
-    margin: 0 auto; /* Centers the container horizontally */
+    margin: 0 auto; 
     margin-top: 160px;
 }
 
-/* Menu title */
+
 .menu-container h1 {
     font-size: 32px;
     font-weight: bold;
@@ -2454,19 +2466,19 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     animation: go-up 1s forwards;
-    opacity: 1; /* Fix: Ensure it's visible */
+    opacity: 1; 
 }
 
-/* Columns - Default to Single Column */
+
 .column {
     width: 100%;
     text-align: left;
     margin-bottom: 20px;
     animation: go-up 1s forwards;
-    opacity: 1; /* Fix: Ensure it's visible */
+    opacity: 1; 
 }
 
-/* Menu sections */
+
 .menu-section h3 {
     font-size: 24px;
     margin-top: 20px;
@@ -2485,7 +2497,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Menu items */
+
 .menu-item {
     display: flex;
     justify-content: space-between;
@@ -2498,7 +2510,7 @@ h2 {
     user-select: none;
 }
 
-/* Description text */
+
 .menu-description {
     font-size: 16px;
     color: #777;
@@ -2509,35 +2521,35 @@ h2 {
     user-select: none;
 }
 
-/* Image container */
+
 .menu-images {
     display: flex;
-    justify-content: flex-start; /* Aligns images to the left */
-    gap: 10px; /* Space between images */
+    justify-content: flex-start; 
+    gap: 10px; 
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Ensures images wrap on small screens */
+    flex-wrap: wrap; 
 }
 
 .image-wrapper {
     position: relative;
     display: inline-block;
-    width: 45%; /* Makes sure both images are equal width */
-    aspect-ratio: 4 / 3; /* Ensures consistent height-to-width ratio */
-    overflow: hidden; /* Prevents overflow if the image is too large */
+    width: 45%; 
+    aspect-ratio: 4 / 3; 
+    overflow: hidden; 
     border-radius: 10px;
 }
 
 .menu-img {
     width: 100%;
-    height: 100%; /* Forces it to fill the container */
-    object-fit: cover; /* Ensures it doesn't stretch */
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; 
     overflow: hidden;
 }
 
-/* Tooltip text */
+
 .image-wrapper::after {
     content: attr(data-description);
     position: absolute;
@@ -2556,21 +2568,21 @@ h2 {
 }
 
 .menu-img:hover {
-    transform: scale(1.05); /* Scales the image up by 1.05 */
+    transform: scale(1.05); 
 }
 
-/* Show text on hover */
+
 .image-wrapper:hover::after {
     opacity: 1;
 }
-/* Responsive - Two Columns when screen is 780px or larger */
+
 @media (min-width: 780px) {
     .menu-container {
         padding: 40px;
     }
     
     .column {
-        width: 48%; /* Side-by-side layout on larger screens */
+        width: 48%;
         margin-bottom: 0;
     }
 
@@ -2579,15 +2591,15 @@ h2 {
     }
 }
 
-/* Responsive - Stack images on small screens */
+
 @media (max-width: 780px) {
     .menu-images {
-        flex-direction: column; /* Stacks images vertically */
+        flex-direction: column; 
         align-items: center;
     }
     
     .menu-img {
-        width: 90%; /* Makes images wider on small screens */
+        width: 90%; 
     }
 }
 
@@ -2611,24 +2623,22 @@ h2 {
 .works-cited {
     position: relative;
     width: 100vw;
-    height: 200vh;
+    height: 260vw;
     z-index: 230;
-    background: white;
+    background: #faf7ed;
     transition: all .3 ease-in-out;
     background-repeat: no-repeat;
-    box-shadow: 50px 20px 50px 20px rgba(6, 39, 0, 0.294);
+    
 }
 
 .embed-container {
-    position: absolute;
-    width: 56vw;
-    height: 120vh;
+    position: relative;
+    width: 60vw;
+    height: 75vw;
     z-index: 300;
-    left: 22vw;
-    top: 10vh;
-    display: flex;
-    justify-content: center;  /* Center horizontally */
-    align-items: center;      /* Center vertically */
+    left: 20vw;
+    top: 30vh;
+    box-shadow:  -2px 2px .1px rgba(0, 0, 0, 0.253);
     
 
 }
