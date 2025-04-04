@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-  width: clamp(310px,68vw,430px);
+  width: clamp(310px,65vw,430px);
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -182,7 +182,7 @@ header .current-date {
 
 /* Form */
 .form-wrapper {
-  width: 450px;
+  width:clamp(300px,65vw,420px);
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -328,11 +328,6 @@ header .current-date {
   }
 }
 
-@media (max-width: 500px) {
-  .form-wrapper {
-    width: 90%;
-  }
-}
 
 * {
   margin: 0;

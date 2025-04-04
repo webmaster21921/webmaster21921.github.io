@@ -440,6 +440,7 @@ h2 {
     padding-bottom: 3%
 }
 
+
 .carryout-top-container {
     display: flex;
     flex-direction: column;
@@ -905,7 +906,7 @@ h2 {
     position: absolute;
     width: 100vw;
     height: 70vh;
-    z-index: 230;
+    z-index: 2;
     top:180vh;
     background: white;
     transition: all .3 ease-in-out;
