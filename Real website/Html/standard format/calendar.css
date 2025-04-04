@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-  width: 450px;
+  width: clamp(310px,68vw,430px);
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
