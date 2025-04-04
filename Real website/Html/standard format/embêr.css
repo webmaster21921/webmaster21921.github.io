@@ -1064,15 +1064,15 @@ h2 {
     scrollbar-width: 10px;
     scrollbar-color: #000000 #000000;
   }
-  .img-scrl::-webkit-scrollbar {
+  #img-scrl::-webkit-scrollbar {
     height: 8px;               /* scrollbar thickness */
   }
   
-  .img-scrl::-webkit-scrollbar-track {
+  #img-scrl::-webkit-scrollbar-track {
     background: #000000;          /* track color */
   }
   
-  .img-scrl::-webkit-scrollbar-thumb {
+  #img-scrl::-webkit-scrollbar-thumb {
     background-color: #000000;    /* scrollbar thumb color */
     border-radius: 4px;
   }
@@ -1091,7 +1091,7 @@ h2 {
     
   }
 
-.img-scrl {
+#img-scrl {
     display: flex;
     width: 100%;
     height: 180%;
