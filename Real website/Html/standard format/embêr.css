@@ -2577,7 +2577,7 @@ h2 {
 
 @media (max-width: 780px) {
     .menu-images {
-        flex-direction: column; 
+        flex-direction: row; 
         align-items: center;
     }
     
