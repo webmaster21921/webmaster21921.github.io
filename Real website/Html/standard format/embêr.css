@@ -386,6 +386,8 @@ h2 {
     background-size: cover;
     background-position: center;
     z-index: 0; 
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 .reservation-page{
@@ -398,6 +400,8 @@ h2 {
     background-size: cover;
     background-position: center;
     z-index: 0; 
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 .order-page{
@@ -410,6 +414,8 @@ h2 {
     background-size: cover;
     background-position: center;
     z-index: 0; 
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 .tour-page{
@@ -422,6 +428,8 @@ h2 {
     background-size: cover;
     background-position: center;
     z-index: 0; 
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 .carryout-page{
@@ -436,6 +444,8 @@ h2 {
     background-position: center;
     z-index: 0; 
     flex-direction: row;
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 .reserve-container {
@@ -451,7 +461,9 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     color: white; 
-    padding-bottom: 3%
+    padding-bottom: 3%;
+    overflow: auto;
+    scroll-snap-type: start;
 }
 
 
