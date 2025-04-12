@@ -387,7 +387,6 @@ h2 {
     background-position: center;
     z-index: 0; 
     overflow: auto;
-    scroll-snap-type: start;
 }
 
 .reservation-page{
